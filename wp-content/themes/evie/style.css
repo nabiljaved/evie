@@ -95,6 +95,7 @@ html {
 body {
 	margin: 0;
 	word-wrap: break-word;
+	font-family: var(--evie-font-secondary);
 }
 
 hr {
@@ -362,6 +363,8 @@ template {
 	/* Override WordPress generated preset colors */
 
 	--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+
+	--wp--preset--gradient--primary-to-secondaryy: linear-gradient(135deg, rgb(var(--evie-color-primary-rgb)) 0%, rgb(var(--evie-color-secondary-rgb)) 100%);
 }
 
 /* Dark Scheme */
@@ -10779,11 +10782,21 @@ body:not(.has-scheme-dark) .dark-mode-button i::before {
 	flex-direction: column;
 	padding: var(--evie-spacing-horizontal);
 	text-align: center;
+	
 }
 
 .site-info{
 	background-color: #0f0f0f !important;
 	color: white !important;
+	
+}
+
+.footer-text{
+	font-size: 1.9rem !important;
+}
+
+.footer-contact-info{
+	font-size: 2rem;
 }
 
 .footer-text {
@@ -14035,9 +14048,8 @@ body:not(.has-scheme-dark) .dark-mode-button i::before {
 /*upper footer section */
 
 .upper_footer_section{
-	height:300px;
+	height:40rem;
 	width:100%;
-	background-color: red;
 	background-image: url("https://evietheme.com/evie3/wp-content/uploads/2022/10/bg-newsletter-form-3.jpg");
 	background-attachment: fixed;
 	background-position: 50%;
@@ -14046,33 +14058,56 @@ body:not(.has-scheme-dark) .dark-mode-button i::before {
 }
 
 .upper_footer_section_inner{
+	
+	display: flex;
+	padding: 3rem;
+	color: white;
+}
+
+.upper_footer_section_dropshadow{
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
 	z-index: 1;
-	opacity: 10;
-	background: var(--wp--preset--gradient--primary-to-secondary) !important;
+	opacity: .5;
 	position: absolute;
-	display: flex;
-	padding: 3rem;
-	
+	background: var(--wp--preset--gradient--primary-to-secondaryy) !important;
+
 }
 
 .upper_footer_section_inner_left{
 	flex-basis: 40%;
-	padding: 6rem;
+	display: flex;
 	color: white;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 6rem;
+	flex-direction: column;
+	z-index: 1000;
 }
+
+
 
 .upper_footer_section_inner_left h1{
 	color: white;
+	font-weight: bolder;
+	z-index: 1000;
+
 }
 
 .upper_footer_section_inner_left p{
 	font-weight: 400;
-	font-size: 2rem;
+	font-size: 2.1rem;
+	z-index: 1000;
+	/* text-shadow: 0 0 10px #eeeeee; */
 }
+
+.upper_footer_section_inner_left span{
+	color: indianred;
+	z-index: 1000;
+}
+
 
 .upper_footer_section_inner_right{
 	flex-basis: 60%;
@@ -14085,21 +14120,22 @@ body:not(.has-scheme-dark) .dark-mode-button i::before {
     background: linear-gradient(rgb(var(--evie-color-white-rgb)),rgb(var(--evie-color-white-rgb))) padding-box,linear-gradient(to right,rgb(var(--evie-color-secondary-rgb)),rgb(var(--evie-color-primary-rgb))) border-box;
     border: 2px solid rgb(var(--evie-color-white-rgb));
     color: rgb(var(--evie-color-black-rgb));
-    height: 5rem;
+    height: 6rem;
     position: relative;
     transition: border-color .3s var(--evie-transition-ease);
     width: 100%;
     z-index: 2;
 	flex-basis: 70%;
+	z-index: 1000;
 }
 
-.upper_footer_section_inner_right .evie-newsletter-form [type=submit] {
-    height: 5rem;
-	background: linear-gradient(45deg,rgb(var(--evie-color-primary-rgb)),rgb(var(--evie-color-primary-rgb)),rgb(var(--evie-color-secondary-rgb)),rgb(var(--evie-color-primary-rgb))) border-box;
+.upper_footer_section_inner_right input[type=submit] {
+    height: 6rem !important;
+	/* background: linear-gradient(45deg,rgb(var(--evie-color-primary-rgb)),rgb(var(--evie-color-primary-rgb)),rgb(var(--evie-color-secondary-rgb)),rgb(var(--evie-color-primary-rgb))) border-box; */
     background-repeat: no-repeat;
     background-size: 400% 100%;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     color: rgb(var(--evie-color-on-primary-rgb));
     cursor: pointer;
     font-weight: 400;
@@ -14109,17 +14145,22 @@ body:not(.has-scheme-dark) .dark-mode-button i::before {
     margin: 0;
     outline: none;
     overflow: hidden;
-    padding: 0 4rem;
+    padding: 0 6rem !important;
     text-align: center;
     text-overflow: ellipsis;
     text-transform: uppercase;
     transition: background-position .3s var(--evie-transition-ease);
     vertical-align: middle;
     white-space: nowrap;
-	flex-basis: 30%;
+	flex-basis: 20%;
+	z-index: 1000;
 }
 
-@media screen and (max-width: 1200px) {
+.upper_footer_section_inner_right  input[type=email]:focus{
+	border: 1px solid indianred;
+}
+
+@media screen and (max-width: 768px) {
 	.upper_footer_section_inner {
 		flex-direction: column;
 		justify-content: center;
@@ -14129,5 +14170,23 @@ body:not(.has-scheme-dark) .dark-mode-button i::before {
 	.upper_footer_section{
 		height: 400px;
 		
+	}
+
+	.upper_footer_section_inner_left {
+		padding: 1rem !important;
+	}
+
+	.upper_footer_section_inner_right {
+		flex-direction: column;
+	}
+
+	.upper_footer_section_inner_right input[type=email]{
+		flex-basis: auto;
+	}
+
+	.upper_footer_section_inner_right input[type=submit]{
+		width: 27rem;
+   	    margin-top: 2rem !important;
+		height: 5rem;
 	}
   }

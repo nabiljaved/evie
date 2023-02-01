@@ -20,14 +20,15 @@
 			<footer id="site-footer" class="main-footer">
 
 			<div class="upper_footer_section">
+				<div class="upper_footer_section_dropshadow"></div>
 				<div class="upper_footer_section_inner">
 					<div class="upper_footer_section_inner_left">
-						<h1> Feed Your <span style="color: tomato">Eyes.</span> </h1>
+						<h1> Feed Your <span style="color: tomato">Eyes</span> .</h1>
 						<p>Subscribe to our newsletter and never miss the new updates.</p>
 					</div>
 					<div class="upper_footer_section_inner_right">
 					      <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your email address" value="" type="email" name="email-278">
-						  <span style="margin-left:10px"><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Subscribe"></span>
+						  <input style="margin-left:10px" class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Subscribe">
 				    </div>
 				</div>
 			</div>
