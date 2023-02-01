@@ -1,0 +1,27 @@
+/**
+ * Customize Preview
+ */
+
+/*--------------------------------------------------------------
+# Customizer
+--------------------------------------------------------------*/
+
+.evie-customize-ready {
+	opacity: 1;
+}
+
+.customize-partial-edit-shortcut,
+.widget .customize-partial-edit-shortcut {
+	top: 0;
+	z-index: 9999;
+}
+
+.customize-partial-edit-shortcut button,
+.widget .customize-partial-edit-shortcut button {
+	right: 0;
+	z-index: 9999;
+}
+
+body:not(.has-user-color-support) .dark-mode-button {
+	display: none;
+}

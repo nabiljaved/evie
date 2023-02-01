@@ -1,0 +1,963 @@
+/**
+ * Block Editor Styles
+ *
+ * NOTE:
+ * This file customizes items that are out of the normal scope of style-editor.css
+ * due to the auto-prefixing functionality associated with add_editor_style().
+ */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Icons
+# Editor
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+
+:root {
+
+	/* Typography */
+	--evie-font-primary: "Poppins", "Helvetica", "Arial", sans-serif;
+	--evie-font-secondary: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--evie-font-highlight: "Noto Serif", serif;
+	--evie-font-monospace: "Cutive Mono", monospace;
+
+	--evie-font-size-base: 1.64rem;
+	--evie-font-size-xs: 1.24rem;
+	--evie-font-size-sm: 1.4rem;
+	--evie-font-size-md: 1.8rem;
+	--evie-font-size-lg: 2rem;
+	--evie-font-size-xl: 2.4rem;
+	--evie-font-size-xxl: 3.2rem;
+	--evie-font-size-xxxl: 8.4vw;
+
+	/* Headings */
+	--evie-font-size-h1: 3.4rem;
+	--evie-font-size-h2: 3rem;
+	--evie-font-size-h3: 2.6rem;
+	--evie-font-size-h4: 2.2rem;
+	--evie-font-size-h5: 2rem;
+	--evie-font-size-h6: 1.8rem;
+
+	/* Header */
+	--evie-header-menu-height: 6.5rem;
+	--evie-header-menu-gap: 6.5rem;
+	--evie-admin-bar-height: 0px; /* stylelint-disable-line length-zero-no-unit -- A unit is required, unitless (0) is not supported in calc(). */
+
+	/* Spacing */
+	--evie-spacing-xs: 1rem;
+	--evie-spacing-sm: 2rem;
+	--evie-spacing-md: 3rem;
+	--evie-spacing-lg: 4rem;
+	--evie-spacing-horizontal: 2rem;
+	--evie-spacing-vertical: 4rem;
+	--evie-alignright-margin: 0;
+	--evie-alignleft-margin: 0;
+
+	/* Content */
+	--evie-content-width: 78rem;
+	--evie-wide-width: 120rem;
+	--evie-full-width: 140rem;
+	--evie-sidebar-width: 100%;
+
+	/* Grid */
+	--evie-grid-columns: 1;
+	--evie-grid-gap: var(--evie-spacing-horizontal);
+
+	/* Misc */
+	--evie-scrollbar-width: 0;
+	--evie-transition-ease: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	--evie-transition-delay: 0.1s;
+
+}
+
+/* Colors */
+
+/* stylelint-disable at-rule-no-unknown -- Ignore PostCSS Mixins rule */
+
+:root,
+.has-scheme-light,
+.flext-has-scheme-light {
+
+	--evie-color-black-rgb: 20, 20, 20;
+
+	--evie-color-white-rgb: 255, 255, 255;
+
+	--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+	--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+	--evie-color-primary-rgb: 244, 86, 86;
+
+	--evie-color-on-primary-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-secondary-rgb: 164, 85, 244;
+
+	--evie-color-on-secondary-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-surface-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-on-surface-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-header: rgba(var(--evie-color-on-surface-rgb), 0.03);
+
+	--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+
+	--evie-color-menu-rgb: var(--evie-color-surface-rgb);
+
+	--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+	--evie-color-background-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-alert: #d00c09;
+
+	--evie-color-info: #00a32a;
+
+	/* Override WordPress generated preset colors */
+
+	--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+}
+
+/* Dark Scheme */
+
+.has-scheme-dark,
+.flext-has-scheme-dark {
+
+	--evie-color-black-rgb: 15, 15, 15;
+
+	--evie-color-white-rgb: 245, 245, 245;
+
+	--evie-color-surface-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-on-surface-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-header: rgba(var(--evie-color-black-rgb), 0.2);
+
+	--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+
+	--evie-color-menu-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+	--evie-color-background-rgb: 33, 33, 33;
+
+	--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+	--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+	/* Override WordPress generated preset colors */
+
+	--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+}
+
+/* stylelint-enable at-rule-no-unknown */
+
+/* Text Mode */
+
+.has-text-mode-light {
+	--evie-color-on-surface-rgb: 245, 245, 245;
+	--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+}
+
+.has-text-mode-dark {
+	--evie-color-on-surface-rgb: 17, 17, 17;
+	--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+}
+
+.admin-bar {
+	--evie-admin-bar-height: 46px;
+}
+
+.desktop-menu {
+	--evie-header-menu-height: 9.5rem;
+	--evie-header-menu-gap: 9.5rem;
+}
+
+.transparent-menu {
+	--evie-header-menu-gap: 0px; /* stylelint-disable-line length-zero-no-unit -- A unit is required, unitless (0) is not supported in calc(). */
+}
+
+/*--------------------------------------------------------------
+# Icons
+--------------------------------------------------------------*/
+
+@font-face {
+	font-family: evie;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/evie.woff) format("woff");
+}
+
+[class^="evie-ico-"]::before,
+[class*=" evie-ico-"]::before {
+	display: inline-block;
+	font-family: evie, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+
+	/* fix buttons height, for twitter bootstrap */
+	text-align: center;
+	text-decoration: inherit;
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 1em;
+}
+
+.evie-ico-sortby::before {
+	content: "\e817";
+}
+
+.evie-ico-list::before {
+	content: "\e833";
+}
+
+.evie-ico-artical::before {
+	content: "\e830";
+}
+
+.evie-ico-cancel::before {
+	content: "\e829";
+}
+
+.evie-ico-filter::before {
+	content: "\e816";
+}
+
+.evie-ico-light::before {
+	content: "\e814";
+}
+
+.evie-ico-dark::before {
+	content: "\e815";
+}
+
+.evie-ico-eye-hide::before {
+	content: "\e884";
+}
+
+.evie-ico-eye::before {
+	content: "\e883";
+}
+
+.evie-ico-facebook::before {
+	content: "\e811";
+}
+
+.evie-ico-pinterest::before {
+	content: "\e812";
+}
+
+.evie-ico-twitter::before {
+	content: "\e813";
+}
+
+.evie-ico-whatsapp::before {
+	content: "\e810";
+}
+
+.evie-ico-like::before {
+	content: "\e825";
+}
+
+.evie-ico-unlike::before {
+	content: "\e826";
+}
+
+.evie-ico-stock::before {
+	content: "\e889";
+}
+
+.evie-ico-outofstock::before {
+	content: "\e886";
+}
+
+.evie-ico-mail::before {
+	content: "\e888";
+}
+
+.evie-ico-logout::before {
+	content: "\e887";
+}
+
+.evie-ico-user::before {
+	content: "\e885";
+}
+
+.evie-ico-login::before {
+	content: "\e882";
+}
+
+.evie-ico-coupon::before {
+	content: "\e880";
+}
+
+.evie-ico-delivery::before {
+	content: "\e881";
+}
+
+.evie-ico-info::before {
+	content: "\e917";
+}
+
+.evie-ico-search::before {
+	content: "\e82c";
+}
+
+.evie-ico-check::before {
+	content: "\e831";
+}
+
+.evie-ico-sticky-post::before {
+	content: "\e100";
+}
+
+.evie-ico-reply::before {
+	content: "\e802";
+}
+
+.evie-ico-title-za::before {
+	content: "\e901";
+}
+
+.evie-ico-title::before {
+	content: "\e902";
+}
+
+.evie-ico-date-new::before {
+	content: "\e903";
+}
+
+.evie-ico-globe::before {
+	content: "\e921";
+}
+
+.evie-ico-spinner::before {
+	content: "\e91f";
+}
+
+.evie-ico-resize::before {
+	content: "\e837";
+}
+
+.evie-ico-zoom-out::before {
+	content: "\e92c";
+}
+
+.evie-ico-share::before {
+	content: "\e906";
+}
+
+.evie-ico-play::before {
+	content: "\e91b";
+}
+
+.evie-ico-back::before {
+	content: "\e803";
+}
+
+.evie-ico-date::before {
+	content: "\e915";
+}
+
+.evie-ico-resize-full::before {
+	content: "\e836";
+}
+
+.evie-ico-archive::before {
+	content: "\e85e";
+}
+
+.evie-ico-arrow-down::before {
+	content: "\e90e";
+}
+
+.evie-ico-arrow-left::before {
+	content: "\e912";
+}
+
+.evie-ico-arrow-right::before {
+	content: "\e913";
+}
+
+.evie-ico-arrow-up::before {
+	content: "\e905";
+}
+
+.evie-ico-attention::before {
+	content: "\e83e";
+}
+
+.evie-ico-author::before {
+	content: "\e916";
+}
+
+.evie-ico-bookmark::before {
+	content: "\e841";
+}
+
+.evie-ico-comment::before {
+	content: "\e809";
+}
+
+.evie-ico-hashtag::before {
+	content: "\e910";
+}
+
+.evie-ico-down::before {
+	content: "\e845";
+}
+
+.evie-ico-left::before {
+	content: "\e842";
+}
+
+.evie-ico-right::before {
+	content: "\e843";
+}
+
+.evie-ico-up::before {
+	content: "\e844";
+}
+
+.evie-ico-more::before {
+	content: "\e840";
+}
+
+.evie-ico-pencil::before {
+	content: "\e80a";
+}
+
+.evie-ico-quotes::before {
+	content: "\e80f";
+}
+
+.evie-ico-setting::before {
+	content: "\e82f";
+}
+
+.evie-ico-shopping-bag::before {
+	content: "\e82d";
+}
+
+.evie-ico-star-empty::before {
+	content: "\e807";
+}
+
+.evie-ico-star::before {
+	content: "\e806";
+}
+
+.evie-ico-trash::before {
+	content: "\e599";
+}
+
+.evie-ico-zoom-in::before {
+	content: "\e91c";
+}
+
+.evie-ico-ok-circle::before {
+	content: "\e832";
+}
+
+.evie-ico-cart::before {
+	content: "\e848";
+}
+
+.evie-ico-pause::before {
+	content: "\e904";
+}
+
+/*--------------------------------------------------------------
+# Editor
+--------------------------------------------------------------*/
+
+:root {
+	--evie-editor-header-background-color: var(--evie-color-header);
+	--evie-editor-header-background-image: "";
+	--evie-editor-header-background-position: center center;
+	--evie-editor-header-background-size: cover;
+	--evie-editor-header-overlay-color: "";
+	--evie-editor-header-overlay-opacity: 0.75;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1rem = 10px */
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	scrollbar-color: rgb(var(--evie-color-black-rgb)) rgb(var(--evie-color-white-rgb));
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: var(--evie-scrollbar-width);
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(var(--evie-color-black-rgb), 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+	border-radius: 0.5rem;
+}
+
+:hover::-webkit-scrollbar-thumb {
+	background-color: rgba(var(--evie-color-black-rgb), 0.6);
+}
+
+body:hover::-webkit-scrollbar-thumb {
+	background-color: rgb(var(--evie-color-black-rgb));
+}
+
+body * {
+	scrollbar-color: auto;
+}
+
+/* stylelint-disable selector-class-pattern -- Ignore Editor special classes */
+
+.block-editor-page .interface-interface-skeleton__editor {
+	width: 100%;
+}
+
+.block-editor-page .edit-post-visual-editor {
+	position: relative;
+	width: 100%;
+}
+
+.edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	align-items: center;
+	background-color: var(--evie-color-header);
+	color: var(--evie-color-on-header);
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: var(--evie-spacing-horizontal);
+	margin-top: 0;
+	padding: var(--evie-spacing-horizontal);
+	position: relative;
+}
+
+.has-header-background-color .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	background-color: var(--evie-editor-header-background-color);
+}
+
+.has-header-background-image .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	background-image: var(--evie-editor-header-background-image);
+	background-position: var(--evie-editor-header-background-position);
+	background-repeat: no-repeat;
+	background-size: var(--evie-editor-header-background-size);
+}
+
+.has-header-background-fixed .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	background-attachment: fixed;
+}
+
+.has-header-background-repeat .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	background-repeat: repeat;
+}
+
+.has-header-background-image.has-header-gradient-background .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	margin-bottom: 0;
+}
+
+.has-header-background-image .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper::before {
+	background-color: var(--evie-editor-header-overlay-color);
+	bottom: 0;
+	content: "";
+	left: 0;
+	opacity: var(--evie-editor-header-overlay-opacity);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.has-header-background-image.has-header-gradient-background .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper::before {
+	background-color: transparent;
+	background-image: linear-gradient(rgba(var(--evie-color-background-rgb), 0.8), rgba(var(--evie-color-background-rgb), 0.9) 50%, rgb(var(--evie-color-background-rgb)));
+	opacity: 1;
+}
+
+.has-header-none .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	filter: opacity(0.4) saturate(0);
+	margin-bottom: 0;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+}
+
+.has-header-breadcrumb .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.has-header-breadcrumb.has-header-align-left .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.has-header-breadcrumb.has-header-align-center .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.has-header-breadcrumb.has-header-align-right .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.has-header-breadcrumb .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title::after {
+	content: "Home / Page";
+	display: block;
+	font-size: var(--evie-font-size-sm);
+	font-weight: 400;
+	padding: 0;
+	white-space: nowrap;
+	width: auto;
+}
+
+.has-header-breadcrumb.has-header-align-left .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title::after,
+.has-header-breadcrumb.has-header-align-center .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title::after,
+.has-header-breadcrumb.has-header-align-right .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title::after {
+	width: 100%;
+}
+
+.has-header-size-short:not(.has-header-none) .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+}
+
+.has-header-size-medium:not(.has-header-none) .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	min-height: calc(40vh - var(--evie-header-menu-gap) - var(--evie-admin-bar-height)); /* 40% height - header menu - WordPress admin bar */
+}
+
+.has-header-size-tall:not(.has-header-none) .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	min-height: calc(50vh - var(--evie-header-menu-gap) - var(--evie-admin-bar-height)); /* 50% height - header menu - WordPress admin bar */
+}
+
+.has-header-size-full:not(.has-header-none) .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	min-height: calc(100vh - var(--evie-header-menu-gap) - var(--evie-admin-bar-height)); /* 100% height - header menu - WordPress admin bar */
+}
+
+.has-header-overlay-background.has-header-text-light .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	color: rgb(245, 245, 245);
+}
+
+.has-header-overlay-background.has-header-text-dark .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	color: rgb(17, 17, 17);
+}
+
+.is-header-gap-hidden .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
+	margin-bottom: 0;
+}
+
+.edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	color: inherit;
+	margin: 0 auto;
+	max-width: var(--evie-content-width);
+	text-align: center;
+	width: 100%;
+}
+
+.has-header-none .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title::after {
+	content: "\f530";
+	font-family: dashicons, sans-serif;
+	font-size: var(--evie-font-size-xl);
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(-150%, -50%);
+	z-index: 5;
+}
+
+.has-header-width-wide .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	max-width: var(--evie-wide-width);
+}
+
+.has-header-width-full .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	max-width: none;
+}
+
+.has-header-align-left .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	text-align: left;
+}
+
+.has-header-align-center .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	text-align: center;
+}
+
+.has-header-align-right .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	text-align: right;
+}
+
+.has-header-description .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title::before {
+	content: "Description";
+	display: block;
+	font-family: var(--evie-font-highlight);
+	font-size: var(--evie-font-size-base);
+	font-weight: 400;
+	margin-bottom: 1.5rem;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.edit-post-visual-editor .editor-post-title {
+	color: inherit;
+	font-family: var(--evie-font-primary);
+	font-size: var(--evie-font-size-h1);
+	font-weight: 700;
+	padding: 0;
+	text-align: inherit;
+}
+
+.editor-styles-wrapper .flext-has-scheme-dark select,
+.has-scheme-dark .editor-styles-wrapper select {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjIuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDE1LjUgNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTUuNSA3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxnPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxMCwwIDAsMCA1LDcgCSIvPgo8L2c+Cjwvc3ZnPgo=);
+	background-size: 16px;
+}
+
+.editor-styles-wrapper .flext-has-scheme-dark .wp-block-file .wp-block-file__textlink::after,
+.has-scheme-dark .editor-styles-wrapper .wp-block-file .wp-block-file__textlink::after,
+.editor-styles-wrapper .flext-has-scheme-dark .wp-block-file a:not(.wp-block-file__button)::after,
+.has-scheme-dark .editor-styles-wrapper .wp-block-file a:not(.wp-block-file__button)::after,
+.editor-styles-wrapper .flext-has-scheme-dark .wp-block-button.is-style-evie-circle .wp-block-button__link::after,
+.editor-styles-wrapper .flext-has-scheme-dark .wp-block-button.is-style-evie-circle-after .wp-block-button__link::after,
+.has-scheme-dark .editor-styles-wrapper .wp-block-button.is-style-evie-circle .wp-block-button__link::after,
+.has-scheme-dark .editor-styles-wrapper .wp-block-button.is-style-evie-circle-after .wp-block-button__link::after {
+	background: none;
+}
+
+.has-scheme-dark .editor-styles-wrapper .navigation.loadmore-pagination a {
+	background: none;
+}
+
+/*--------------------------------------------------------------
+# WC Block Editor
+--------------------------------------------------------------*/
+
+.components-base-control .components-base-control__label {
+	font-size: inherit;
+	text-transform: none;
+}
+
+/* stylelint-enable selector-class-pattern */
+
+@media (min-width: 576px) {
+
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 31rem;
+
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	/* Variables */
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 33rem;
+
+		/* Spacing */
+		--evie-spacing-xs: 1.5rem;
+		--evie-spacing-sm: 2.5rem;
+		--evie-spacing-md: 3.5rem;
+		--evie-spacing-lg: 4.5rem;
+		--evie-spacing-horizontal: 3rem;
+		--evie-spacing-vertical: 6rem;
+
+		/* Grid */
+		--evie-grid-columns: 2;
+	}
+
+	/* Grid Columns */
+	.has-2-columns {
+		--evie-grid-columns: 2;
+	}
+
+}
+
+@media (min-width: 783px) {
+
+	.admin-bar {
+		--evie-admin-bar-height: 32px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	/* Variables */
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 35rem;
+
+		/* Typography */
+		--evie-font-size-lg: 2.2rem;
+		--evie-font-size-xl: 3rem;
+		--evie-font-size-xxl: 5rem;
+		--evie-font-size-xxxl: 8.4vw;
+
+		/* Headings */
+		--evie-font-size-h1: var(--evie-font-size-xxl);
+		--evie-font-size-h2: 4.4rem;
+		--evie-font-size-h3: 3rem;
+		--evie-font-size-h4: var(--evie-font-size-lg);
+		--evie-font-size-h5: 2.2rem;
+		--evie-font-size-h6: var(--evie-font-size-md);
+
+		/* Spacing */
+		--evie-spacing-horizontal: 4rem;
+		--evie-spacing-vertical: 8rem;
+		--evie-alignright-margin: calc(0.5 * (100vw - var(--evie-content-width)) - var(--evie-spacing-horizontal));
+		--evie-alignleft-margin: calc(0.5 * (100vw - var(--evie-content-width)) - var(--evie-spacing-horizontal));
+
+		/* Grid */
+		--evie-grid-columns: 3;
+
+		/* Misc */
+		--evie-scrollbar-width: 0.6rem;
+	}
+
+	/* Grid Columns */
+	.has-3-columns {
+		--evie-grid-columns: 3;
+	}
+
+	.has-4-columns,
+	.has-5-columns {
+		--evie-grid-columns: 4;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	/* Variables */
+	:root {
+		--evie-sidebar-width: 42rem;
+
+		/* Typography */
+		--evie-font-size-lg: 2.4rem;
+		--evie-font-size-xl: 3.4rem;
+		--evie-font-size-xxl: 5.4rem;
+		--evie-font-size-xxxl: 8.4vw;
+
+		/* Headings */
+		--evie-font-size-h1: var(--evie-font-size-xxl);
+		--evie-font-size-h2: 4.4rem;
+		--evie-font-size-h3: 3rem;
+		--evie-font-size-h4: var(--evie-font-size-lg);
+		--evie-font-size-h5: 2.2rem;
+		--evie-font-size-h6: var(--evie-font-size-md);
+
+		/* Spacing */
+		--evie-spacing-xs: 2rem;
+		--evie-spacing-sm: 3rem;
+		--evie-spacing-md: 4rem;
+		--evie-spacing-lg: 5rem;
+		--evie-spacing-horizontal: 6rem;
+		--evie-spacing-vertical: 9rem;
+	}
+
+	.has-5-columns {
+		--evie-grid-columns: 5;
+	}
+
+	.has-6-columns {
+		--evie-grid-columns: 6;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.has-scheme-auto {
+
+		--evie-color-black-rgb: 15, 15, 15;
+
+		--evie-color-white-rgb: 245, 245, 245;
+
+		--evie-color-surface-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-on-surface-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-header: rgba(var(--evie-color-black-rgb), 0.2);
+
+		--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+
+		--evie-color-menu-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+		--evie-color-background-rgb: 33, 33, 33;
+
+		--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+		--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+		/* Override WordPress generated preset colors */
+
+		--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+	}
+
+}
+
+@media (prefers-color-scheme: light) {
+
+	.has-scheme-auto {
+
+		--evie-color-black-rgb: 20, 20, 20;
+
+		--evie-color-white-rgb: 255, 255, 255;
+
+		--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+		--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+		--evie-color-primary-rgb: 244, 86, 86;
+
+		--evie-color-on-primary-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-secondary-rgb: 164, 85, 244;
+
+		--evie-color-on-secondary-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-surface-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-on-surface-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-header: rgba(var(--evie-color-on-surface-rgb), 0.03);
+
+		--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+
+		--evie-color-menu-rgb: var(--evie-color-surface-rgb);
+
+		--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+		--evie-color-background-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-alert: #d00c09;
+
+		--evie-color-info: #00a32a;
+
+		/* Override WordPress generated preset colors */
+
+		--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+	}
+
+}

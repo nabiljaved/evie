@@ -1,0 +1,57 @@
+{
+	"apiVersion": 2,
+	"name": "flextension/counter",
+	"title": "Counter",
+	"description": "An animated numbered counter.",
+	"category": "flextension",
+	"textdomain": "flextension",
+	"keywords": [
+		"count up",
+		"animated number"
+	],
+	"supports": {
+		"anchor": true,		
+		"color": {
+			"background": false
+		},
+		"typography": {
+			"fontSize": true			
+		},
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {	
+		"textAlign": {
+			"type": "string"
+		},	
+		"start": {
+			"type": "number",
+			"default": 0
+		},
+		"end": {
+			"type": "number",
+			"default": 100
+		},
+		"prefix": {
+			"type": "string",
+			"default": ""
+		},
+		"suffix": {
+			"type": "string",
+			"default": ""
+		},
+		"duration": {
+			"type": "number",
+			"default": 1000
+		},
+		"delay": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"editorStyle": "flextension-block-editor",
+	"editorScript": "flextension-block-editor",
+	"style": "flextension-elements",
+	"viewScript": "flextension-elements"
+}

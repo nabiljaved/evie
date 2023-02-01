@@ -1,0 +1,107 @@
+{
+	"apiVersion": 2,
+	"name": "evie/posts",
+	"title": "Posts",
+	"description": "Displays your posts.",
+	"category": "flextension",
+	"textdomain": "evie-xt",
+	"keywords": [ "post", "blog", "portfolio", "project" ],
+	"supports": {
+		"html": false,
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		},
+		"className": {
+			"type": "string"
+		},
+		"layout": {
+			"type": "string",
+			"default": "list"
+		},
+		"postStyle": {
+			"type": "string",
+			"default": "card"
+		},
+		"hoverEffect": {
+			"type": "string",
+			"default": "none"
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+		"parallax": {
+			"type": "boolean",
+			"default": false
+		},
+		"animation": {
+			"type": "string",
+			"default": ""
+		},
+		"pagination": {
+			"type": "string",
+			"default": ""
+		},
+		"link": {
+			"type": "string",
+			"default": ""
+		},
+		"linkText": {
+			"type": "string",
+			"default": "See all"
+		},
+		"linkURL": {
+			"type": "string",
+			"default": ""
+		},
+		"displayTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayButtons": {
+			"type": "boolean",
+			"default": true
+		},
+		"page": {
+			"type": "number",
+			"default": 1
+		},
+		"query": {
+			"type": "object",
+			"default": {				
+				"postType": "post",	
+				"posts": [],			
+				"taxonomy": "",
+				"terms": [],
+				"author": "",
+				"authors": [],
+				"timeRange": "",
+				"orderBy": "date",
+				"order": "DESC",
+				"numberOfItems": 10
+			}
+		}
+	},
+	"editorStyle": "evie-edit-blocks",
+	"editorScript": "evie-edit-blocks",
+	"style": "evie-blocks",
+	"viewScript": "evie-blocks"
+}

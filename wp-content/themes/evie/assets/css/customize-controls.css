@@ -1,0 +1,621 @@
+/**
+ * Customize Controls
+ */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Customize Controls
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+
+:root {
+
+	/* Typography */
+	--evie-font-primary: "Poppins", "Helvetica", "Arial", sans-serif;
+	--evie-font-secondary: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--evie-font-highlight: "Noto Serif", serif;
+	--evie-font-monospace: "Cutive Mono", monospace;
+
+	--evie-font-size-base: 1.64rem;
+	--evie-font-size-xs: 1.24rem;
+	--evie-font-size-sm: 1.4rem;
+	--evie-font-size-md: 1.8rem;
+	--evie-font-size-lg: 2rem;
+	--evie-font-size-xl: 2.4rem;
+	--evie-font-size-xxl: 3.2rem;
+	--evie-font-size-xxxl: 8.4vw;
+
+	/* Headings */
+	--evie-font-size-h1: 3.4rem;
+	--evie-font-size-h2: 3rem;
+	--evie-font-size-h3: 2.6rem;
+	--evie-font-size-h4: 2.2rem;
+	--evie-font-size-h5: 2rem;
+	--evie-font-size-h6: 1.8rem;
+
+	/* Header */
+	--evie-header-menu-height: 6.5rem;
+	--evie-header-menu-gap: 6.5rem;
+	--evie-admin-bar-height: 0px; /* stylelint-disable-line length-zero-no-unit -- A unit is required, unitless (0) is not supported in calc(). */
+
+	/* Spacing */
+	--evie-spacing-xs: 1rem;
+	--evie-spacing-sm: 2rem;
+	--evie-spacing-md: 3rem;
+	--evie-spacing-lg: 4rem;
+	--evie-spacing-horizontal: 2rem;
+	--evie-spacing-vertical: 4rem;
+	--evie-alignright-margin: 0;
+	--evie-alignleft-margin: 0;
+
+	/* Content */
+	--evie-content-width: 78rem;
+	--evie-wide-width: 120rem;
+	--evie-full-width: 140rem;
+	--evie-sidebar-width: 100%;
+
+	/* Grid */
+	--evie-grid-columns: 1;
+	--evie-grid-gap: var(--evie-spacing-horizontal);
+
+	/* Misc */
+	--evie-scrollbar-width: 0;
+	--evie-transition-ease: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	--evie-transition-delay: 0.1s;
+
+}
+
+/* Colors */
+
+/* stylelint-disable at-rule-no-unknown -- Ignore PostCSS Mixins rule */
+
+:root,
+.has-scheme-light,
+.flext-has-scheme-light {
+
+	--evie-color-black-rgb: 20, 20, 20;
+
+	--evie-color-white-rgb: 255, 255, 255;
+
+	--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+	--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+	--evie-color-primary-rgb: 244, 86, 86;
+
+	--evie-color-on-primary-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-secondary-rgb: 164, 85, 244;
+
+	--evie-color-on-secondary-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-surface-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-on-surface-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-header: rgba(var(--evie-color-on-surface-rgb), 0.03);
+
+	--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+
+	--evie-color-menu-rgb: var(--evie-color-surface-rgb);
+
+	--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+	--evie-color-background-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-alert: #d00c09;
+
+	--evie-color-info: #00a32a;
+
+	/* Override WordPress generated preset colors */
+
+	--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+}
+
+/* Dark Scheme */
+
+.has-scheme-dark,
+.flext-has-scheme-dark {
+
+	--evie-color-black-rgb: 15, 15, 15;
+
+	--evie-color-white-rgb: 245, 245, 245;
+
+	--evie-color-surface-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-on-surface-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-header: rgba(var(--evie-color-black-rgb), 0.2);
+
+	--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+
+	--evie-color-menu-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+	--evie-color-background-rgb: 33, 33, 33;
+
+	--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+	--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+	/* Override WordPress generated preset colors */
+
+	--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+}
+
+/* stylelint-enable at-rule-no-unknown */
+
+/* Text Mode */
+
+.has-text-mode-light {
+	--evie-color-on-surface-rgb: 245, 245, 245;
+	--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+}
+
+.has-text-mode-dark {
+	--evie-color-on-surface-rgb: 17, 17, 17;
+	--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+}
+
+.admin-bar {
+	--evie-admin-bar-height: 46px;
+}
+
+.desktop-menu {
+	--evie-header-menu-height: 9.5rem;
+	--evie-header-menu-gap: 9.5rem;
+}
+
+.transparent-menu {
+	--evie-header-menu-gap: 0px; /* stylelint-disable-line length-zero-no-unit -- A unit is required, unitless (0) is not supported in calc(). */
+}
+
+/*--------------------------------------------------------------
+# Customize Controls
+--------------------------------------------------------------*/
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1rem = 10px */
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	scrollbar-color: rgb(var(--evie-color-primary-rgb)) rgba(var(--evie-color-on-surface-rgb), 0.6);
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: 0.6rem;
+	border-radius: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+	border-radius: 0.6rem;
+}
+
+:hover::-webkit-scrollbar-thumb {
+	background-color: rgba(var(--evie-color-on-surface-rgb), 0.6);
+}
+
+body * {
+	scrollbar-color: auto;
+}
+
+.wp-customizer .preview-mobile .wp-full-overlay-main {
+	height: 667px;
+	margin-left: -187px;
+	width: calc(375px + 17px);
+}
+
+.wp-customizer .preview-tablet .wp-full-overlay-main {
+	height: 1024px;
+	margin-left: -390px;
+	width: calc(768px + 17px);
+}
+
+.wp-customizer #customize-theme-controls .customize-pane-child.customize-widgets__sidebar-section {
+	background: rgb(var(--evie-color-surface-rgb));
+	color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+.wp-customizer .customize-control-sidebar_block_editor .block-editor-button-block-appender {
+	color: rgb(var(--evie-color-on-surface-rgb));
+	box-shadow: inset 0 0 0 1px rgb(var(--evie-color-on-surface-rgb));
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	height: 2rem;
+	width: 2rem;
+}
+
+input[type="checkbox"]:checked::before {
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+
+input[type="radio"]:checked::before {
+	height: 1rem;
+	margin: 0.4rem;
+	width: 1rem;
+}
+
+.customize-control-checkbox .customize-inside-control-row {
+	margin-left: 40px;
+}
+
+.customize-control input[type="number"] {
+	max-width: 100px;
+}
+
+.customize-control-checkbox input[type="checkbox"] {
+	align-items: center;
+	-webkit-appearance: none;
+	        appearance: none;
+	background: rgba(0, 0, 0, 0.15);
+	border: none;
+	border-radius: 30px;
+	box-shadow: none;
+	display: inline-flex;
+	height: 18px;
+	margin: 0 4px 0 -40px;
+	padding: 2px 5px !important;
+	text-align: left;
+	width: 35px;
+}
+
+.customize-control-checkbox input[type="checkbox"]:checked {
+	background: var(--wp-admin-theme-color, #2271b1);
+}
+
+.customize-control-checkbox input[type="checkbox"]:checked:focus {
+	box-shadow: 0 0 3px 4px rgba(33, 113, 177, 0.25);
+}
+
+.customize-control-checkbox input[type="checkbox"]::before {
+	background: #fff;
+	border-radius: 100%;
+	content: "";
+	display: inline-block;
+	height: 12px;
+	margin: 0;
+	transition: transform 0.3s;
+	width: 12px;
+}
+
+.customize-control-checkbox input[type="checkbox"]:checked::before {
+	transform: translateX(100%);
+}
+
+.customize-control-evie-label {
+	margin-bottom: 0;
+}
+
+.customize-control-evie-range .flext-field-range-wrapper {
+	overflow: hidden;
+	padding: 0 5px;
+	position: relative;
+}
+
+.customize-control-evie-range .evie-range-marks {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -2px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+.customize-control-evie-range .evie-range-marks span {
+	align-items: center;
+	display: inline-flex;
+	font-size: 11px;
+	justify-content: center;
+	padding-bottom: 10px;
+	position: relative;
+	width: 20px;
+}
+
+.customize-control-evie-range .evie-range-marks span::after {
+	background: #000;
+	bottom: -5px;
+	content: "";
+	height: 10px;
+	left: 50%;
+	margin-left: -1px;
+	position: absolute;
+	width: 1px;
+}
+
+.customize-control-evie-range input {
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+
+.customize-control-evie-range .evie-range-value-wrapper {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.customize-control-evie-range .evie-range-value {
+	background: rgb(0, 0, 0);
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	min-width: 20px;
+	padding: 2px 5px;
+	position: relative;
+}
+
+.customize-control-evie-range .evie-range-value::before {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid rgb(0, 0, 0);
+	content: "";
+	height: 10px;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translate(-50%, -100%);
+	z-index: 999;
+}
+
+.evie-customize-input-controls {
+	display: grid;
+	grid-column-gap: 1rem;
+	grid-template-columns: repeat(4, minmax(2rem, 1fr));
+}
+
+.evie-customize-input-control {
+	text-align: center;
+}
+
+.evie-customize-input-control input {
+	margin-bottom: 0.25rem;
+	text-align: center;
+}
+
+.evie-customize-input-control input::placeholder {
+	font-size: var(--evie-font-size-xs);
+}
+
+.evie-customize-input-control label {
+	display: block;
+	margin-top: 0.5rem;
+}
+
+.evie-customize-clear-button {
+	text-align: right;
+}
+
+.evie-customize-control-html {
+	width: 100%;
+}
+
+.mce-btn.mce-active button,
+.mce-btn.mce-active:hover button {
+	background-color: #111;
+}
+
+@media (min-width: 576px) {
+
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 31rem;
+
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	/* Variables */
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 33rem;
+
+		/* Spacing */
+		--evie-spacing-xs: 1.5rem;
+		--evie-spacing-sm: 2.5rem;
+		--evie-spacing-md: 3.5rem;
+		--evie-spacing-lg: 4.5rem;
+		--evie-spacing-horizontal: 3rem;
+		--evie-spacing-vertical: 6rem;
+
+		/* Grid */
+		--evie-grid-columns: 2;
+	}
+
+	/* Grid Columns */
+	.has-2-columns {
+		--evie-grid-columns: 2;
+	}
+
+}
+
+@media (min-width: 783px) {
+
+	.admin-bar {
+		--evie-admin-bar-height: 32px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	/* Variables */
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 35rem;
+
+		/* Typography */
+		--evie-font-size-lg: 2.2rem;
+		--evie-font-size-xl: 3rem;
+		--evie-font-size-xxl: 5rem;
+		--evie-font-size-xxxl: 8.4vw;
+
+		/* Headings */
+		--evie-font-size-h1: var(--evie-font-size-xxl);
+		--evie-font-size-h2: 4.4rem;
+		--evie-font-size-h3: 3rem;
+		--evie-font-size-h4: var(--evie-font-size-lg);
+		--evie-font-size-h5: 2.2rem;
+		--evie-font-size-h6: var(--evie-font-size-md);
+
+		/* Spacing */
+		--evie-spacing-horizontal: 4rem;
+		--evie-spacing-vertical: 8rem;
+		--evie-alignright-margin: calc(0.5 * (100vw - var(--evie-content-width)) - var(--evie-spacing-horizontal));
+		--evie-alignleft-margin: calc(0.5 * (100vw - var(--evie-content-width)) - var(--evie-spacing-horizontal));
+
+		/* Grid */
+		--evie-grid-columns: 3;
+
+		/* Misc */
+		--evie-scrollbar-width: 0.6rem;
+	}
+
+	/* Grid Columns */
+	.has-3-columns {
+		--evie-grid-columns: 3;
+	}
+
+	.has-4-columns,
+	.has-5-columns {
+		--evie-grid-columns: 4;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	/* Variables */
+	:root {
+		--evie-sidebar-width: 42rem;
+
+		/* Typography */
+		--evie-font-size-lg: 2.4rem;
+		--evie-font-size-xl: 3.4rem;
+		--evie-font-size-xxl: 5.4rem;
+		--evie-font-size-xxxl: 8.4vw;
+
+		/* Headings */
+		--evie-font-size-h1: var(--evie-font-size-xxl);
+		--evie-font-size-h2: 4.4rem;
+		--evie-font-size-h3: 3rem;
+		--evie-font-size-h4: var(--evie-font-size-lg);
+		--evie-font-size-h5: 2.2rem;
+		--evie-font-size-h6: var(--evie-font-size-md);
+
+		/* Spacing */
+		--evie-spacing-xs: 2rem;
+		--evie-spacing-sm: 3rem;
+		--evie-spacing-md: 4rem;
+		--evie-spacing-lg: 5rem;
+		--evie-spacing-horizontal: 6rem;
+		--evie-spacing-vertical: 9rem;
+	}
+
+	.has-5-columns {
+		--evie-grid-columns: 5;
+	}
+
+	.has-6-columns {
+		--evie-grid-columns: 6;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.has-scheme-auto {
+
+		--evie-color-black-rgb: 15, 15, 15;
+
+		--evie-color-white-rgb: 245, 245, 245;
+
+		--evie-color-surface-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-on-surface-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-header: rgba(var(--evie-color-black-rgb), 0.2);
+
+		--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+
+		--evie-color-menu-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+		--evie-color-background-rgb: 33, 33, 33;
+
+		--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+		--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+		/* Override WordPress generated preset colors */
+
+		--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+	}
+
+}
+
+@media (prefers-color-scheme: light) {
+
+	.has-scheme-auto {
+
+		--evie-color-black-rgb: 20, 20, 20;
+
+		--evie-color-white-rgb: 255, 255, 255;
+
+		--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+		--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+		--evie-color-primary-rgb: 244, 86, 86;
+
+		--evie-color-on-primary-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-secondary-rgb: 164, 85, 244;
+
+		--evie-color-on-secondary-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-surface-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-on-surface-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-header: rgba(var(--evie-color-on-surface-rgb), 0.03);
+
+		--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+
+		--evie-color-menu-rgb: var(--evie-color-surface-rgb);
+
+		--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+		--evie-color-background-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-alert: #d00c09;
+
+		--evie-color-info: #00a32a;
+
+		/* Override WordPress generated preset colors */
+
+		--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+	}
+
+}

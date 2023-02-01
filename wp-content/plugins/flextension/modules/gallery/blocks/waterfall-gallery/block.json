@@ -1,0 +1,101 @@
+{
+	"apiVersion": 2,
+	"name": "flextension/waterfall-gallery",
+	"title": "Waterfall Gallery",
+	"description": "Displays multiple images in a waterfall gallery.",
+	"category": "flextension",
+	"textdomain": "flextension",
+	"keywords": [
+		"gallery",
+		"images"
+	],
+	"supports": {
+		"anchor": true,
+		"align": [
+			"wide",
+			"full"
+		],
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"images": {
+			"type": "array",
+			"default": [],
+			"source": "query",
+			"selector": ".flext-gallery-item",
+			"query": {
+				"url": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "src"
+				},
+				"fullUrl": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "data-full-url"
+				},
+				"link": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "data-link"
+				},
+				"alt": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "alt",
+					"default": ""
+				},
+				"id": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "data-id"
+				},
+				"caption": {
+					"type": "string",
+					"source": "html",
+					"selector": ".flext-item-caption"
+				}
+			}
+		},
+		"ids": {
+			"type": "array",
+			"items": {
+				"type": "number"
+			},
+			"default": []
+		},
+		"columns": {
+			"type": "number",
+			"default": 3,
+			"minimum": 1,
+			"maximum": 8
+		},
+		"gutters": {
+			"type": "boolean",
+			"default": true
+		},
+		"caption": {
+			"type": "string",
+			"source": "html",
+			"selector": ".flext-gallery-caption"
+		},
+		"linkTo": {
+			"type": "string"
+		},
+		"sizeSlug": {
+			"type": "string",
+			"default": "large"
+		}
+	},
+	"editorStyle": "flextension-gallery-block-editor",
+	"editorScript": "flextension-gallery-block-editor",
+	"style": "flextension-gallery-block",
+	"viewScript": "flextension-gallery-block"
+}

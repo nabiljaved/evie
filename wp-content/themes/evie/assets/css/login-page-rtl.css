@@ -1,0 +1,1901 @@
+/**
+ * Login Page
+ */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Variables
+# Icons
+# Typography
+# Forms
+# Login Page
+# Login Form
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+* Styles based on Normalize v8.0.0
+* @link https://github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1rem = 10px */
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	word-wrap: break-word;
+}
+
+hr {
+	background-color: rgba(var(--evie-color-on-surface-rgb), 0.15);
+	border: 0;
+	box-sizing: content-box;
+	height: 1px;
+	overflow: visible;
+}
+
+pre {
+	background: rgba(var(--evie-color-on-surface-rgb), 0.05);
+	border-radius: 1rem;
+	font-family: var(--evie-font-monospace);
+	margin: 0;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.5rem 2rem;
+}
+
+a {
+	background-color: transparent;
+}
+
+abbr[title] {
+	border-bottom: none;
+	text-decoration: none;
+}
+
+b,
+strong {
+	font-weight: 600;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+}
+
+sup {
+	vertical-align: super;
+}
+
+img {
+	border-style: none;
+	height: auto;
+	max-width: 100%;
+	position: relative;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: inherit;
+	margin: 0;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button::-moz-focusring,
+[type="button"]::-moz-focusring,
+[type="reset"]::-moz-focusring,
+[type="submit"]::-moz-focusring {
+	outline: 1px dotted inherit;
+}
+
+fieldset {
+	padding: 1rem 2rem 2rem;
+}
+
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0 1rem;
+	white-space: normal;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+textarea {
+	overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+template {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+
+:root {
+
+	/* Typography */
+	--evie-font-primary: "Poppins", "Helvetica", "Arial", sans-serif;
+	--evie-font-secondary: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--evie-font-highlight: "Noto Serif", serif;
+	--evie-font-monospace: "Cutive Mono", monospace;
+
+	--evie-font-size-base: 1.64rem;
+	--evie-font-size-xs: 1.24rem;
+	--evie-font-size-sm: 1.4rem;
+	--evie-font-size-md: 1.8rem;
+	--evie-font-size-lg: 2rem;
+	--evie-font-size-xl: 2.4rem;
+	--evie-font-size-xxl: 3.2rem;
+	--evie-font-size-xxxl: 8.4vw;
+
+	/* Headings */
+	--evie-font-size-h1: 3.4rem;
+	--evie-font-size-h2: 3rem;
+	--evie-font-size-h3: 2.6rem;
+	--evie-font-size-h4: 2.2rem;
+	--evie-font-size-h5: 2rem;
+	--evie-font-size-h6: 1.8rem;
+
+	/* Header */
+	--evie-header-menu-height: 6.5rem;
+	--evie-header-menu-gap: 6.5rem;
+	--evie-admin-bar-height: 0px; /* stylelint-disable-line length-zero-no-unit -- A unit is required, unitless (0) is not supported in calc(). */
+
+	/* Spacing */
+	--evie-spacing-xs: 1rem;
+	--evie-spacing-sm: 2rem;
+	--evie-spacing-md: 3rem;
+	--evie-spacing-lg: 4rem;
+	--evie-spacing-horizontal: 2rem;
+	--evie-spacing-vertical: 4rem;
+	--evie-alignright-margin: 0;
+	--evie-alignleft-margin: 0;
+
+	/* Content */
+	--evie-content-width: 78rem;
+	--evie-wide-width: 120rem;
+	--evie-full-width: 140rem;
+	--evie-sidebar-width: 100%;
+
+	/* Grid */
+	--evie-grid-columns: 1;
+	--evie-grid-gap: var(--evie-spacing-horizontal);
+
+	/* Misc */
+	--evie-scrollbar-width: 0;
+	--evie-transition-ease: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	--evie-transition-delay: 0.1s;
+
+}
+
+/* Colors */
+
+/* stylelint-disable at-rule-no-unknown -- Ignore PostCSS Mixins rule */
+
+:root,
+.has-scheme-light,
+.flext-has-scheme-light {
+
+	--evie-color-black-rgb: 20, 20, 20;
+
+	--evie-color-white-rgb: 255, 255, 255;
+
+	--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+	--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+	--evie-color-primary-rgb: 244, 86, 86;
+
+	--evie-color-on-primary-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-secondary-rgb: 164, 85, 244;
+
+	--evie-color-on-secondary-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-surface-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-on-surface-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-header: rgba(var(--evie-color-on-surface-rgb), 0.03);
+
+	--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+
+	--evie-color-menu-rgb: var(--evie-color-surface-rgb);
+
+	--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+	--evie-color-background-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-alert: #d00c09;
+
+	--evie-color-info: #00a32a;
+
+	/* Override WordPress generated preset colors */
+
+	--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+}
+
+/* Dark Scheme */
+
+.has-scheme-dark,
+.flext-has-scheme-dark {
+
+	--evie-color-black-rgb: 15, 15, 15;
+
+	--evie-color-white-rgb: 245, 245, 245;
+
+	--evie-color-surface-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-on-surface-rgb: var(--evie-color-white-rgb);
+
+	--evie-color-header: rgba(var(--evie-color-black-rgb), 0.2);
+
+	--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+
+	--evie-color-menu-rgb: var(--evie-color-black-rgb);
+
+	--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+	--evie-color-background-rgb: 33, 33, 33;
+
+	--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+	--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+	/* Override WordPress generated preset colors */
+
+	--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+}
+
+/* stylelint-enable at-rule-no-unknown */
+
+/* Text Mode */
+
+.has-text-mode-light {
+	--evie-color-on-surface-rgb: 245, 245, 245;
+	--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+}
+
+.has-text-mode-dark {
+	--evie-color-on-surface-rgb: 17, 17, 17;
+	--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+}
+
+.admin-bar {
+	--evie-admin-bar-height: 46px;
+}
+
+.desktop-menu {
+	--evie-header-menu-height: 9.5rem;
+	--evie-header-menu-gap: 9.5rem;
+}
+
+.transparent-menu {
+	--evie-header-menu-gap: 0px; /* stylelint-disable-line length-zero-no-unit -- A unit is required, unitless (0) is not supported in calc(). */
+}
+
+/*--------------------------------------------------------------
+# Icons
+--------------------------------------------------------------*/
+
+@font-face {
+	font-family: evie;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/evie.woff) format("woff");
+}
+
+[class^="evie-ico-"]::before,
+[class*=" evie-ico-"]::before {
+	display: inline-block;
+	font-family: evie, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+
+	/* fix buttons height, for twitter bootstrap */
+	text-align: center;
+	text-decoration: inherit;
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 1em;
+}
+
+.evie-ico-sortby::before {
+	content: "\e817";
+}
+
+.evie-ico-list::before {
+	content: "\e833";
+}
+
+.evie-ico-artical::before {
+	content: "\e830";
+}
+
+.evie-ico-cancel::before {
+	content: "\e829";
+}
+
+.evie-ico-filter::before {
+	content: "\e816";
+}
+
+.evie-ico-light::before {
+	content: "\e814";
+}
+
+.evie-ico-dark::before {
+	content: "\e815";
+}
+
+.evie-ico-eye-hide::before {
+	content: "\e884";
+}
+
+.evie-ico-eye::before {
+	content: "\e883";
+}
+
+.evie-ico-facebook::before {
+	content: "\e811";
+}
+
+.evie-ico-pinterest::before {
+	content: "\e812";
+}
+
+.evie-ico-twitter::before {
+	content: "\e813";
+}
+
+.evie-ico-whatsapp::before {
+	content: "\e810";
+}
+
+.evie-ico-like::before {
+	content: "\e825";
+}
+
+.evie-ico-unlike::before {
+	content: "\e826";
+}
+
+.evie-ico-stock::before {
+	content: "\e889";
+}
+
+.evie-ico-outofstock::before {
+	content: "\e886";
+}
+
+.evie-ico-mail::before {
+	content: "\e888";
+}
+
+.evie-ico-logout::before {
+	content: "\e887";
+}
+
+.evie-ico-user::before {
+	content: "\e885";
+}
+
+.evie-ico-login::before {
+	content: "\e882";
+}
+
+.evie-ico-coupon::before {
+	content: "\e880";
+}
+
+.evie-ico-delivery::before {
+	content: "\e881";
+}
+
+.evie-ico-info::before {
+	content: "\e917";
+}
+
+.evie-ico-search::before {
+	content: "\e82c";
+}
+
+.evie-ico-check::before {
+	content: "\e831";
+}
+
+.evie-ico-sticky-post::before {
+	content: "\e100";
+}
+
+.evie-ico-reply::before {
+	content: "\e802";
+}
+
+.evie-ico-title-za::before {
+	content: "\e901";
+}
+
+.evie-ico-title::before {
+	content: "\e902";
+}
+
+.evie-ico-date-new::before {
+	content: "\e903";
+}
+
+.evie-ico-globe::before {
+	content: "\e921";
+}
+
+.evie-ico-spinner::before {
+	content: "\e91f";
+}
+
+.evie-ico-resize::before {
+	content: "\e837";
+}
+
+.evie-ico-zoom-out::before {
+	content: "\e92c";
+}
+
+.evie-ico-share::before {
+	content: "\e906";
+}
+
+.evie-ico-play::before {
+	content: "\e91b";
+}
+
+.evie-ico-back::before {
+	content: "\e803";
+}
+
+.evie-ico-date::before {
+	content: "\e915";
+}
+
+.evie-ico-resize-full::before {
+	content: "\e836";
+}
+
+.evie-ico-archive::before {
+	content: "\e85e";
+}
+
+.evie-ico-arrow-down::before {
+	content: "\e90e";
+}
+
+.evie-ico-arrow-left::before {
+	content: "\e912";
+}
+
+.evie-ico-arrow-right::before {
+	content: "\e913";
+}
+
+.evie-ico-arrow-up::before {
+	content: "\e905";
+}
+
+.evie-ico-attention::before {
+	content: "\e83e";
+}
+
+.evie-ico-author::before {
+	content: "\e916";
+}
+
+.evie-ico-bookmark::before {
+	content: "\e841";
+}
+
+.evie-ico-comment::before {
+	content: "\e809";
+}
+
+.evie-ico-hashtag::before {
+	content: "\e910";
+}
+
+.evie-ico-down::before {
+	content: "\e845";
+}
+
+.evie-ico-left::before {
+	content: "\e842";
+}
+
+.evie-ico-right::before {
+	content: "\e843";
+}
+
+.evie-ico-up::before {
+	content: "\e844";
+}
+
+.evie-ico-more::before {
+	content: "\e840";
+}
+
+.evie-ico-pencil::before {
+	content: "\e80a";
+}
+
+.evie-ico-quotes::before {
+	content: "\e80f";
+}
+
+.evie-ico-setting::before {
+	content: "\e82f";
+}
+
+.evie-ico-shopping-bag::before {
+	content: "\e82d";
+}
+
+.evie-ico-star-empty::before {
+	content: "\e807";
+}
+
+.evie-ico-star::before {
+	content: "\e806";
+}
+
+.evie-ico-trash::before {
+	content: "\e599";
+}
+
+.evie-ico-zoom-in::before {
+	content: "\e91c";
+}
+
+.evie-ico-ok-circle::before {
+	content: "\e832";
+}
+
+.evie-ico-cart::before {
+	content: "\e848";
+}
+
+.evie-ico-pause::before {
+	content: "\e904";
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+/* Noto Serif */
+
+@font-face {
+	font-family: "Noto Serif";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local(""),
+		url(../fonts/noto-serif-regular.woff2) format("woff2"),
+		url(../fonts/noto-serif-regular.woff) format("woff");
+}
+
+/* Cutive Mono */
+
+@font-face {
+	font-family: "Cutive Mono";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local(""),
+		url(../fonts/cutive-mono-regular.woff2) format("woff2"),
+		url(../fonts/cutive-mono-regular.woff) format("woff");
+}
+
+/* Roboto */
+
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local(""),
+		url(../fonts/roboto-300.woff2) format("woff2"),
+		url(../fonts/roboto-300.woff) format("woff");
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: italic;
+	font-weight: 300;
+	src:
+		local(""),
+		url(../fonts/roboto-300italic.woff2) format("woff2"),
+		url(../fonts/roboto-300italic.woff) format("woff");
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local(""),
+		url(../fonts/roboto-regular.woff2) format("woff2"),
+		url(../fonts/roboto-regular.woff) format("woff");
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local(""),
+		url(../fonts/roboto-italic.woff2) format("woff2"),
+		url(../fonts/roboto-italic.woff) format("woff");
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local(""),
+		url(../fonts/roboto-700.woff2) format("woff2"),
+		url(../fonts/roboto-700.woff) format("woff");
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: italic;
+	font-weight: 700;
+	src:
+		local(""),
+		url(../fonts/roboto-700italic.woff2) format("woff2"),
+		url(../fonts/roboto-700italic.woff) format("woff");
+}
+
+/* Poppins */
+
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local(""),
+		url(../fonts/poppins-300.woff2) format("woff2"),
+		url(../fonts/poppins-300.woff) format("woff");
+}
+
+@font-face {
+	font-family: Poppins;
+	font-style: italic;
+	font-weight: 300;
+	src:
+		local(""),
+		url(../fonts/poppins-300italic.woff2) format("woff2"),
+		url(../fonts/poppins-300italic.woff) format("woff");
+}
+
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local(""),
+		url(../fonts/poppins-regular.woff2) format("woff2"),
+		url(../fonts/poppins-regular.woff) format("woff");
+}
+
+@font-face {
+	font-family: Poppins;
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local(""),
+		url(../fonts/poppins-italic.woff2) format("woff2"),
+		url(../fonts/poppins-italic.woff) format("woff");
+}
+
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local(""),
+		url(../fonts/poppins-700.woff2) format("woff2"),
+		url(../fonts/poppins-700.woff) format("woff");
+}
+
+@font-face {
+	font-family: Poppins;
+	font-style: italic;
+	font-weight: 700;
+	src:
+		local(""),
+		url(../fonts/poppins-700italic.woff2) format("woff2"),
+		url(../fonts/poppins-700italic.woff) format("woff");
+}
+
+body {
+	font-family: var(--evie-font-secondary);
+	font-size: var(--evie-font-size-base);
+	line-height: 1.688;
+	letter-spacing: 0.02rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: rgb(var(--evie-color-primary-rgb));
+	text-decoration: none;
+	transition: color 0.3s var(--evie-transition-ease);
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: rgb(var(--evie-color-secondary-rgb));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: rgb(var(--evie-color-on-surface-rgb));
+	font-family: var(--evie-font-primary);
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: 0;
+	margin: 0 0 1.5rem;
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: var(--evie-font-size-h1);
+}
+
+h2 {
+	font-size: var(--evie-font-size-h2);
+}
+
+h3 {
+	font-size: var(--evie-font-size-h3);
+}
+
+h4 {
+	font-size: var(--evie-font-size-h4);
+}
+
+h5 {
+	font-size: var(--evie-font-size-h5);
+}
+
+h6 {
+	font-size: var(--evie-font-size-h6);
+}
+
+p {
+	margin: 0 0 1.5rem 0;
+}
+
+cite,
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+em {
+	font-family: var(--evie-font-highlight);
+	font-weight: 400;
+}
+
+em strong {
+	font-weight: 700;
+}
+
+blockquote {
+	clear: both;
+	font-family: var(--evie-font-highlight);
+	font-size: var(--evie-font-size-lg);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 0;
+	padding-top: 2rem;
+	position: relative;
+	z-index: 0;
+}
+
+blockquote::before {
+	content: "\e80f";
+	font-family: evie, sans-serif;
+	font-size: 9rem;
+	font-style: normal;
+	line-height: 1;
+	opacity: 0.14;
+	position: absolute;
+	top: 1rem;
+	z-index: 0;
+}
+
+blockquote cite {
+	color: inherit;
+	display: block;
+	font-family: var(--evie-font-secondary);
+	font-size: var(--evie-font-size-sm);
+	font-weight: 400;
+	margin-top: 2rem;
+	opacity: 0.8;
+}
+
+address {
+	margin: 0 0 1.5rem;
+}
+
+code,
+kbd,
+samp,
+tt,
+var {
+	font-family: var(--evie-font-monospace);
+	font-size: var(--evie-font-size-base);
+}
+
+code {
+	color: inherit;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+ins {
+	background: rgba(var(--evie-color-primary-rgb), 0.3);
+	padding: 0 0.2rem;
+	text-decoration: none;
+}
+
+mark {
+	color: inherit;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+form {
+	position: relative;
+}
+
+/*--------------------------------------------------------------
+## Button
+--------------------------------------------------------------*/
+
+[type="reset"],
+[type="submit"],
+[type="submit"].is-primary {
+	background: linear-gradient(-45deg, rgb(var(--evie-color-primary-rgb)), rgb(var(--evie-color-primary-rgb)), rgb(var(--evie-color-secondary-rgb)), rgb(var(--evie-color-primary-rgb))) border-box;
+	background-repeat: no-repeat;
+	background-size: 400% 100%;
+	border: none;
+	border-radius: 0.5rem;
+	color: rgb(var(--evie-color-on-primary-rgb));
+	cursor: pointer;
+	font-weight: 400;
+	height: 4rem;
+	letter-spacing: 0.2rem;
+	line-height: 1.5;
+	margin: 0;
+	outline: none;
+	overflow: hidden;
+	padding: 0 4rem;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	transition: background-position 0.3s var(--evie-transition-ease);
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+[type="reset"]:hover,
+[type="submit"]:hover,
+[type="reset"]:focus,
+[type="submit"]:focus,
+[type="reset"]:active,
+[type="submit"]:active,
+[type="submit"].is-primary:hover,
+[type="submit"].is-primary:active {
+	background-position: 0% 0;
+}
+
+button,
+.evie-button {
+	align-items: center;
+	background: none;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	display: inline-flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	line-height: 1.5;
+	outline: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-overflow: ellipsis;
+	z-index: 1;
+}
+
+button:disabled,
+.evie-button:disabled {
+	opacity: 0.5;
+	cursor: default;
+	pointer-events: none;
+}
+
+.evie-button > * {
+	display: inline-block;
+	line-height: 1;
+	margin: 0.25rem;
+	position: relative;
+	white-space: nowrap;
+	z-index: 1;
+}
+
+.evie-outlined {
+	border: 1px solid rgba(var(--evie-color-on-surface-rgb), 0.3);
+	color: inherit;
+	padding: 0.5rem 1.5rem;
+	transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.evie-outlined:hover {
+	background-color: rgb(var(--evie-color-on-surface-rgb));
+	color: rgb(var(--evie-color-surface-rgb));
+}
+
+.evie-outlined.is-primary {
+	border-color: rgba(var(--evie-color-primary-rgb), 0.3);
+}
+
+.evie-outlined.is-primary:hover {
+	border-color: rgba(var(--evie-color-primary-rgb), 0.3);
+	color: rgb(var(--evie-color-on-primary-rgb));
+}
+
+.evie-rounded {
+	border-radius: 0.5rem;
+}
+
+.evie-unelevated {
+	background: rgb(var(--evie-color-on-surface-rgb));
+	color: rgb(var(--evie-color-surface-rgb));
+}
+
+.evie-unelevated.is-primary:hover {
+	background: rgba(var(--evie-color-primary-rgb), 0.5);
+	color: rgb(var(--evie-color-on-primary-rgb));
+}
+
+/*--------------------------------------------------------------
+## Icon Button
+--------------------------------------------------------------*/
+
+.evie-icon-button {
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	box-sizing: border-box;
+	display: inline-flex;
+	flex-wrap: wrap;
+	font-size: 140%;
+	height: 5rem;
+	justify-content: center;
+	outline: none;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	transition: color 0.25s;
+	-webkit-user-select: none;
+	        user-select: none;
+	width: 5rem;
+}
+
+.evie-icon-button:hover,
+.evie-icon-button:focus {
+	color: rgb(var(--evie-color-on-secondary-rgb));
+}
+
+.evie-icon-button::before {
+	background: rgb(var(--evie-color-secondary-rgb));
+	content: "";
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	transition: opacity 0.25s;
+	width: 100%;
+}
+
+.evie-icon-button:hover::before,
+.evie-icon-button:focus::before {
+	opacity: 1;
+}
+
+.evie-icon-button:active {
+	text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.evie-icon-button i {
+	line-height: 0;
+	position: relative;
+	z-index: 5;
+}
+
+/*--------------------------------------------------------------
+## Checkbox & Radio Button
+--------------------------------------------------------------*/
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-appearance: none;
+	        appearance: none;
+	background: transparent;
+	border: 1px solid rgba(var(--evie-color-on-surface-rgb), 0.15);
+	border-radius: 0.5rem;
+	box-shadow: none;
+	cursor: pointer;
+	display: inline-block;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	margin: 0 0 0 0.6rem;
+	outline: none;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 1.8rem;
+	transition: background-color 0.25s, border-color 0.25s;
+}
+
+input[type="radio"] {
+	border-radius: 50%;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+	border-color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+	background: rgb(var(--evie-color-on-surface-rgb));
+	border-color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+input[type="checkbox"]:checked::before {
+	color: rgb(var(--evie-color-surface-rgb));
+	content: "\e831";
+	display: inline-block;
+	font-family: evie, sans-serif;
+	font-size: var(--evie-font-size-sm);
+	height: 100%;
+	margin: 0;
+	vertical-align: top;
+	width: 100%;
+}
+
+input[type="radio"]:checked::before {
+	border: 3px solid rgb(var(--evie-color-surface-rgb));
+	border-radius: 50%;
+	content: "";
+	display: inline-block;
+	height: 100%;
+	margin: 0;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Text field
+--------------------------------------------------------------*/
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	-webkit-appearance: none;
+	        appearance: none;
+	background: rgba(var(--evie-color-on-surface-rgb), 0.013);
+	border: 1px solid rgba(var(--evie-color-on-surface-rgb), 0.15);
+	border-radius: 0.5rem;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: inherit;
+	font-size: var(--evie-font-size-base);
+	font-weight: 400;
+	height: 4rem;
+	letter-spacing: 0.04rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0.5rem 1rem;
+	transition: border-color 0.25s;
+	outline: none;
+	width: 100%;
+}
+
+textarea {
+	border-radius: 0.5rem;
+	border-width: 1px;
+	padding: 1rem;
+	resize: vertical;
+	height: auto;
+}
+
+label {
+	display: inline-block;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+
+input[type="text"]::-ms-clear {
+	display: none;
+	height: 0;
+	width: 0;
+}
+
+input[type="text"]::-ms-reveal {
+	display: none;
+	height: 0;
+	width: 0;
+}
+
+input[type="range"] {
+	width: 100%;
+}
+
+/* Removes the clear button from date inputs */
+
+input[type="date"]::-webkit-clear-button {
+	display: none;
+}
+
+/* Removes the spin button */
+
+input[type="date"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	border-color: rgba(var(--evie-color-on-surface-rgb), 0.5);
+}
+
+input[type="search"] {
+	background: none;
+}
+
+::placeholder {
+	color: rgba(var(--evie-color-on-surface-rgb), 0.6);
+}
+
+/*--------------------------------------------------------------
+## Select
+--------------------------------------------------------------*/
+
+select {
+	-webkit-appearance: none;
+	        appearance: none;
+	background-color: rgba(var(--evie-color-on-surface-rgb), 0.013);
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxNS41cHgiIGhlaWdodD0iNi45OTNweCIgdmlld0JveD0iMCAxMjMyLjE3NCAxNS41IDYuOTkzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMTIzMi4xNzQgMTUuNSA2Ljk5MyINCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cG9seWdvbiBmaWxsPSIjMDMwMTA0IiBwb2ludHM9IjEwLDEyMzIuMTc1IDAsMTIzMi4xNzQgNSwxMjM5LjEzIAkiLz4NCjwvZz4NCjwvc3ZnPg0K);
+	background-position: left 1rem center;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(var(--evie-color-on-surface-rgb), 0.15);
+	border-radius: 0.5rem;
+	color: rgb(var(--evie-color-on-surface-rgb));
+	cursor: pointer;
+	height: 4rem;
+	margin: 0;
+	max-width: 100%;
+	outline: none;
+	overflow: hidden;
+	padding: 0.5rem 1.5rem 0.5rem 3rem;
+	position: relative;
+	text-indent: 0.001px;
+	text-overflow: ellipsis;
+	transition: border-color 0.25s;
+}
+
+.has-scheme-dark select,
+.flext-has-scheme-dark select {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjIuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDE1LjUgNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTUuNSA3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxnPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxMCwwIDAsMCA1LDcgCSIvPgo8L2c+Cjwvc3ZnPgo=);
+	background-size: 16px;
+}
+
+select:hover,
+select:focus {
+	background-color: transparent;
+	border-color: rgba(var(--evie-color-on-surface-rgb), 0.5);
+}
+
+select option {
+	background-color: rgb(var(--evie-color-surface-rgb));
+	color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+select[multiple="multiple"] {
+	background-image: none;
+	height: auto;
+	padding: 0;
+}
+
+select[multiple="multiple"] option {
+	background-color: transparent;
+	color: inherit;
+	padding: 0.5rem 1rem;
+}
+
+select[multiple="multiple"] option:checked {
+	background-color: rgba(var(--evie-color-on-surface-rgb), 0.1);
+}
+
+/*--------------------------------------------------------------
+# Login Page
+--------------------------------------------------------------*/
+
+body.interim-login {
+	padding: var(--evie-spacing-horizontal);
+}
+
+.evie-login-header {
+	background: #1b1b1b;
+	background-image: url(../images/login.png), linear-gradient(-135deg, rgba(40, 40, 40, 0.9) 0%, rgb(27, 27, 27, 0.9) 100%);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #fff;
+	padding: var(--evie-spacing-vertical) var(--evie-spacing-horizontal);
+}
+
+.interim-login .evie-login-header {
+	display: none;
+}
+
+.evie-login-header h1 {
+	text-align: right;
+}
+
+.login.has-scheme-dark {
+	background: rgba(var(--evie-color-background-rgb), 0.9);
+	color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+.login.has-scheme-dark form .input,
+.login.has-scheme-dark input[type="text"],
+.login.has-scheme-dark form input[type="checkbox"] {
+	background: transparent;
+}
+
+/*--------------------------------------------------------------
+# Login Form
+--------------------------------------------------------------*/
+
+a:focus {
+	box-shadow: none;
+}
+
+#login {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+	max-width: 50rem;
+	padding: var(--evie-spacing-vertical) var(--evie-spacing-horizontal);
+	width: 100%;
+}
+
+/* stylelint-disable selector-id-pattern -- Ignore WP element ID */
+
+.login #login_error {
+	border-radius: 0.5rem;
+	width: 100%;
+}
+
+/* stylelint-enable selector-id-pattern */
+
+.login h1 a {
+	align-items: center;
+	background-image: none;
+	display: flex;
+	flex-flow: row wrap;
+	font-size: var(--evie-font-size-h4);
+	font-weight: 700;
+	height: auto;
+	margin: 0 0 var(--evie-spacing-xs) 0;
+	max-width: 100%;
+	text-indent: 0;
+	width: auto;
+}
+
+#login h1 {
+	display: none;
+}
+
+.login .success {
+	border-color: var(--evie-color-jungle-green);
+}
+
+#login form {
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.login label {
+	font-size: var(--evie-font-size-base);
+	opacity: 0.6;
+}
+
+.login .evie-login-wrapper form .button.button-large {
+	align-items: center;
+	background: linear-gradient(-45deg, rgb(var(--evie-color-on-surface-rgb)), rgb(var(--evie-color-on-surface-rgb)), rgb(var(--evie-color-secondary-rgb)), rgb(var(--evie-color-primary-rgb))) border-box;
+	background-repeat: no-repeat;
+	background-size: 400% 100%;
+	border: none;
+	border-radius: 0.5rem;
+	color: rgb(var(--evie-color-surface-rgb));
+	cursor: pointer;
+	display: inline-flex;
+	font-weight: 400;
+	height: 4rem;
+	justify-content: center;
+	letter-spacing: 0.2rem;
+	line-height: 1.5;
+	margin: 0;
+	outline: none;
+	overflow: hidden;
+	padding: 0 4rem;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	transition: background-position 0.3s var(--evie-transition-ease), color 0.3s var(--evie-transition-ease);
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.login .evie-login-wrapper form .button.button-large:hover {
+	background-position: 0% 0;
+	color: rgb(var(--evie-color-on-primary-rgb));
+}
+
+.login .evie-login-wrapper form .button.button-primary {
+	background-image: linear-gradient(-45deg, rgb(var(--evie-color-primary-rgb)), rgb(var(--evie-color-primary-rgb)), rgb(var(--evie-color-secondary-rgb)), rgb(var(--evie-color-primary-rgb)));
+	box-shadow: none;
+	color: rgb(var(--evie-color-on-primary-rgb));
+	float: none;
+}
+
+.login .evie-login-wrapper form .button.button-primary:hover {
+	background-position: 0% 0;
+	color: rgb(var(--evie-color-on-primary-rgb));
+}
+
+.login form .input,
+.login input[type="text"],
+.login input[type="password"] {
+	border-width: 1px;
+	border-radius: 0.5rem;
+	box-shadow: none;
+	font-size: var(--evie-font-size-base);
+	height: 4rem;
+	padding: 0.5rem 1rem;
+}
+
+.js.login input.password-input {
+	padding-left: 3.6rem;
+}
+
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus {
+	box-shadow: none;
+}
+
+.login .button.wp-hide-pw:focus {
+	border: none;
+	box-shadow: none;
+}
+
+.login .button.wp-hide-pw .dashicons {
+	height: 2rem;
+	width: 2rem;
+}
+
+.login .wp-pwd .wp-hide-pw span::before {
+	color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+#login form p.forgetmenot {
+	float: none;
+	margin-bottom: 2.5rem;
+	margin-top: 0.5rem;
+}
+
+#login form .forgetmenot label {
+	margin-bottom: 0;
+}
+
+#login form p.submit {
+	margin: 0 0 1.5rem;
+}
+
+#login form p.submit .button {
+	font-size: var(--evie-font-size-base);
+	width: 100%;
+}
+
+.login #nav {
+	color: transparent;
+	display: flex;
+	gap: 0.5rem;
+	justify-content: space-between;
+	flex: 0 0 auto;
+	flex-flow: row nowrap;
+	margin: 0;
+	width: 100%;
+}
+
+.login #nav,
+.login #backtoblog {
+	font-size: var(--evie-font-size-base);
+	padding: 0;
+}
+
+.login #nav a {
+	align-items: center;
+	background-image: linear-gradient(-45deg, rgb(var(--evie-color-on-surface-rgb)), rgb(var(--evie-color-on-surface-rgb)), rgb(var(--evie-color-secondary-rgb)), rgb(var(--evie-color-primary-rgb)));
+	background-size: 400% 100%;
+	border-radius: 0.5rem;
+	color: rgb(var(--evie-color-surface-rgb));
+	display: inline-flex;
+	flex: 1 0 auto;
+	height: 4rem;
+	justify-content: center;
+	margin: 0;
+	padding: 0 1.5rem;
+	transition: background-position 0.3s var(--evie-transition-ease), color 0.3s var(--evie-transition-ease);
+}
+
+.login #nav a:hover {
+	background-position: 0% 0;
+	color: rgb(var(--evie-color-on-primary-rgb));
+	text-decoration: none;
+
+}
+
+.interim-login #loginform input[type="checkbox"] {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+
+.login form input[type="checkbox"]:checked,
+.login form input[type="radio"]:checked {
+	background: rgb(var(--evie-color-on-surface-rgb));
+	border-color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+.interim-login #loginform input[type="checkbox"]:checked::before {
+	margin: 0;
+}
+
+.login #backtoblog,
+.login .privacy-policy-page-link {
+	flex: 1 1 50%;
+	margin: var(--evie-spacing-lg) 0 0;
+	max-width: 50%;
+}
+
+.login .privacy-policy-page-link {
+	text-align: left;
+}
+
+.login #backtoblog a,
+.login .privacy-policy-page-link a {
+	color: rgb(var(--evie-color-on-surface-rgb));
+	transition: color 0.3s;
+}
+
+.login #backtoblog a:hover,
+.login .privacy-policy-page-link a:hover {
+	color: rgb(var(--evie-color-primary-rgb));
+}
+
+@media (min-width: 576px) {
+
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 31rem;
+
+	}
+}
+
+@media (min-width: 768px) {
+
+	/* Variables */
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 33rem;
+
+		/* Spacing */
+		--evie-spacing-xs: 1.5rem;
+		--evie-spacing-sm: 2.5rem;
+		--evie-spacing-md: 3.5rem;
+		--evie-spacing-lg: 4.5rem;
+		--evie-spacing-horizontal: 3rem;
+		--evie-spacing-vertical: 6rem;
+
+		/* Grid */
+		--evie-grid-columns: 2;
+	}
+
+	/* Grid Columns */
+	.has-2-columns {
+		--evie-grid-columns: 2;
+	}
+}
+
+@media (min-width: 783px) {
+
+	.admin-bar {
+		--evie-admin-bar-height: 32px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	/* Variables */
+	:root {
+
+		/* Content */
+		--evie-sidebar-width: 35rem;
+
+		/* Typography */
+		--evie-font-size-lg: 2.2rem;
+		--evie-font-size-xl: 3rem;
+		--evie-font-size-xxl: 5rem;
+		--evie-font-size-xxxl: 8.4vw;
+
+		/* Headings */
+		--evie-font-size-h1: var(--evie-font-size-xxl);
+		--evie-font-size-h2: 4.4rem;
+		--evie-font-size-h3: 3rem;
+		--evie-font-size-h4: var(--evie-font-size-lg);
+		--evie-font-size-h5: 2.2rem;
+		--evie-font-size-h6: var(--evie-font-size-md);
+
+		/* Spacing */
+		--evie-spacing-horizontal: 4rem;
+		--evie-spacing-vertical: 8rem;
+		--evie-alignright-margin: calc(0.5 * (100vw - var(--evie-content-width)) - var(--evie-spacing-horizontal));
+		--evie-alignleft-margin: calc(0.5 * (100vw - var(--evie-content-width)) - var(--evie-spacing-horizontal));
+
+		/* Grid */
+		--evie-grid-columns: 3;
+
+		/* Misc */
+		--evie-scrollbar-width: 0.6rem;
+	}
+
+	/* Grid Columns */
+	.has-3-columns {
+		--evie-grid-columns: 3;
+	}
+
+	.has-4-columns,
+	.has-5-columns {
+		--evie-grid-columns: 4;
+	}
+
+	/*--------------------------------------------------------------
+	# Login Page
+	--------------------------------------------------------------*/
+	.evie-login-wrapper {
+		align-items: center;
+		color: rgb(var(--evie-color-on-surface-rgb));
+		display: flex;
+		height: 100%;
+		padding: 0 var(--evie-sidebar-width) 0 0;
+	}
+
+	.interim-login .evie-login-wrapper {
+		padding-right: 0;
+	}
+
+	.evie-login-header {
+		bottom: 0;
+		right: 0;
+		padding: var(--evie-spacing-horizontal);
+		position: fixed;
+		top: 0;
+		width: var(--evie-sidebar-width);
+	}
+
+	.evie-login-header p {
+		font-size: var(--evie-font-size-h4);
+	}
+
+	/*--------------------------------------------------------------
+	# Login Form
+	--------------------------------------------------------------*/
+	#login {
+		max-width: 50rem;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	/* Variables */
+	:root {
+		--evie-sidebar-width: 42rem;
+
+		/* Typography */
+		--evie-font-size-lg: 2.4rem;
+		--evie-font-size-xl: 3.4rem;
+		--evie-font-size-xxl: 5.4rem;
+		--evie-font-size-xxxl: 8.4vw;
+
+		/* Headings */
+		--evie-font-size-h1: var(--evie-font-size-xxl);
+		--evie-font-size-h2: 4.4rem;
+		--evie-font-size-h3: 3rem;
+		--evie-font-size-h4: var(--evie-font-size-lg);
+		--evie-font-size-h5: 2.2rem;
+		--evie-font-size-h6: var(--evie-font-size-md);
+
+		/* Spacing */
+		--evie-spacing-xs: 2rem;
+		--evie-spacing-sm: 3rem;
+		--evie-spacing-md: 4rem;
+		--evie-spacing-lg: 5rem;
+		--evie-spacing-horizontal: 6rem;
+		--evie-spacing-vertical: 9rem;
+	}
+
+	.has-5-columns {
+		--evie-grid-columns: 5;
+	}
+
+	.has-6-columns {
+		--evie-grid-columns: 6;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.has-scheme-auto {
+
+		--evie-color-black-rgb: 15, 15, 15;
+
+		--evie-color-white-rgb: 245, 245, 245;
+
+		--evie-color-surface-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-on-surface-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-header: rgba(var(--evie-color-black-rgb), 0.2);
+
+		--evie-color-on-header: rgb(var(--evie-color-on-surface-rgb));
+
+		--evie-color-menu-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+		--evie-color-background-rgb: 33, 33, 33;
+
+		--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+		--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+		/* Override WordPress generated preset colors */
+
+		--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+
+	.has-scheme-auto {
+
+		--evie-color-black-rgb: 20, 20, 20;
+
+		--evie-color-white-rgb: 255, 255, 255;
+
+		--evie-color-black: rgb(var(--evie-color-black-rgb));
+
+		--evie-color-white: rgb(var(--evie-color-white-rgb));
+
+		--evie-color-primary-rgb: 244, 86, 86;
+
+		--evie-color-on-primary-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-secondary-rgb: 164, 85, 244;
+
+		--evie-color-on-secondary-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-surface-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-on-surface-rgb: var(--evie-color-black-rgb);
+
+		--evie-color-header: rgba(var(--evie-color-on-surface-rgb), 0.03);
+
+		--evie-color-on-header: rgba(var(--evie-color-on-surface-rgb), 0.75);
+
+		--evie-color-menu-rgb: var(--evie-color-surface-rgb);
+
+		--evie-color-on-menu-rgb: var(--evie-color-on-surface-rgb);
+
+		--evie-color-background-rgb: var(--evie-color-white-rgb);
+
+		--evie-color-alert: #d00c09;
+
+		--evie-color-info: #00a32a;
+
+		/* Override WordPress generated preset colors */
+
+		--wp--preset--color--grey: rgba(var(--evie-color-on-surface-rgb), 0.6);
+	}
+}

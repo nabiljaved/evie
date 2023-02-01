@@ -1,0 +1,72 @@
+{
+	"apiVersion": 2,
+	"name": "evie/featured-posts",
+	"title": "Featured Posts",
+	"description": "Displays the featured posts.",
+	"category": "flextension",
+	"textdomain": "evie-xt",
+	"keywords": [
+		"featured posts",
+		"top posts",
+		"post",
+		"blog",
+		"portfolio",
+		"project"
+	],
+	"supports": {
+		"html": false,
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		},
+		"className": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"enum": [ "carousel", "slider", "split", "vertical" ],
+			"default": "carousel"
+		},
+		"backgroundOverlay": {
+			"type": "string",
+			"enum": [ "", "dark", "light" ],
+			"default": ""
+		},
+		"displayCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"mousewheel": {
+			"type": "boolean",
+			"default": false
+		},
+		"disableScroll": {
+			"type": "boolean",
+			"default": false
+		},
+		"query": {
+			"type": "object",
+			"default": {				
+				"postType": "post",	
+				"posts": [],			
+				"taxonomy": "",
+				"terms": [],
+				"author": "",
+				"authors": [],
+				"timeRange": "",
+				"orderBy": "date",
+				"order": "DESC",
+				"numberOfItems": 10
+			}
+		}
+	},
+	"editorStyle": "evie-edit-blocks",
+	"editorScript": "evie-edit-blocks",
+	"style": "evie-blocks",
+	"viewScript": "evie-blocks"
+}

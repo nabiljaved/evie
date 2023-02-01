@@ -1,0 +1,97 @@
+{
+	"apiVersion": 2,
+	"name": "flextension/authors",
+	"title": "Authors",
+	"description": "Displays a list of authors.",
+	"category": "flextension",
+	"textdomain": "flextension",
+	"keywords": [
+		"authors",
+		"editors",
+		"contributors"
+	],
+	"supports": {
+		"anchor": true,
+		"align": [
+			"wide",
+			"full"
+		],
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"blockId": {
+			"type": "string",
+			"default": ""
+		},
+		"displayAvatar": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayCover": {
+			"type": "boolean",
+			"default": false
+		},
+		"imageSize": {
+			"type": "string",
+			"default": ""
+		},
+		"displayDescription": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayFollowers": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayPosts": {
+			"type": "boolean",
+			"default": false
+		},
+		"postType": {
+			"type": "string",
+			"default": ""
+		},
+		"filterBy": {
+			"type": "string",
+			"enum": [ "role", "author" ],
+			"default": "role"
+		},
+		"roles": {
+			"type": "array",
+			"default": []
+		},
+		"authors": {
+			"type": "array",
+			"default": []
+		},
+		"hasPublishedPosts": {
+			"type": "boolean",
+			"default": false
+		},
+		"pagination": {
+			"type": "boolean",
+			"default": false
+		},
+		"numberOfItems": {
+			"type": "number",
+			"default": 5
+		},
+		"page": {
+			"type": "number",
+			"default": 1
+		}
+	},
+	"styles": [
+		{ "name": "list", "label": "List", "isDefault": true },
+		{ "name": "grid", "label": "Grid" }
+	],
+	"editorStyle": "flextension-author-block-editor",
+	"editorScript": "flextension-author-block-editor",
+	"style": "flextension-author"
+}

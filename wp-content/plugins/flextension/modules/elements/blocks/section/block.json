@@ -1,0 +1,72 @@
+{
+	"apiVersion": 2,
+	"name": "flextension/section",
+	"title": "Section",
+	"description": "A section block.",
+	"category": "flextension",
+	"textdomain": "flextension",
+	"keywords": [
+		"row",
+		"container"
+	],
+	"supports": {
+		"anchor": true,
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"align": {
+			"type": "string"
+		},
+		"url": {
+			"type": "string"
+		},
+		"id": {
+			"type": "number"
+		},
+		"hasParallax": {
+			"type": "boolean",
+			"default": false
+		},
+		"isRepeated": {
+			"type": "boolean",
+			"default": false
+		},
+		"dimRatio": {
+			"type": "number",
+			"default": 50
+		},
+		"overlayColor": {
+			"type": "string"
+		},
+		"customOverlayColor": {
+			"type": "string"
+		},
+		"scheme": {
+			"type": "string"
+		},
+		"backgroundType": {
+			"type": "string",
+			"default": "image"
+		},
+		"focalPoint": {
+			"type": "object"
+		},
+		"minHeight": {
+			"type": "number"
+		},
+		"minHeightUnit": {
+			"type": "string"
+		},
+		"gradient": {
+			"type": "string"
+		},
+		"customGradient": {
+			"type": "string"
+		}
+	},
+	"editorStyle": "flextension-block-editor",
+	"editorScript": "flextension-block-editor",
+	"style": "flextension-elements"
+}

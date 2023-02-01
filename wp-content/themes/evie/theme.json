@@ -1,0 +1,189 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+	"settings": {
+        "layout": {
+            "contentSize": "var(--evie-content-width)",
+            "wideSize": "var(--evie-wide-width)"
+        },
+		"color": {
+			"customDuotone": false,
+			"defaultDuotone": false,
+			"duotone": null,
+			"gradients": [
+				{
+					"name": "Theme Color",
+					"slug": "primary-to-secondary",
+                    "gradient": "linear-gradient(135deg, rgb(var(--evie-color-primary-rgb)) 0%, rgb(var(--evie-color-secondary-rgb)) 100%)"
+				},
+				{
+					"name": "Light Theme Color - Reverse",
+					"slug": "light-secondary-to-primary-reverse",
+                    "gradient": "linear-gradient(135deg, rgb(var(--evie-color-secondary-rgb)) 0%, rgb(var(--evie-color-primary-rgb)) 100%)"
+				},
+                {
+					"name": "Coal Black",
+					"slug": "coal-black",
+                    "gradient": "linear-gradient(135deg, #3a3a3a 0%, #151515 100%)"
+				},
+                {
+					"name": "Snow Again",
+					"slug": "snow-again",
+                    "gradient": "linear-gradient(135deg, #f8f9fa 0%, #dbdcdd 100%)"
+				},
+                {
+					"name": "Rambutan Fruit",
+					"slug": "rambutan-fruit",
+                    "gradient": "linear-gradient(135deg, #ce3242 0%, #8d1b27 100%)"
+				},
+                {
+					"name": "Bush Rose",
+					"slug": "bush-rose",
+                    "gradient": "linear-gradient(135deg, #fff3f3 0%, #d3a9a9 100%)"
+				},
+                {
+					"name": "Pearl Rose",
+					"slug": "pearl-rose",
+                    "gradient": "linear-gradient(135deg, #fcf3ea 0%, #e2b1ae 100%)"
+				},
+				{
+					"name": "Creamy",
+					"slug": "creamy",
+                    "gradient": "linear-gradient(135deg, #fcf3ea 0%, #d8ccc1 100%)"
+				}
+			],
+			"palette": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "rgb(var(--evie-color-primary-rgb))"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "rgb(var(--evie-color-secondary-rgb))"
+				},
+				{
+					"name": "Grey",
+					"slug": "grey",
+					"color": "rgba(var(--evie-color-on-surface-rgb), 0.6)"
+				},
+				{
+					"name": "Isabelline",
+					"slug": "isabelline",
+					"color": "#f1eae4"
+				},
+				{
+					"name": "Fire Brick",
+					"slug": "fire-brick",
+					"color": "#b12c2c"
+				},
+				{
+					"name": "Eerie Black",
+					"slug": "eerie-black",
+					"color": "#1e1e1e"
+				},
+				{
+					"name": "Pale Chestnut",
+					"slug": "pale-chestnut",
+					"color": "#e2b1ae"
+				},
+				{
+					"name": "Bottle Green",
+					"slug": "bottle-green",
+					"color": "#277254"
+				},
+				{
+					"name": "Honey Wax",
+					"slug": "honey-wax",
+					"color": "#fdb024"
+				},
+				{
+					"name": "Blue Torus",
+					"slug": "blue-torus",
+					"color": "#042b89"
+				},
+				{
+					"name": "Purple",
+					"slug": "exodus-purple",
+					"color": "#8273cf"
+				},
+				{
+					"name": "Bakelite Gold",
+					"slug": "bakelite-gold",
+					"color": "#d5985e"
+				}
+			]
+		},
+		"spacing": {
+			"blockGap": false
+		},
+		"typography": {
+			"fontSizes": [
+				{
+					"name": "Extra small",
+					"slug": "extra-small",
+					"size": "var(--evie-font-size-xs)"
+				},
+                {
+					"name": "Small",
+					"slug": "small",
+					"size": "var(--evie-font-size-sm)"
+				},
+				{
+					"name": "Medium",
+					"slug": "medium",
+					"size": "var(--evie-font-size-md)"
+				},
+				{
+					"name": "Large",
+					"slug": "large",
+					"size": "var(--evie-font-size-lg)"
+				},
+				{
+					"name": "Extra large",
+					"slug": "extra-large",
+					"size": "var(--evie-font-size-xl)"
+				},
+				{
+					"name": "Huge",
+					"slug": "huge",
+					"size": "var(--evie-font-size-xxl)"
+				},
+				{
+					"name": "Gigantic",
+					"slug": "gigantic",
+					"size": "var(--evie-font-size-xxxl)"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"text": "",
+					"background": ""
+				},
+				"spacing": {
+					"padding": ""
+				}
+			},
+			"link": {
+				"typography": {
+					"textDecoration": ""
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "var(--evie-spacing-md)"
+		},
+		"blocks": {
+			"core/group": {
+                "spacing": {
+                    "blockGap": "var(--evie-spacing-xs)"
+                }
+            }
+		}
+	}
+}

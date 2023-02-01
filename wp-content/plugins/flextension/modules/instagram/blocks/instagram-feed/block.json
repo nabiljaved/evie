@@ -1,0 +1,54 @@
+{
+	"apiVersion": 2,
+	"name": "flextension/instagram-feed",
+	"title": "Instagram Feed",
+	"description": "Displays an Instagram media feed.",
+	"category": "flextension",
+	"textdomain": "flextension",
+	"keywords": [
+		"image",
+		"social",
+		"feed"
+	],
+	"supports": {
+		"anchor": true,
+		"align": [
+			"wide",
+			"full"
+		],
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"align": {
+			"type": "string"
+		},
+		"className": {
+			"type": "string"
+		},
+		"columns": {
+			"type": "number",
+			"default": 5
+		},
+		"imagesToShow": {
+			"type": "number",
+			"default": 10
+		},
+		"gutters": {
+			"type": "string",
+			"default": ""
+		},
+		"showUsername": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorStyle": "flextension-instagram-feed-block-editor",
+	"editorScript": "flextension-instagram-feed-block-editor",
+	"style": "flextension-instagram-feed"
+}

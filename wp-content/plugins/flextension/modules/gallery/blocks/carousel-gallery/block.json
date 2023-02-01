@@ -1,0 +1,127 @@
+{
+	"apiVersion": 2,
+	"name": "flextension/carousel-gallery",
+	"title": "Carousel Gallery",
+	"description": "Displays multiple images in a carousel gallery.",
+	"category": "flextension",
+	"textdomain": "flextension",
+	"keywords": [
+		"gallery",
+		"carousel"
+	],
+	"supports": {
+		"anchor": true,
+		"align": [
+			"wide",
+			"full"
+		],
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"images": {
+			"type": "array",
+			"default": [],
+			"source": "query",
+			"selector": ".flext-slide",
+			"query": {
+				"url": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "src"
+				},
+				"fullUrl": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "data-full-url"
+				},
+				"link": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "data-link"
+				},
+				"alt": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "alt",
+					"default": ""
+				},
+				"id": {
+					"type": "string",
+					"source": "attribute",
+					"selector": "img",
+					"attribute": "data-id"
+				},
+				"caption": {
+					"type": "string",
+					"source": "html",
+					"selector": ".flext-item-caption"
+				}
+			}
+		},
+		"ids": {
+			"type": "array",
+			"items": {
+				"type": "number"
+			},
+			"default": []
+		},
+		"columns": {
+			"type": "number",
+			"default": 3,
+			"minimum": 1,
+			"maximum": 12
+		},
+		"speed": {
+			"type": "number",
+			"default": 1000,
+			"minimum": 100,
+			"maximum": 1500
+		},
+		"gutters": {
+			"type": "string",
+			"default": ""
+		},
+		"centered": {
+			"type": "boolean",
+			"default": false
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": false
+		},
+		"loop": {
+			"type": "boolean",
+			"default": false
+		},
+		"navigation": {
+			"type": "boolean",
+			"default": false
+		},
+		"pagination": {
+			"type": "boolean",
+			"default": false
+		},
+		"caption": {
+			"type": "string",
+			"source": "html",
+			"selector": ".flext-gallery-caption"
+		},
+		"linkTo": {
+			"type": "string"
+		},
+		"sizeSlug": {
+			"type": "string",
+			"default": "large"
+		}
+	},
+	"editorStyle": "flextension-gallery-block-editor",
+	"editorScript": "flextension-gallery-block-editor",
+	"style": "flextension-gallery-block",
+	"viewScript": "flextension-gallery-block"
+}

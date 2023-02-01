@@ -1,0 +1,578 @@
+/**
+ * Portfolio
+ */
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+/* stylelint-disable selector-class-pattern -- Ignore WP special classes */
+
+.archive.tax-project_tag .archive-title::before {
+	color: inherit;
+	content: "\e910";
+	display: inline-block;
+	font-family: evie, sans-serif;
+	font-size: 85%;
+	line-height: 0;
+	opacity: 0.5;
+	vertical-align: middle;
+}
+
+/* stylelint-enable selector-class-pattern */
+
+.project-attributes {
+	display: grid;
+	gap: var(--evie-spacing-lg);
+	grid-template-columns: repeat(var(--evie-grid-columns), 1fr);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.project-attributes li {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.project-attributes li p {
+	color: rgba(var(--evie-color-on-surface-rgb), 0.6);
+	line-height: 1.8;
+	margin: 0;
+}
+
+.project-attributes .project-attribute-title {
+	font-size: var(--evie-font-size-base);
+	font-weight: 600;
+	margin-bottom: 0.8rem;
+	text-transform: uppercase;
+}
+
+.posts-list .project .project-attributes,
+.quick-view-content .project-attributes {
+	margin-bottom: var(--evie-spacing-sm);
+}
+
+.posts-list .project-attributes li {
+	--evie-grid-gap: 1.6rem;
+	border-left: 1px dashed rgba(var(--evie-color-on-surface-rgb), 0.6);
+	padding: 0 0 0 1.6rem;
+}
+
+.project-attributes li a {
+	color: inherit;
+	transition: color 0.3s var(--evie-transition-ease);
+}
+
+.project-attributes li a:hover {
+	color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+/*--------------------------------------------------------------
+## Posts Layout - Large
+--------------------------------------------------------------*/
+
+.posts-layout-large .project .entry-header {
+	position: relative;
+}
+
+/*--------------------------------------------------------------
+## Posts Hover Effect
+--------------------------------------------------------------*/
+
+/* Slide Up */
+
+.posts-style-text-overlay.posts-hover-2 .project {
+	color: rgb(var(--evie-color-on-secondary-rgb));
+}
+
+.posts-hover-2 .project.has-scheme-light,
+.posts-hover-2 .project.has-scheme-dark {
+	color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+.posts-style-text-overlay.posts-hover-2 .project .content-inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.posts-hover-2.posts-style-text-overlay .project .entry-meta {
+	opacity: 0;
+	transform: translateX(1rem);
+	transition: opacity 0.3s var(--evie-transition-ease), transform 0.3s var(--evie-transition-ease);
+}
+
+.posts-hover-2.posts-style-text-overlay .project:hover .entry-meta {
+	opacity: 1;
+	transform: translateX(0);
+	transition-delay: 0.2s;
+}
+
+.posts-hover-2.posts-style-text-overlay .project .entry-title {
+	margin-bottom: 0;
+	opacity: 0;
+	transform: translateX(-1rem);
+	transition: opacity 0.3s var(--evie-transition-ease), transform 0.3s var(--evie-transition-ease);
+}
+
+.posts-hover-2.posts-style-text-overlay .project:hover .entry-title {
+	opacity: 1;
+	transform: translateX(0);
+	transition-delay: 0.2s;
+}
+
+.posts-hover-2.posts-style-text-overlay .project .entry-title a {
+	overflow: initial;
+}
+
+.posts-hover-2.posts-style-text-overlay .project .entry-buttons {
+	opacity: 0;
+	transform: translateY(2rem);
+	transition: opacity 0.3s var(--evie-transition-ease), transform 0.3s var(--evie-transition-ease);
+}
+
+.posts-hover-2.posts-style-text-overlay .project:hover .entry-buttons {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.posts-hover-2.posts-style-card .project:not(.has-scheme-light) .flext-quick-view-button,
+.posts-hover-2.posts-style-text-overlay .project:not(.has-scheme-light),
+.posts-hover-3.posts-style-card .project:not(.has-scheme-light) .flext-quick-view-button,
+.posts-hover-3.posts-style-text-overlay .project:not(.has-scheme-light) {
+	--evie-color-surface-rgb: var(--evie-color-black-rgb);
+	--evie-color-on-surface-rgb: var(--evie-color-white-rgb);
+}
+
+/*--------------------------------------------------------------
+## Post Animation
+--------------------------------------------------------------*/
+
+.has-post-animation .entry {
+	--evie-transition-delay: 0s;
+}
+
+/* Post Animation - 1 */
+
+.posts-animation-1 .project .project-attributes {
+	-webkit-clip-path: inset(0 100% 0 0);
+	        clip-path: inset(0 100% 0 0);
+	transform-origin: left bottom;
+	transition: -webkit-clip-path 0.3s var(--evie-transition-ease);
+	transition: clip-path 0.3s var(--evie-transition-ease);
+	transition: clip-path 0.3s var(--evie-transition-ease), -webkit-clip-path 0.3s var(--evie-transition-ease);
+	z-index: 9;
+}
+
+.posts-animation-1 .project.evie-active .project-attributes {
+	-webkit-clip-path: inset(0 0 0 0);
+	        clip-path: inset(0 0 0 0);
+	transition: -webkit-clip-path 0.6s var(--evie-transition-ease) 1s;
+	transition: clip-path 0.6s var(--evie-transition-ease) 1s;
+	transition: clip-path 0.6s var(--evie-transition-ease) 1s, -webkit-clip-path 0.6s var(--evie-transition-ease) 1s;
+}
+
+/* Post Animation - 2 */
+
+.posts-animation-2 .project .project-attributes {
+	opacity: 0;
+	-webkit-mask-image: linear-gradient(315deg, #0000 25%, #000 75%);
+	        mask-image: linear-gradient(315deg, #0000 25%, #000 75%);
+	-webkit-mask-size: 400%;
+	        mask-size: 400%;
+}
+
+.posts-animation-2 .project.evie-active .project-attributes {
+	animation: evie-fade-wipe 1s var(--evie-transition-ease) 0.6s forwards;
+}
+
+/*--------------------------------------------------------------
+# Single Portfolio
+--------------------------------------------------------------*/
+
+.single-project .single-entry .project-description {
+	font-size: var(--evie-font-size-lg);
+	letter-spacing: 0;
+	line-height: 1.5;
+}
+
+.single-project .single-entry .project-description p {
+	color: rgba(var(--evie-color-on-surface-rgb), 0.6);
+	margin-bottom: var(--evie-spacing-sm);
+}
+
+.single-project .single-entry .project-description .project-link {
+	font-size: var(--evie-font-size-base);
+	line-height: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.project-description blockquote {
+	font-size: var(--evie-font-size-h4);
+	margin-bottom: 1.5rem;
+	padding-top: 0;
+}
+
+.single-entry .project-details {
+	margin-bottom: var(--evie-spacing-vertical);
+}
+
+/*--------------------------------------------------------------
+# Layout 1
+--------------------------------------------------------------*/
+
+.single-project.single-layout-1 .single-entry-header .entry-meta > span {
+	margin: 0;
+}
+
+.single-project.single-layout-1 .single-entry .project-attributes {
+	padding: 3rem 0 0;
+}
+
+/*--------------------------------------------------------------
+# Layout 2
+--------------------------------------------------------------*/
+
+.single-project.single-layout-2 .single-entry .project-attributes {
+	padding: var(--evie-spacing-horizontal) 0 0;
+}
+
+/*--------------------------------------------------------------
+# Layout 3
+--------------------------------------------------------------*/
+
+.single-project.single-layout-3 .single-entry-header .single-entry-media {
+	margin-bottom: var(--evie-spacing-horizontal);
+}
+
+.single-project.single-layout-3 .single-entry-header .evie-container {
+	padding-bottom: var(--evie-spacing-horizontal);
+}
+
+.single-project.single-layout-3 .single-entry-header .project-description {
+	font-size: var(--evie-font-size-base);
+	line-height: 1.8;
+	margin-top: 0.8rem;
+}
+
+.single-project.single-layout-3 .single-entry .project-attributes {
+	border-top: 1px solid rgba(var(--evie-color-on-surface-rgb), 0.16);
+	padding: var(--evie-spacing-horizontal) 0 0;
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Layout 4
+--------------------------------------------------------------*/
+
+.single-project.single-layout-4 .project:not(.has-post-thumbnail) .single-entry-header {
+	margin-left: calc(var(--evie-spacing-horizontal) * -1);
+	margin-right: calc(var(--evie-spacing-horizontal) * -1);
+	padding-left: var(--evie-spacing-horizontal);
+	padding-right: var(--evie-spacing-horizontal);
+}
+
+.single-project.single-layout-4 .single-entry-header .header-content {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.single-project.single-layout-4 .single-entry .project-attributes {
+	padding-bottom: var(--evie-spacing-vertical);
+	padding-top: var(--evie-spacing-horizontal);
+}
+
+.single-project.single-layout-4 .single-entry .project-description {
+	margin-bottom: var(--evie-spacing-vertical);
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Layout 5
+--------------------------------------------------------------*/
+
+.single-project.single-layout-5 .single-entry .single-entry-header {
+	margin-bottom: 0;
+	padding-bottom: var(--evie-spacing-vertical);
+}
+
+.single-project.single-layout-5 .single-entry.has-post-thumbnail .single-entry-header {
+	padding-bottom: 0;
+}
+
+.single-project.single-layout-5 .single-entry.has-post-thumbnail .single-entry-media {
+	margin-bottom: var(--evie-spacing-vertical);
+}
+
+.single-project.single-layout-5 .single-entry.has-post-thumbnail .project-attributes,
+.single-project.single-layout-5 .single-entry.has-post-thumbnail .project-gallery {
+	--evie-color-on-surface-rgb: var(--evie-color-white-rgb);
+	background: rgb(11, 11, 11);
+	color: rgb(var(--evie-color-on-surface-rgb));
+}
+
+.single-project.single-layout-5 .single-entry .project-attributes {
+	padding-left: var(--evie-spacing-horizontal);
+}
+
+.single-project.single-layout-5 .single-entry.has-post-thumbnail .project-attributes {
+	border-bottom: 1px solid rgba(var(--evie-color-on-surface-rgb), 0.1);
+	margin-left: calc(var(--evie-spacing-horizontal) * -1);
+	margin-right: calc(var(--evie-spacing-horizontal) * -1);
+	margin-top: calc(var(--evie-spacing-vertical) * -2);
+	padding: calc(var(--evie-spacing-vertical) * 2) var(--evie-spacing-horizontal) var(--evie-spacing-vertical) var(--evie-spacing-horizontal);
+}
+
+.single-project.single-layout-5 .single-entry.has-post-thumbnail .project-gallery {
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: var(--evie-spacing-vertical) var(--evie-spacing-horizontal);
+}
+
+.single-project.single-layout-5 .single-entry .project-description,
+.single-project.single-layout-5 .single-entry .project-description p {
+	margin: 0;
+}
+
+.single-project.single-layout-5 .single-entry .project-description .project-link {
+	margin-top: 3rem;
+}
+
+/*--------------------------------------------------------------
+# Layout 6
+--------------------------------------------------------------*/
+
+.single-project.single-layout-6 .single-entry-header .header-content {
+	padding-bottom: var(--evie-spacing-vertical);
+	width: 100%;
+}
+
+.single-project.single-layout-6 .single-entry .project-link .more-link {
+	color: rgb(var(--evie-color-on-surface-rgb));
+	font-size: var(--evie-font-size-base);
+}
+
+.single-project.single-layout-6 .single-entry-header .project-attributes {
+	flex: 1;
+	max-width: 100%;
+	padding: 0 var(--evie-spacing-horizontal) var(--evie-spacing-vertical);
+}
+
+.single-project.single-layout-6 .has-post-thumbnail .single-entry-header .project-attributes {
+	padding: var(--evie-spacing-vertical) var(--evie-spacing-horizontal) 0;
+}
+
+.single-project.single-layout-6 .single-entry .project-gallery {
+	margin-bottom: var(--evie-spacing-vertical);
+}
+
+@media (min-width: 768px) {
+
+	.quick-view-content .project-attributes {
+		--evie-grid-columns: 3;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	/* Portfolio */
+	.posts-style-list .project-attributes li p {
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	/* Posts Layout - Large */
+	.posts-layout-large .project {
+		opacity: 1;
+		transform: none;
+	}
+
+	.posts-layout-large .project:hover .entry-header .entry-title a,
+	.posts-layout-large .project:hover .entry-header .entry-meta a {
+		transform: translate(0, 0);
+	}
+
+	/* Single Project */
+	.single-project .project-details {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.project-details .project-description {
+		flex: 1 1 60%;
+		margin: 0;
+		max-width: 60%;
+	}
+
+	.project-description blockquote {
+		width: 80%;
+	}
+
+	.single-project .single-entry .project-attributes {
+		flex: 1 1 40%;
+		max-width: 40%;
+		padding: 0 0 0 var(--evie-spacing-horizontal);
+	}
+
+	/* Layout 1 */
+	.single-project.single-layout-1 .single-entry .project-attributes,
+	.single-project.single-layout-2 .single-entry .project-attributes {
+		padding: 0.6rem 0 0 var(--evie-spacing-horizontal);
+	}
+
+	/* Layout 3 */
+	.single-project.single-layout-3 .has-post-thumbnail .single-entry-header .entry-title {
+		text-align: center;
+	}
+
+	.single-project.single-layout-3 .single-entry-header .evie-container {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.single-project.single-layout-3 .single-entry-header .project-description {
+		flex: 1 1 50%;
+		margin: 0;
+		max-width: 50%;
+		order: 1;
+	}
+
+	.single-project.single-layout-3 .single-entry-header .entry-meta {
+		align-items: flex-end;
+		flex: 1 1 50%;
+		flex-direction: column;
+		margin: 0;
+		max-width: 50%;
+		order: 2;
+	}
+
+	.single-project.single-layout-3 .entry-meta > span {
+		padding-left: 1rem;
+	}
+
+	.single-project.single-layout-3 .entry-meta > span::before {
+		display: none;
+	}
+
+	/* Layout 4 */
+
+	.single-project.single-layout-4 .single-entry-header .evie-container {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.single-project.single-layout-4 .single-entry .header-content {
+		flex: 1 1 60%;
+		max-width: 60%;
+	}
+
+	.single-project.single-layout-4 .single-entry-header .entry-title {
+		padding-right: var(--evie-spacing-horizontal);
+	}
+
+	.single-project.single-layout-4 .single-entry .project-attributes {
+		padding: var(--evie-spacing-vertical) 0;
+	}
+
+	/* Layout 5 */
+	.single-layout-5 .single-entry-header {
+		z-index: 5;
+	}
+
+	.single-project.single-layout-5 .single-entry.has-post-thumbnail .project-attributes {
+		flex: 1;
+		max-width: none;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	/* Portfolio */
+
+	/* Porfolio Layout - Large */
+	.posts-layout-large .entry-header .entry-meta a {
+		margin: 0.6rem 0;
+	}
+
+	/* Single Project */
+
+	/* Layout 3 */
+	.single-project.single-layout-3 .single-entry-header .project-attributes {
+		flex: none;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+	}
+
+	.single-project.single-layout-3 .single-entry-header .project-attributes li:nth-child(4n+1) {
+		max-width: 70%;
+	}
+
+	/* Layout 5 */
+	.single-project.single-layout-5 .single-entry.has-post-thumbnail .project-attributes {
+		border: none;
+		margin: 0;
+		padding: var(--evie-spacing-horizontal);
+		position: absolute;
+		right: 0;
+		transform: translateY(-50%);
+		top: 0;
+		width: 50rem;
+		z-index: 9;
+	}
+
+	.single-project.single-layout-5 .single-entry.has-post-thumbnail .project-gallery {
+		padding-top: calc(var(--evie-spacing-vertical) * 2);
+		margin-top: calc(var(--evie-spacing-vertical) * -2);
+	}
+
+	.single-project.single-layout-5 .single-entry-header .header-content {
+		margin-right: 54rem;
+		padding-bottom: var(--evie-spacing-horizontal);
+	}
+
+	/* Layout 6 */
+	.single-project.single-layout-6 .single-entry-header .entry-title {
+		width: var(--evie-content-width);
+	}
+
+	.single-project.single-layout-6 .has-post-thumbnail .single-entry-header .single-entry-media {
+		border-radius: 0 1rem 1rem 0;
+	}
+
+	.single-project.single-layout-6 .has-post-thumbnail .single-entry-header .project-attributes {
+		flex: 1 1 40%;
+		max-width: 40%;
+		padding: var(--evie-spacing-vertical) var(--evie-spacing-horizontal);
+	}
+
+	.single-project.single-layout-6 .single-entry .project-description {
+		max-width: var(--evie-content-width);
+	}
+
+	.single-project.single-layout-6 .single-entry:not(.has-post-thumbnail) .project-attributes {
+		margin: auto;
+		max-width: var(--evie-wide-width);
+		padding: 0 0 var(--evie-spacing-vertical);
+	}
+}
+
+@media (min-width: 1650px) {
+
+	/* Layout 1 */
+	.single-project.single-layout-1 .single-entry-header .entry-title {
+		width: 55%;
+	}
+
+	/* Layout 6 */
+	.single-project.single-layout-6 .has-post-thumbnail .single-entry-header .project-attributes {
+		gap: var(--evie-spacing-vertical);
+		padding: var(--evie-spacing-vertical);
+	}
+}

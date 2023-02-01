@@ -1,0 +1,1 @@
+.lazyload{background-color:#ced4da;-webkit-clip-path:inset(0 0 0 0);clip-path:inset(0 0 0 0);filter:blur(10px);transition:filter .25s linear}.lazyload:not([src]){visibility:hidden}.lazyload.flext-lazyload-unstyled{animation:none;background-color:transparent}.lazyload:not(.flext-lqip){height:auto;width:auto}.lazyloaded{filter:blur(0)}

@@ -1,0 +1,103 @@
+{
+	"apiVersion": 2,
+	"name": "flextension/post-carousel",
+	"title": "Post Carousel",
+	"description": "Displays your posts in a carousel.",
+	"category": "flextension",
+	"textdomain": "flextension",
+	"keywords": [
+		"carousel",
+		"slider",
+		"post",
+		"blog",
+		"portfolio",
+		"project"
+	],
+	"supports": {
+		"align": ["wide", "full"],
+		"html": false,
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		},
+		"className": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"columns": {
+			"type": "number",
+			"default": 5
+		},
+		"displayNumber": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayButtons": {
+			"type": "boolean",
+			"default": true
+		},
+		"navigation": {
+			"type": "boolean",
+			"default": false
+		},
+		"pagination": {
+			"type": "boolean",
+			"default": false
+		},
+		"link": {
+			"type": "string",
+			"enum": [ "", "archive", "more", "custom" ],
+			"default": ""
+		},
+		"linkText": {
+			"type": "string",
+			"default": "See all"
+		},
+		"linkURL": {
+			"type": "string",
+			"default": ""
+		},
+		"query": {
+			"type": "object",
+			"default": {				
+				"postType": "post",	
+				"posts": [],			
+				"taxonomy": "",
+				"terms": [],
+				"author": "",
+				"authors": [],
+				"timeRange": "",
+				"orderBy": "date",
+				"order": "DESC",
+				"numberOfItems": 10
+			}
+		}
+	},	
+	"editorStyle": "flextension-block-editor",
+	"editorScript": "flextension-block-editor",
+	"style": "flextension-blocks",
+	"viewScript": "flextension-blocks"
+}

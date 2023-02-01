@@ -1,0 +1,83 @@
+{
+	"apiVersion": 2,
+	"name": "flextension/categories",
+	"title": "Featured Categories",
+	"description": "Displays featured categories.",
+	"category": "flextension",
+	"textdomain": "flextension",
+	"keywords": [
+		"categories"
+	],
+	"supports": {
+		"anchor": true,
+		"align": [
+			"center",
+			"wide",
+			"full"
+		],
+		"html": false,
+		"flextensionAnimation": true,
+		"flextensionSpacing": true,
+		"flextensionVisibility": true
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "center"
+		},
+		"className": {
+			"type": "string"
+		},
+		"layout": {
+			"type": "string",
+			"default": ""
+		},
+		"textAlign": {
+			"type": "string",
+			"default": ""
+		},
+		"columns": {
+			"type": "number",
+			"default": 4
+		},
+		"navigation": {
+			"type": "boolean",
+			"default": true
+		},
+		"pagination": {
+			"type": "boolean",
+			"default": false
+		},
+		"taxonomy": {
+			"type": "string",
+			"default": "category"
+		},
+		"display": {
+			"type": "string",
+			"enum": [
+				"all",
+				"custom"
+			],
+			"default": "all"
+		},
+		"terms": {
+			"type": "array",
+			"default": []
+		},
+		"showPostCounts": {
+			"type": "boolean",
+			"default": true
+		},
+		"showImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"imageSize": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorStyle": "flextension-categories",
+	"editorScript": "flextension-categories-block-editor",
+	"style": "flextension-categories"
+}

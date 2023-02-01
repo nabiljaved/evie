@@ -1,0 +1,1972 @@
+# Flextension Plugin
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flextension\n"
+"POT-Creation-Date: 2023-01-28 15:42+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: build\n"
+"X-Poedit-SearchPathExcluded-2: .git\n"
+"X-Poedit-SearchPathExcluded-3: **/blocks/**\n"
+"X-Poedit-SearchPathExcluded-4: **/inc/**\n"
+"X-Poedit-SearchPathExcluded-5: **/vendor/**\n"
+
+#: admin/class-flextension-modules-list-table.php:171
+msgid "Module activated."
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:191
+msgid "Module deactivated."
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:212
+msgid "Selected modules activated."
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:219
+#: admin/class-flextension-modules-list-table.php:243
+msgid "Please select at least one item to perform this action on."
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:236
+msgid "Selected modules deactivated."
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:439
+#, php-format
+msgctxt "modules"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-flextension-modules-list-table.php:449
+#, php-format
+msgid "Active <span class=\"count\">(%s)</span>"
+msgid_plural "Active <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-flextension-modules-list-table.php:458
+#, php-format
+msgid "Inactive <span class=\"count\">(%s)</span>"
+msgid_plural "Inactive <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-flextension-modules-list-table.php:467
+#, php-format
+msgid "Extensions <span class=\"count\">(%s)</span>"
+msgid_plural "Extensions <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-flextension-modules-list-table.php:566
+#: admin/class-flextension-modules-list-table.php:725
+msgid "Activate"
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:585
+#: admin/class-flextension-modules-list-table.php:729
+msgid "Deactivate"
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:619
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:646
+msgid "Required for: "
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:688
+msgid "No modules found."
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:688
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:699
+msgid "Module"
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:700
+msgid "Description"
+msgstr ""
+
+#: admin/class-flextension-modules-list-table.php:746
+#, php-format
+msgid "Flextension v%s"
+msgstr ""
+
+#: admin/class-flextension-modules-manager.php:58
+#: modules/adobe-fonts/index.php:26 modules/author/index.php:27
+#: modules/custom-fonts/index.php:26 modules/google-fonts/index.php:26
+#: modules/instagram/index.php:26 modules/lazyload/index.php:28
+#: modules/live-search/index.php:28 modules/retina-images/index.php:25
+#: modules/share-buttons/index.php:27 modules/smooth-scroll/index.php:25
+#: modules/social-links/index.php:25
+msgid "Settings"
+msgstr ""
+
+#: admin/class-flextension-modules-manager.php:74
+msgid "Flextension Modules"
+msgstr ""
+
+#: admin/class-flextension-modules-manager.php:75
+#: includes/class-flextension.php:47
+#: modules/elements/flextension-elements.php:601
+msgid "Flextension"
+msgstr ""
+
+#: extensions/carousel/index.php:18
+msgid "Carousel"
+msgstr ""
+
+#: extensions/carousel/index.php:19
+msgid "Includes carousel files in your website to create a modern mobile touch slider."
+msgstr ""
+
+#: extensions/carousel/index.php:20 modules/author/index.php:20
+msgid "Widget"
+msgstr ""
+
+#: extensions/fonts/admin/class-flextension-fonts-admin.php:40
+msgid "Fonts Settings"
+msgstr ""
+
+#: extensions/fonts/admin/class-flextension-fonts-admin.php:41
+#: extensions/fonts/index.php:20
+msgid "Fonts"
+msgstr ""
+
+#: extensions/fonts/admin/class-flextension-fonts-admin.php:55
+#: modules/author/admin/class-flextension-author-admin.php:138
+#: modules/instagram/admin/class-flextension-instagram-admin.php:53
+#: modules/live-search/admin/class-flextension-live-search-admin.php:205
+#: modules/share-buttons/admin/class-flextension-share-buttons-admin.php:163
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:115
+#: modules/social-links/admin/class-flextension-social-links-admin.php:285
+msgid "You do not have sufficient rights to view this page."
+msgstr ""
+
+#: extensions/fonts/index.php:21
+msgid "Adds new fonts into your WordPress site."
+msgstr ""
+
+#: extensions/lightbox/index.php:18
+msgid "Lightbox"
+msgstr ""
+
+#: extensions/lightbox/index.php:19
+msgid "Displays an HTML content in a responsive lightbox."
+msgstr ""
+
+#: extensions/meta-box/admin/class-flextension-meta-box-admin.php:154
+#, php-format
+msgid "%s Settings"
+msgstr ""
+
+#: extensions/meta-box/index.php:20
+msgid "Meta Box"
+msgstr ""
+
+#: extensions/meta-box/index.php:21
+msgid "Adds meta box fields into WordPress Editor."
+msgstr ""
+
+#: includes/class-flextension-module-control.php:757
+msgid "Add image"
+msgstr ""
+
+#: includes/class-flextension-module-control.php:758
+msgid "Remove image"
+msgstr ""
+
+#: includes/class-flextension-module-control.php:811
+msgid "Add images"
+msgstr ""
+
+#: includes/class-flextension-module-control.php:863
+msgid "Media Library"
+msgstr ""
+
+#: includes/class-flextension-module-control.php:864
+msgid "Remove media"
+msgstr ""
+
+#: includes/class-flextension-module-control.php:914
+msgid "Choose file"
+msgstr ""
+
+#: includes/class-flextension-module-control.php:915
+msgid "Remove file"
+msgstr ""
+
+#: includes/class-flextension-module-control.php:950
+msgid "Are you sure you want to permanently delete this file?"
+msgstr ""
+
+#: includes/class-flextension-module-control.php:1133
+msgid "Add New"
+msgstr ""
+
+#: includes/flextension-functions.php:538
+msgid "B"
+msgstr ""
+
+#: includes/flextension-functions.php:539
+msgid "M"
+msgstr ""
+
+#: includes/flextension-functions.php:540
+msgid "K"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:65
+msgid "API Token"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:84
+msgid "Select Project"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:100
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:111
+msgid "Update"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:102
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:113
+msgid "A fonts list is preconfigured for weekly automatic updates. Click the \"Update\" button to update it now."
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:108
+msgid "Project"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:148
+#: modules/adobe-fonts/flextension-adobe-fonts.php:19
+#: modules/adobe-fonts/flextension-adobe-fonts.php:157
+#: modules/adobe-fonts/index.php:18
+msgid "Adobe Fonts"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:168
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:140
+msgid "Sample Text!"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:196
+msgid "Please follow the steps below:"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:202
+#, php-format
+msgid "Log in to your %s."
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:203
+msgid "Adobe Fonts Account"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:211
+#, php-format
+msgid "Visit %s to get your API Token."
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:212
+msgid "API Tokens"
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:216
+msgid "Copy the token into the box below and click the \"Save Changes\" button."
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:221
+#, php-format
+msgid "You can find more details in the %s."
+msgstr ""
+
+#: modules/adobe-fonts/admin/class-flextension-adobe-fonts-admin.php:222
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:188
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:172
+msgid "Documentation"
+msgstr ""
+
+#: modules/adobe-fonts/index.php:19
+msgid "Adds Adobe Fonts to your website."
+msgstr ""
+
+#: modules/adobe-fonts/index.php:20 modules/custom-fonts/index.php:20
+#: modules/google-fonts/index.php:20 modules/lazyload/index.php:23
+#: modules/retina-images/index.php:20 modules/smooth-scroll/index.php:20
+msgid "Advanced"
+msgstr ""
+
+#: modules/adobe-fonts/index.php:31 modules/custom-fonts/index.php:31
+#: modules/google-fonts/index.php:31
+msgid "View documentation"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-admin.php:37
+msgid "Advanced Author Settings"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-admin.php:38
+#: modules/author/index.php:18
+msgid "Advanced Author"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-admin.php:65
+msgid "Follow Button"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-admin.php:73
+msgid "Display “Follow” button and allow people to follow authors."
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-admin.php:79
+msgid "Followers and Following"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-admin.php:87
+msgid "Display number of followers and following."
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:49
+msgid "Cover Image"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:52
+msgid "A cover image helps personalize your account."
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:61
+msgid "Cover Image Position"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:64
+msgid "A cover image background position."
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:66
+msgid "Left Top"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:67
+msgid "Left Center"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:68
+msgid "Left Bottom"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:69
+msgid "Right Top"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:70
+msgid "Right Center"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:71
+msgid "Right Bottom"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:72
+msgid "Center Top"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:73
+msgid "Center Center"
+msgstr ""
+
+#: modules/author/admin/class-flextension-author-cover-image.php:74
+msgid "Center Bottom"
+msgstr ""
+
+#: modules/author/flextension-author-follow.php:256
+msgid "Unfollow"
+msgstr ""
+
+#: modules/author/flextension-author-follow.php:256
+msgid "Follow"
+msgstr ""
+
+#: modules/author/flextension-author-follow.php:336
+msgid "Follower"
+msgid_plural "Followers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/author/flextension-author-follow.php:378
+#: modules/author/templates/following.php:15
+msgid "Following"
+msgstr ""
+
+#: modules/author/flextension-author-follow.php:547
+msgid "Load more"
+msgstr ""
+
+#: modules/author/flextension-author-follow.php:570
+#, php-format
+msgid "You must <a href=\"%1$s\">Login</a> or <a href=\"%2$s\">Register</a> to follow."
+msgstr ""
+
+#: modules/author/flextension-author.php:163
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:140
+msgid "All"
+msgstr ""
+
+#: modules/author/flextension-author.php:164
+#: modules/author/widgets/class-flextension-author-widget.php:36
+#: modules/author/widgets/class-flextension-author-widget.php:117
+msgid "Author"
+msgstr ""
+
+#: modules/author/flextension-author.php:165
+msgid "Contributor"
+msgstr ""
+
+#: modules/author/flextension-author.php:166
+msgid "Editor"
+msgstr ""
+
+#: modules/author/flextension-author.php:345
+#: modules/author/widgets/class-flextension-authors-widget.php:32
+msgid "Authors"
+msgstr ""
+
+#: modules/author/flextension-author.php:598
+#: modules/lightbox-gallery/flextension-lightbox-gallery.php:20
+msgid "Previous"
+msgstr ""
+
+#: modules/author/flextension-author.php:603
+#: modules/lightbox-gallery/flextension-lightbox-gallery.php:19
+msgid "Next"
+msgstr ""
+
+#: modules/author/flextension-author.php:627
+#, php-format
+msgid "%1$s has created %2$s post."
+msgid_plural "%1$s has created %2$s posts."
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/author/flextension-author.php:673
+#, php-format
+msgctxt "Maps API URL"
+msgid "https://www.google.com/maps/search/?api=1&query=%s"
+msgstr ""
+
+#: modules/author/flextension-author.php:705
+msgid "Location"
+msgstr ""
+
+#: modules/author/index.php:19
+msgid "Allows you to follow authors and see their posts in your feed, displays number of followers in the Author block and widget."
+msgstr ""
+
+#: modules/author/rest-api/class-flextension-followers-api.php:90
+msgid "Invalid author ID."
+msgstr ""
+
+#: modules/author/rest-api/class-flextension-followers-api.php:118
+msgid "Invalid user ID."
+msgstr ""
+
+#: modules/author/templates/followers.php:15
+msgid "Followers"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:46
+msgid "Displays the author box with image and bio."
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:50
+msgid "Flextension Author"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:111
+#: modules/author/widgets/class-flextension-authors-widget.php:112
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:130
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:119
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:111
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:110
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:151
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:102
+msgid "Title"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:119
+msgid "Select an author"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:137
+#: modules/author/widgets/class-flextension-authors-widget.php:137
+msgid "Display followers"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:143
+#: modules/author/widgets/class-flextension-authors-widget.php:143
+msgid "Display avatar"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:149
+#: modules/author/widgets/class-flextension-authors-widget.php:149
+msgid "Display cover image"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:154
+#: modules/author/widgets/class-flextension-authors-widget.php:154
+msgid "Image size"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:158
+#: modules/author/widgets/class-flextension-authors-widget.php:158
+msgid "Thumbnail"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:159
+#: modules/author/widgets/class-flextension-authors-widget.php:159
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:152
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:184
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:177
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:73
+#: modules/social-links/flextension-social-links.php:287
+msgid "Medium"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:160
+#: modules/author/widgets/class-flextension-authors-widget.php:160
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:153
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:185
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:178
+msgid "Large"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-author-widget.php:161
+#: modules/author/widgets/class-flextension-authors-widget.php:161
+msgid "Full Size"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-authors-widget.php:42
+msgid "Displays a list of authors, contributors and editors."
+msgstr ""
+
+#: modules/author/widgets/class-flextension-authors-widget.php:46
+msgid "Flextension Authors"
+msgstr ""
+
+#: modules/author/widgets/class-flextension-authors-widget.php:118
+msgid "Role"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:93
+#: modules/custom-fonts/flextension-custom-fonts.php:19
+#: modules/custom-fonts/flextension-custom-fonts.php:54
+#: modules/custom-fonts/index.php:18
+msgid "Custom Fonts"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:107
+msgid "Name"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:118
+msgid "Weight"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:120
+msgctxt "Font weight"
+msgid "100"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:121
+msgctxt "Font weight"
+msgid "200"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:122
+msgctxt "Font weight"
+msgid "300"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:123
+msgctxt "Font weight"
+msgid "400 (Regular)"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:124
+msgctxt "Font weight"
+msgid "500"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:125
+msgctxt "Font weight"
+msgid "600"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:126
+msgctxt "Font weight"
+msgid "700"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:127
+msgctxt "Font weight"
+msgid "800"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:128
+msgctxt "Font weight"
+msgid "900"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:134
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:126
+msgid "Style"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:136
+msgid "Normal"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:137
+msgid "Italic"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:143
+msgid "Font file (.woff)"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:149
+msgid "Font file (.woff2)"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:155
+msgid "Add font files"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:162
+msgid "Add New Font Family"
+msgstr ""
+
+#: modules/custom-fonts/admin/class-flextension-custom-fonts-admin.php:187
+#, php-format
+msgid "You can find the instructions on how to add custom fonts in the %s."
+msgstr ""
+
+#: modules/custom-fonts/index.php:19
+msgid "Allows you to add and use custom fonts by simply uploading web-font files to your site."
+msgstr ""
+
+#: modules/elements/flextension-elements.php:365
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:119
+msgid "Popular Posts"
+msgstr ""
+
+#: modules/elements/flextension-elements.php:366
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:122
+msgid "Popular"
+msgstr ""
+
+#: modules/elements/flextension-elements.php:375
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:123
+msgid "Recent Posts"
+msgstr ""
+
+#: modules/elements/flextension-elements.php:376
+msgid "Recent"
+msgstr ""
+
+#: modules/elements/flextension-elements.php:385
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:127
+msgid "Recent Comments"
+msgstr ""
+
+#: modules/elements/flextension-elements.php:386
+msgid "Comments"
+msgstr ""
+
+#: modules/elements/flextension-elements.php:451
+#: modules/elements/flextension-elements.php:513
+#: modules/elements/flextension-elements.php:575
+#: modules/instagram/flextension-instagram.php:380
+#: modules/instagram/flextension-instagram.php:411
+msgid "There are no posts to show right now."
+msgstr ""
+
+#: modules/elements/flextension-elements.php:558
+#, php-format
+msgid "%s on"
+msgstr ""
+
+#: modules/elements/index.php:18
+msgid "Basic Elements"
+msgstr ""
+
+#: modules/elements/index.php:19
+msgid "Adds basic blocks and widgets to your WordPress website."
+msgstr ""
+
+#: modules/elements/index.php:20
+msgid "Content"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:45
+msgid "Displays Popular Posts, Recent Posts and Recent Comments in carousel."
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:49
+msgid "Flextension Post Carousel"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:111
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:93
+#: modules/lightbox-gallery/index.php:22 modules/post-likes/index.php:20
+#: modules/post-views/index.php:20 modules/quick-view/index.php:20
+#: modules/reading-time/index.php:22 modules/share-buttons/index.php:20
+msgid "Post"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:123
+msgid "Latest"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:124
+msgid "Specific Tags"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:136
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:106
+msgid "Post type"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:146
+msgid "Source"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:156
+msgid "Tags"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:158
+msgid "Enter a tag name, or multiple tags separated by commas."
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-carousel-widget.php:163
+msgid "Number of posts to show"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:41
+msgid "Displays Popular Posts, Recent Posts and Recent Comments in tabs."
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:45
+msgid "Flextension Post Tabs"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:116
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:156
+msgid "Tabs"
+msgstr ""
+
+#: modules/elements/widgets/class-flextension-post-tabs-widget.php:132
+msgid "Number of posts to show:"
+msgstr ""
+
+#: modules/facebook/flextension-facebook.php:36
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:32
+msgid "Find us on Facebook"
+msgstr ""
+
+#: modules/facebook/index.php:18
+#: modules/share-buttons/flextension-share-buttons.php:26
+#: modules/social-links/flextension-social-links.php:139
+msgid "Facebook"
+msgstr ""
+
+#: modules/facebook/index.php:19
+msgid "Displays a Facebook Page widget in your sidebar."
+msgstr ""
+
+#: modules/facebook/index.php:20 modules/flickr/index.php:20
+#: modules/instagram/index.php:20 modules/social-links/index.php:20
+msgid "Social"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:45
+msgid "Displays Timeline, Events and Messages from Facebook Page."
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:49
+msgid "Flextension Facebook Page"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:125
+msgid "Facebook Page URL"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:131
+msgid "Width"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:133
+msgid "The pixel width of the plugin. Min. is 180 & Max. is 500."
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:138
+msgid "Height"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:145
+msgid "Show Friend's Faces"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:151
+msgid "Small Header"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:159
+msgid "Timeline"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:162
+msgid "Events"
+msgstr ""
+
+#: modules/facebook/widgets/class-flextension-facebook-page-widget.php:165
+msgid "Messages"
+msgstr ""
+
+#: modules/featured-categories/admin/class-flextension-featured-categories-edit.php:78
+#: modules/featured-categories/admin/class-flextension-featured-categories-edit.php:126
+msgid "Featured Image"
+msgstr ""
+
+#: modules/featured-categories/admin/class-flextension-featured-categories-edit.php:148
+msgid "Image"
+msgstr ""
+
+#: modules/featured-categories/index.php:20
+msgid "Featured Categories"
+msgstr ""
+
+#: modules/featured-categories/index.php:21
+msgid "Allows you to set the featured image for categories and displays them in widgets and blocks."
+msgstr ""
+
+#: modules/featured-categories/index.php:22 modules/featured-media/index.php:22
+msgid "Blog"
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:36
+msgid "Categories"
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:46
+msgid "Displays a list of categories with images."
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:50
+msgid "Flextension Categories"
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:117
+msgid "Taxonomy"
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:138
+msgid "Display"
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:141
+#: modules/social-links/flextension-social-links.php:671
+msgid "Custom"
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:163
+msgid "Terms"
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:180
+msgid "Show post counts"
+msgstr ""
+
+#: modules/featured-categories/widgets/class-flextension-categories-widget.php:186
+msgid "Show featured image"
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:50
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:116
+#: modules/social-links/flextension-social-links.php:168
+#: modules/social-links/flextension-social-links.php:234
+#: modules/social-links/flextension-social-links.php:271
+#: modules/social-links/flextension-social-links.php:316
+#: modules/social-links/flextension-social-links.php:364
+#: modules/social-links/flextension-social-links.php:437
+#: modules/social-links/flextension-social-links.php:580
+#: modules/social-links/flextension-social-links.php:639
+#: modules/social-links/flextension-social-links.php:668
+msgid "Type"
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:53
+#: modules/gallery/index.php:18 modules/gallery/index.php:20
+msgid "Gallery"
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:54
+msgid "Slider"
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:59
+msgid "Image rollover"
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:60
+msgid "This image will appear when the mouse over the featured image."
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:70
+msgid "Media"
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:71
+msgid "Enter a media URL from media services (e.g. YouTube, Vimeo, SoundCloud) or choose from Media Library."
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:80
+msgid "Poster image (optional)"
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:81
+msgid "If not set, Featured Image will be used."
+msgstr ""
+
+#: modules/featured-media/admin/class-flextension-featured-media-meta-box.php:97
+#: modules/featured-media/index.php:20
+msgid "Featured Media"
+msgstr ""
+
+#: modules/featured-media/flextension-featured-media.php:654
+#: modules/featured-media/flextension-featured-media.php:744
+msgid "Play"
+msgstr ""
+
+#: modules/featured-media/flextension-featured-media.php:663
+#: modules/featured-media/flextension-featured-media.php:759
+msgid "Play/Pause"
+msgstr ""
+
+#: modules/featured-media/flextension-featured-media.php:666
+#: modules/featured-media/flextension-featured-media.php:762
+msgid "Mute/Unmute"
+msgstr ""
+
+#: modules/featured-media/flextension-featured-media.php:669
+#: modules/featured-media/flextension-featured-media.php:765
+msgid "Fullscreen"
+msgstr ""
+
+#: modules/featured-media/index.php:21
+msgid "Displays featured video, audio and images gallery of the post."
+msgstr ""
+
+#: modules/flickr/index.php:18
+msgid "Flickr Photos"
+msgstr ""
+
+#: modules/flickr/index.php:19
+msgid "Displays a Flickr Photos feed in your website."
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:32
+msgid "Find us on Flickr"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:43
+msgid "Displays Flickr photos."
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:47
+msgid "Flextension Flickr Photos"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:120
+#: modules/social-links/flextension-social-links.php:368
+#: modules/social-links/flextension-social-links.php:443
+#: modules/social-links/flextension-social-links.php:584
+msgid "User"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:121
+#: modules/social-links/flextension-social-links.php:583
+msgid "Group"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:132
+#: modules/social-links/flextension-social-links.php:157
+msgid "Flickr ID"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:138
+#, php-format
+msgid "To find the flickID, please visit %s."
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:147
+msgid "Image Size"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:151
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:183
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:176
+msgid "Small"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:164
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:157
+msgid "Number of images to show"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:170
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:163
+msgid "Columns"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:180
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:173
+msgid "Gutters"
+msgstr ""
+
+#: modules/flickr/widgets/class-flextension-flickr-widget.php:182
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:175
+msgid "None"
+msgstr ""
+
+#: modules/gallery/index.php:19
+msgid "Adds a Carousel Gallery and Waterfall Gallery to the Block Editor."
+msgstr ""
+
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:65
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:76
+msgid "API Key"
+msgstr ""
+
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:75
+#, php-format
+msgid "Get your %s to enable automatic updates for Google Fonts list."
+msgstr ""
+
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:120
+#: modules/google-fonts/flextension-google-fonts.php:19
+#: modules/google-fonts/flextension-google-fonts.php:208
+#: modules/google-fonts/index.php:18
+msgid "Google Fonts"
+msgstr ""
+
+#: modules/google-fonts/admin/class-flextension-google-fonts-admin.php:171
+#, php-format
+msgid "You can find the instructions on how to enable automatic updates for Google Fonts list in the %s."
+msgstr ""
+
+#: modules/google-fonts/index.php:19
+msgid "Adds Google Fonts to your website."
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:39
+msgid "Instagram Feed Settings"
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:40
+#: modules/instagram/index.php:18
+msgid "Instagram Feed"
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:72
+msgid "Currently connected to the following account:"
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:81
+msgid "Remove"
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:85
+#: modules/instagram/admin/class-flextension-instagram-admin.php:90
+msgid "Refresh Cache"
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:86
+msgid "Your Instagram feed is temporarily cached and preconfigured for hourly automatic updates. Click the button below to refresh it now."
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:96
+msgid "Connect to your Instagram account to get the Instagram Access Token. You can find more details in the documentation."
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:98
+msgid "Connect"
+msgstr ""
+
+#: modules/instagram/admin/class-flextension-instagram-admin.php:135
+msgid "Your Instagram media feed has been updated."
+msgstr ""
+
+#: modules/instagram/flextension-instagram.php:209
+msgid "Please connect to an Instagram account on the Settings page."
+msgstr ""
+
+#: modules/instagram/flextension-instagram.php:378
+msgid "This error message is only visible to WordPress administrators:"
+msgstr ""
+
+#: modules/instagram/index.php:19
+msgid "Displays your Instagram feed on your website."
+msgstr ""
+
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:32
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:32
+msgid "Follow Us"
+msgstr ""
+
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:41
+msgid "Displays a media feed from your Instagram account."
+msgstr ""
+
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:45
+msgid "Flextension Instagram Feed"
+msgstr ""
+
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:106
+msgid "Displaying a media feed from:"
+msgstr ""
+
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:113
+#, php-format
+msgid "You can connect to another account in %s."
+msgstr ""
+
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:133
+#, php-format
+msgid "There are no connected accounts. To display a media feed, you will need to connect an account in %s."
+msgstr ""
+
+#: modules/instagram/widgets/class-flextension-instagram-widget.php:185
+msgid "Display Username"
+msgstr ""
+
+#: modules/lazyload/admin/class-flextension-lazyload-admin.php:38
+#: modules/lazyload/index.php:21
+msgid "Lazy Load"
+msgstr ""
+
+#: modules/lazyload/admin/class-flextension-lazyload-admin.php:45
+msgid "Image placeholders"
+msgstr ""
+
+#: modules/lazyload/admin/class-flextension-lazyload-admin.php:53
+msgid "Displays a low quality image placeholder while the image is loading. You will need to regenerate thumbnails after enabling this option."
+msgstr ""
+
+#: modules/lazyload/index.php:22
+msgid "Defers the loading of images on the page as long as they are not needed. Images outside of the viewport will not be loaded before user scrolls to them. This can speed up your site."
+msgstr ""
+
+#: modules/lightbox-gallery/flextension-lightbox-gallery.php:21
+msgid "Close"
+msgstr ""
+
+#: modules/lightbox-gallery/index.php:20
+msgid "Lightbox Gallery"
+msgstr ""
+
+#: modules/lightbox-gallery/index.php:21
+msgid "Displays the large size of image in a lightbox when you set its link to Media File."
+msgstr ""
+
+#: modules/lightbox-login/flextension-lightbox-login.php:32
+#: modules/lightbox-login/templates/login.php:16
+msgid "Log In"
+msgstr ""
+
+#: modules/lightbox-login/index.php:18
+msgid "Lightbox Login"
+msgstr ""
+
+#: modules/lightbox-login/index.php:19
+msgid "Displays a login form in the lightbox."
+msgstr ""
+
+#: modules/lightbox-login/index.php:20
+msgid "Utilities"
+msgstr ""
+
+#: modules/lightbox-login/templates/login.php:22
+msgid "Lost your password?"
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:35
+msgid "Live Search Settings"
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:36
+#: modules/live-search/index.php:20
+msgid "Live Search"
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:89
+msgid "Post types"
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:98
+msgid "Select post types to display in Live Search suggestions."
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:104
+msgid "Number of suggestions"
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:124
+msgid "Select number of search suggestion items per post type."
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:130
+msgid "Featured image"
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:138
+msgid "Display featured images in search results."
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:144
+msgid "Post date"
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:152
+msgid "Display post date in search results."
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:158
+msgid "Post author"
+msgstr ""
+
+#: modules/live-search/admin/class-flextension-live-search-admin.php:166
+msgid "Display author in search results."
+msgstr ""
+
+#: modules/live-search/flextension-live-search.php:89
+#, php-format
+msgid "See more results for “%s”"
+msgstr ""
+
+#: modules/live-search/flextension-live-search.php:95
+msgid "Sorry, but nothing matched your search terms."
+msgstr ""
+
+#: modules/live-search/index.php:21
+msgid "Displays live search suggestions while typing a keyword."
+msgstr ""
+
+#: modules/live-search/index.php:22
+#: modules/live-search/templates/live-search.php:23
+msgid "Search"
+msgstr ""
+
+#: modules/live-search/templates/live-search.php:17
+msgid "Start typing..."
+msgstr ""
+
+#: modules/live-search/templates/live-search.php:19
+msgid "Cancel"
+msgstr ""
+
+#: modules/post-likes/flextension-post-likes.php:227
+msgid "Unlike this"
+msgstr ""
+
+#: modules/post-likes/flextension-post-likes.php:227
+msgid "Like this"
+msgstr ""
+
+#: modules/post-likes/flextension-post-likes.php:307
+#, php-format
+msgid "You must <a href=\"%1$s\">Login</a> or <a href=\"%2$s\">Register</a> to like a post."
+msgstr ""
+
+#: modules/post-likes/index.php:18
+msgid "Post Likes"
+msgstr ""
+
+#: modules/post-likes/index.php:19
+msgid "Displays number of likes for the post."
+msgstr ""
+
+#: modules/post-views/flextension-post-views.php:75
+#, php-format
+msgid "%s view"
+msgid_plural "%s views"
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/post-views/index.php:18
+msgid "Post Views"
+msgstr ""
+
+#: modules/post-views/index.php:19
+msgid "Displays number of views for the post."
+msgstr ""
+
+#: modules/quick-view/flextension-quick-view.php:35
+#: modules/quick-view/index.php:18
+msgid "Quick View"
+msgstr ""
+
+#: modules/quick-view/index.php:19
+msgid "Displays quick view content in the lightbox."
+msgstr ""
+
+#: modules/quick-view/rest-api/class-flextension-quick-view-api.php:57
+#: modules/quick-view/rest-api/class-flextension-quick-view-api.php:114
+#: modules/share-buttons/rest-api/class-flextension-share-buttons-api.php:56
+#: modules/share-buttons/rest-api/class-flextension-share-buttons-api.php:102
+msgid "Invalid post ID."
+msgstr ""
+
+#: modules/quick-view/rest-api/class-flextension-quick-view-api.php:90
+msgid "Incorrect post password."
+msgstr ""
+
+#: modules/reading-time/flextension-reading-time.php:57
+msgctxt "Word count type. Do not translate!"
+msgid "words"
+msgstr ""
+
+#: modules/reading-time/flextension-reading-time.php:133
+#, php-format
+msgid "%s min read"
+msgstr ""
+
+#: modules/reading-time/flextension-reading-time.php:139
+#, php-format
+msgid "%s minutes to read"
+msgstr ""
+
+#: modules/reading-time/index.php:20
+msgid "Reading Time"
+msgstr ""
+
+#: modules/reading-time/index.php:21
+msgid "Displays an estimated reading time of the post."
+msgstr ""
+
+#: modules/retina-images/admin/class-flextension-retina-images-admin.php:38
+#: modules/retina-images/index.php:18
+msgid "Retina Images"
+msgstr ""
+
+#: modules/retina-images/admin/class-flextension-retina-images-admin.php:48
+msgid "Sizes"
+msgstr ""
+
+#: modules/retina-images/admin/class-flextension-retina-images-admin.php:94
+msgid "Select the image sizes below to generate the Retina Images. After saving changes, new image sizes may not be shown until you regenerate thumbnails."
+msgstr ""
+
+#: modules/retina-images/index.php:19
+msgid "Serves larger images on Retina screens to make your images look crisp and beautiful on any device."
+msgstr ""
+
+#: modules/share-buttons/admin/class-flextension-share-buttons-admin.php:37
+#: modules/share-buttons/admin/class-flextension-share-buttons-admin.php:38
+#: modules/share-buttons/index.php:18
+msgid "Share Buttons"
+msgstr ""
+
+#: modules/share-buttons/admin/class-flextension-share-buttons-admin.php:71
+msgid "Share buttons"
+msgstr ""
+
+#: modules/share-buttons/admin/class-flextension-share-buttons-admin.php:97
+#: modules/social-links/admin/class-flextension-social-links-admin.php:131
+msgid "Order"
+msgstr ""
+
+#: modules/share-buttons/admin/class-flextension-share-buttons-admin.php:116
+#: modules/social-links/admin/class-flextension-social-links-admin.php:150
+msgid "Link target"
+msgstr ""
+
+#: modules/share-buttons/admin/class-flextension-share-buttons-admin.php:124
+#: modules/social-links/admin/class-flextension-social-links-admin.php:158
+msgid "Open link in a new tab"
+msgstr ""
+
+#: modules/share-buttons/admin/class-flextension-share-buttons-admin.php:189
+msgid "Select the share buttons listed below to display in the post sharing options."
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:21
+#: modules/social-links/flextension-social-links.php:90
+msgid "Digg"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:31
+#: modules/social-links/flextension-social-links.php:229
+msgid "Line"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:36
+msgid "Linkedin"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:41
+msgid "Mail"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:46
+#: modules/social-links/flextension-social-links.php:347
+msgid "Pinterest"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:51
+#: modules/social-links/flextension-social-links.php:359
+msgid "Reddit"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:56
+#: modules/social-links/flextension-social-links.php:384
+msgid "Skype"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:61
+#: modules/social-links/flextension-social-links.php:471
+msgid "Telegram"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:66
+#: modules/social-links/flextension-social-links.php:503
+msgid "Tumblr"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:71
+#: modules/social-links/flextension-social-links.php:527
+msgid "Twitter"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:76
+#: modules/social-links/flextension-social-links.php:539
+msgid "Viber"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:81
+#: modules/social-links/flextension-social-links.php:575
+msgid "VK"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:86
+#: modules/social-links/flextension-social-links.php:622
+msgid "Weibo"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:91
+#: modules/social-links/flextension-social-links.php:596
+msgid "WhatsApp"
+msgstr ""
+
+#: modules/share-buttons/flextension-share-buttons.php:196
+msgid "Send this to friends or share it on social media."
+msgstr ""
+
+#: modules/share-buttons/index.php:19
+msgid "Allows visitors to share the content on your website over Facebook, Twitter and other social sharing and bookmarking services."
+msgstr ""
+
+#: modules/share-buttons/templates/share-buttons.php:31
+msgid "Copy"
+msgstr ""
+
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:36
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:37
+#: modules/smooth-scroll/index.php:18
+msgid "Smooth Scroll"
+msgstr ""
+
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:63
+msgid "Animation duration"
+msgstr ""
+
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:72
+msgid "Short"
+msgstr ""
+
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:74
+msgid "Long"
+msgstr ""
+
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:76
+msgid "Define how long an animation should take to complete. Default \"Medium\"."
+msgstr ""
+
+#: modules/smooth-scroll/admin/class-flextension-smooth-scroll-admin.php:142
+msgid "Select the options listed below to improve user experience. You can find more details in the documentation."
+msgstr ""
+
+#: modules/smooth-scroll/index.php:19
+msgid "Enables smooth scrolling feature."
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:58
+#: modules/social-links/admin/class-flextension-social-links-admin.php:59
+#: modules/social-links/admin/class-flextension-social-links-admin.php:256
+#: modules/social-links/admin/class-flextension-social-links-user-profile.php:65
+#: modules/social-links/index.php:18
+msgid "Social Links"
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:105
+msgid "Social links"
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:218
+#: modules/social-links/admin/class-flextension-social-links-user-profile.php:93
+#, php-format
+msgid "%s URL"
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:242
+#: modules/social-links/admin/class-flextension-social-links-user-profile.php:117
+msgid "Link:"
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:314
+msgid "General"
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:318
+msgid "Links"
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:349
+msgid "Select the social links listed below to use in the Social Icons widget and the Social Icons for post authors."
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:363
+#, php-format
+msgid "These are global settings of the social links for your site. You can also configure the settings for the post authors on %s screen."
+msgstr ""
+
+#: modules/social-links/admin/class-flextension-social-links-admin.php:364
+msgid "Users"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:22
+msgid "500px"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:28
+#: modules/social-links/flextension-social-links.php:48
+#: modules/social-links/flextension-social-links.php:60
+#: modules/social-links/flextension-social-links.php:72
+#: modules/social-links/flextension-social-links.php:84
+#: modules/social-links/flextension-social-links.php:96
+#: modules/social-links/flextension-social-links.php:108
+#: modules/social-links/flextension-social-links.php:120
+#: modules/social-links/flextension-social-links.php:145
+#: modules/social-links/flextension-social-links.php:171
+#: modules/social-links/flextension-social-links.php:191
+#: modules/social-links/flextension-social-links.php:203
+#: modules/social-links/flextension-social-links.php:219
+#: modules/social-links/flextension-social-links.php:293
+#: modules/social-links/flextension-social-links.php:353
+#: modules/social-links/flextension-social-links.php:390
+#: modules/social-links/flextension-social-links.php:414
+#: modules/social-links/flextension-social-links.php:426
+#: modules/social-links/flextension-social-links.php:477
+#: modules/social-links/flextension-social-links.php:493
+#: modules/social-links/flextension-social-links.php:509
+#: modules/social-links/flextension-social-links.php:521
+#: modules/social-links/flextension-social-links.php:533
+#: modules/social-links/flextension-social-links.php:569
+#: modules/social-links/flextension-social-links.php:616
+#: modules/social-links/flextension-social-links.php:628
+msgid "Username"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:34
+msgid "Android"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:38
+msgid "Apple"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:42
+msgid "Behance"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:54
+msgid "Bitbucket"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:66
+msgid "CodePen"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:78
+msgid "DeviantArt"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:102
+msgid "Discord"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:114
+msgid "Dribbble"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:126
+msgid "Email"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:133
+msgid "Email Address"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:151
+msgid "Flickr"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:163
+msgid "Foursquare"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:172
+msgid "User ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:173
+msgid "Place ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:179
+msgid "Username, User ID or Place ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:185
+msgid "Github"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:197
+msgid "GitLab"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:209
+msgid "Houzz"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:213
+msgid "Instagram"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:225
+msgid "JSFiddle"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:237
+msgid "Official Account"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:238
+msgid "Personal Account"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:243
+#: modules/social-links/flextension-social-links.php:394
+#: modules/social-links/flextension-social-links.php:544
+msgid "Action"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:246
+msgid "Add as a friend"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:247
+msgid "Open timeline"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:248
+msgid "Share with"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:260
+msgid "LINE ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:266
+msgid "LinkedIn"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:274
+#: modules/social-links/flextension-social-links.php:643
+msgid "Company"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:275
+msgid "User Profile"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:281
+msgid "Company or User ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:299
+msgid "Meetup"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:305
+msgid "Member ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:311
+msgid "Odnoklassniki"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:319
+msgid "Profile name or Group Name"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:320
+msgid "Profile ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:321
+msgid "Group ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:327
+msgid "Name or ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:333
+msgid "Phone"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:340
+#: modules/social-links/flextension-social-links.php:556
+#: modules/social-links/flextension-social-links.php:603
+msgid "Phone number with country code."
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:341
+#: modules/social-links/flextension-social-links.php:557
+#: modules/social-links/flextension-social-links.php:604
+msgid "Phone Number"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:367
+msgid "Subreddit"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:374
+msgid "Subreddit Name or Reddit User"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:380
+msgid "RSS"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:397
+#: modules/social-links/flextension-social-links.php:547
+msgid "Add to contacts"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:398
+msgid "Call"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:399
+#: modules/social-links/flextension-social-links.php:548
+msgid "Chat"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:400
+msgid "Send voice mail"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:401
+msgid "View user profile"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:408
+msgid "Snapchat"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:420
+msgid "SoundCloud"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:432
+msgid "Spotify"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:440
+msgid "Artist"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:441
+msgid "Playlist"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:442
+msgid "Show"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:449
+msgid "User ID or Show ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:455
+msgid "Steam"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:459
+msgid "Strava"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:465
+msgid "Strava ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:483
+msgid "Thumbtack"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:487
+msgid "TikTok"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:499
+msgid "TripAdvisor"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:515
+msgid "Twitch"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:549
+msgid "Contact"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:563
+msgid "Vimeo"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:590
+msgid "Group or User ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:610
+msgid "WeChat"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:634
+msgid "Xing"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:642
+msgid "Personal"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:649
+msgid "User or Company ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:655
+msgid "Yahoo"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:659
+msgid "Yelp"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:663
+msgid "Youtube"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:672
+msgid "ID-based"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:673
+msgid "Legacy username"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:679
+msgid "Username or Channel ID"
+msgstr ""
+
+#: modules/social-links/flextension-social-links.php:891
+msgid "Website"
+msgstr ""
+
+#: modules/social-links/index.php:19
+msgid "Adds a social links widget to your website and social links settings to the user contact info section."
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:39
+msgid "Displays social icons linked to your social media accounts."
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:43
+msgid "Flextension Social Icons"
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:108
+msgid "Alignment"
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:112
+msgid "Not Set"
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:113
+msgid "Left"
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:114
+msgid "Center"
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:115
+msgid "Right"
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:130
+msgid "Icons Only"
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:131
+msgid "Names Only"
+msgstr ""
+
+#: modules/social-links/widgets/class-flextension-social-icons-widget.php:132
+msgid "Circle"
+msgstr ""

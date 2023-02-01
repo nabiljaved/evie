@@ -1,0 +1,38 @@
+
+---Downloaded files---
+The import files for: Creative Agency - Full Demo were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/wordpress
+Data file = C:\xampp\htdocs\wordpress/wp-content/uploads/2023/01/demo-content-import-file_2023-01-30__12-13-46.xml
+Widget file = C:\xampp\htdocs\wordpress/wp-content/uploads/2023/01/demo-widgets-import-file_2023-01-30__12-13-46.json
+Customizer file = C:\xampp\htdocs\wordpress/wp-content/uploads/2023/01/demo-customizer-import-file_2023-01-30__12-13-46.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Main Sidebar : 
+
+Flextension Post Carousel - No Title - Widget already exists
+Flextension Post Tabs - No Title - Widget already exists
+Flextension Categories - Categories - Widget already exists
+Flextension Social Icons - No Title - Widget already exists
+
+Navigation Menu : 
+
+Text - Base - Widget already exists
+Text - How to Connect - Widget already exists
+Flextension Social Icons - Follow Us - Widget already exists
+
+Footer #1 : 
+
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

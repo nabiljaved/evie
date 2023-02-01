@@ -1,0 +1,1440 @@
+# Evie Theme
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Evie\n"
+"POT-Creation-Date: 2023-01-06 14:26+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: build\n"
+"X-Poedit-SearchPathExcluded-2: .git\n"
+"X-Poedit-SearchPathExcluded-3: src\n"
+"X-Poedit-SearchPathExcluded-4: docs\n"
+"X-Poedit-SearchPathExcluded-5: landing\n"
+"X-Poedit-SearchPathExcluded-6: **/vendor/**\n"
+
+#: comments.php:26
+msgid "Toggle comments"
+msgstr ""
+
+#: comments.php:32
+#, php-format
+msgid "Comments (%1$s)"
+msgstr ""
+
+#: comments.php:61 inc/template-functions.php:2480
+#: inc/template-functions.php:2513
+msgid "Older"
+msgstr ""
+
+#: comments.php:62 inc/template-functions.php:2467
+#: inc/template-functions.php:2512
+msgid "Newer"
+msgstr ""
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:36
+msgid "Back To Top"
+msgstr ""
+
+#: functions.php:69
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:70
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:71 inc/customizer/sections/footer.php:166
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:191
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:193
+msgid "Add widgets here to appear in the main sidebar on your site."
+msgstr ""
+
+#: functions.php:203
+msgid "Navigation Menu"
+msgstr ""
+
+#: functions.php:205
+msgid "Add widgets here to appear in the navigation menu."
+msgstr ""
+
+#: functions.php:215
+msgid "Footer #1"
+msgstr ""
+
+#: functions.php:217
+msgid "Add widgets here to appear in the first column of the footer."
+msgstr ""
+
+#: functions.php:227
+msgid "Footer #2"
+msgstr ""
+
+#: functions.php:229
+msgid "Add widgets here to appear in the second column of the footer."
+msgstr ""
+
+#: functions.php:239
+msgid "Footer #3"
+msgstr ""
+
+#: functions.php:241
+msgid "Add widgets here to appear in the third column of the footer."
+msgstr ""
+
+#: functions.php:251
+msgid "Footer #4"
+msgstr ""
+
+#: functions.php:253
+msgid "Add widgets here to appear in the fourth column of the footer."
+msgstr ""
+
+#: functions.php:457
+msgid "Flextension"
+msgstr ""
+
+#: functions.php:463
+msgid "Evie XT"
+msgstr ""
+
+#: functions.php:482
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/back-compat.php:34 inc/back-compat.php:51 inc/back-compat.php:73
+#, php-format
+msgid "This theme requires WordPress 5.8 or newer. You are running version %s. Please upgrade."
+msgstr ""
+
+#: inc/class-evie-breadcrumb-generator.php:105
+msgid "Home"
+msgstr ""
+
+#: inc/class-evie-breadcrumb-generator.php:108
+msgid "Search Results for"
+msgstr ""
+
+#: inc/class-evie-breadcrumb-generator.php:109
+msgid "Page not found"
+msgstr ""
+
+#: inc/class-evie-breadcrumb-generator.php:490 inc/template-tags.php:770
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/co-authors-template-tags.php:90
+msgid "Multiple Authors"
+msgstr ""
+
+#: inc/customizer/controls/class-evie-customize-unit-control.php:125
+msgid "Clear"
+msgstr ""
+
+#: inc/customizer/sections/background.php:24
+#: inc/customizer/sections/header.php:83 inc/customizer/sections/loader.php:153
+msgid "Background"
+msgstr ""
+
+#: inc/customizer/sections/background.php:26
+msgid "The background color for your site."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:17 inc/customizer/sections/blog.php:31
+#: inc/customizer/sections/footer.php:246 inc/customizer/sections/loader.php:71
+#: inc/customizer/sections/portfolio.php:17
+#: inc/customizer/sections/portfolio.php:31
+msgid "None"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:18 inc/customizer/sections/portfolio.php:18
+msgid "Inset Border"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:19 inc/customizer/sections/loader.php:75
+#: inc/customizer/sections/portfolio.php:19
+msgid "Ripple"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:20 inc/customizer/sections/portfolio.php:20
+msgid "Slide Up"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:32 inc/customizer/sections/portfolio.php:32
+msgid "Fade In"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:33 inc/customizer/sections/portfolio.php:33
+msgid "Fade Up"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:34 inc/customizer/sections/portfolio.php:34
+msgid "Zoom In"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:45 inc/customizer/sections/portfolio.php:45
+msgid "Infinite Scroll"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:46 inc/customizer/sections/portfolio.php:46
+msgid "Load More"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:47 inc/customizer/sections/portfolio.php:47
+msgid "Next and Previous"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:48 inc/customizer/sections/portfolio.php:48
+msgid "Numbered Pagination"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:59 inc/customizer/sections/footer.php:81
+#: inc/customizer/sections/footer.php:170
+#: inc/customizer/sections/portfolio.php:59
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:60 inc/customizer/sections/portfolio.php:60
+msgid "Name Only "
+msgstr ""
+
+#: inc/customizer/sections/blog.php:61 inc/customizer/sections/portfolio.php:61
+msgid "Avatar Only"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:62 inc/customizer/sections/portfolio.php:62
+msgid "Name and Avatar"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:192
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:206
+msgid "Posts Page"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:217
+#: inc/customizer/sections/portfolio.php:236
+msgid "Custom Content"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:237
+msgid "Displays Posts page content before the recent posts."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:260 inc/customizer/sections/blog.php:668
+#: inc/customizer/sections/portfolio.php:279
+#: inc/customizer/sections/portfolio.php:721
+msgid "Filtering & Sorting"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:280 inc/customizer/sections/blog.php:688
+#: inc/customizer/sections/portfolio.php:299
+#: inc/customizer/sections/portfolio.php:741
+msgid "Show filters."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:309 inc/customizer/sections/blog.php:717
+#: inc/customizer/sections/portfolio.php:328
+#: inc/customizer/sections/portfolio.php:770
+msgid "Show sort by options."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:338 inc/customizer/sections/blog.php:746
+#: inc/customizer/sections/portfolio.php:357
+#: inc/customizer/sections/portfolio.php:799
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:339 inc/customizer/sections/blog.php:747
+msgid "Choose blog posts layout."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:342 inc/customizer/sections/blog.php:750
+#: inc/customizer/sections/portfolio.php:361
+#: inc/customizer/sections/portfolio.php:803
+msgid "Large"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:343 inc/customizer/sections/blog.php:751
+#: inc/customizer/sections/portfolio.php:362
+#: inc/customizer/sections/portfolio.php:804
+msgid "List"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:344 inc/customizer/sections/blog.php:752
+#: inc/customizer/sections/portfolio.php:363
+#: inc/customizer/sections/portfolio.php:805
+msgid "Grid"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:345 inc/customizer/sections/blog.php:753
+#: inc/customizer/sections/portfolio.php:364
+#: inc/customizer/sections/portfolio.php:806
+msgid "Waterfall"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:374 inc/customizer/sections/blog.php:782
+#: inc/customizer/sections/portfolio.php:393
+#: inc/customizer/sections/portfolio.php:835
+msgid "Parallax Columns"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:403 inc/customizer/sections/blog.php:811
+#: inc/customizer/sections/portfolio.php:422
+#: inc/customizer/sections/portfolio.php:864
+msgid "Style"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:404 inc/customizer/sections/blog.php:812
+#: inc/customizer/sections/portfolio.php:423
+#: inc/customizer/sections/portfolio.php:865
+msgid "The style of the item in the list."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:407 inc/customizer/sections/blog.php:815
+#: inc/customizer/sections/portfolio.php:426
+#: inc/customizer/sections/portfolio.php:868
+msgid "Card"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:408 inc/customizer/sections/blog.php:816
+#: inc/customizer/sections/portfolio.php:427
+#: inc/customizer/sections/portfolio.php:869
+msgid "Text Overlay"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:437 inc/customizer/sections/blog.php:845
+#: inc/customizer/sections/portfolio.php:456
+#: inc/customizer/sections/portfolio.php:898
+msgid "Hover Effect"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:438 inc/customizer/sections/blog.php:846
+#: inc/customizer/sections/portfolio.php:457
+#: inc/customizer/sections/portfolio.php:899
+msgid "The hover effect of the item in the list."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:468 inc/customizer/sections/blog.php:876
+#: inc/customizer/sections/portfolio.php:487
+#: inc/customizer/sections/portfolio.php:929
+msgid "Animation"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:469 inc/customizer/sections/blog.php:877
+#: inc/customizer/sections/portfolio.php:488
+#: inc/customizer/sections/portfolio.php:930
+msgid "Choose a transition for the post."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:499 inc/customizer/sections/blog.php:907
+#: inc/customizer/sections/portfolio.php:518
+#: inc/customizer/sections/portfolio.php:960
+msgid "Pagination"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:500 inc/customizer/sections/blog.php:908
+#: inc/customizer/sections/portfolio.php:519
+#: inc/customizer/sections/portfolio.php:961
+msgid "Choose posts pagination type."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:523 inc/customizer/sections/blog.php:931
+#: inc/customizer/sections/blog.php:1076
+msgid "Post Metadata"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:543 inc/customizer/sections/blog.php:951
+#: inc/customizer/sections/blog.php:1096
+#: inc/customizer/sections/portfolio.php:596
+#: inc/customizer/sections/portfolio.php:1038
+#: inc/customizer/sections/portfolio.php:1170
+#: inc/customizer/sections/portfolio.php:1420
+msgid "Publication date."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:573 inc/customizer/sections/blog.php:981
+#: inc/customizer/sections/blog.php:1126
+msgid "Post category."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:603 inc/customizer/sections/blog.php:1011
+#: inc/customizer/sections/blog.php:1186
+#: inc/customizer/sections/portfolio.php:656
+#: inc/customizer/sections/portfolio.php:1098
+#: inc/customizer/sections/portfolio.php:1260
+#: inc/customizer/sections/portfolio.php:1480
+msgid "Comments, Likes and Share buttons."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:633 inc/customizer/sections/blog.php:1041
+#: inc/customizer/sections/portfolio.php:686
+#: inc/customizer/sections/portfolio.php:1128
+#: inc/customizer/sections/portfolio.php:1510
+msgid "Author"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:657
+#: inc/customizer/sections/portfolio.php:710
+msgid "Archive Pages"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:1065
+msgid "Single Post"
+msgstr ""
+
+#: inc/customizer/sections/blog.php:1156
+msgid "Post tags."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:1216
+#: inc/customizer/sections/portfolio.php:1290
+msgid "Author information."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:1246
+msgid "Related Posts."
+msgstr ""
+
+#: inc/customizer/sections/blog.php:1276
+msgid "Post Navigation."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:35
+msgid "Color Scheme"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:36
+msgid "Default color scheme for your site."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:39 inc/customizer/sections/header.php:327
+msgid "Light"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:40 inc/customizer/sections/header.php:326
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:41 inc/customizer/sections/header.php:325
+msgid "Auto"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:60
+msgid "Allow users to switch color schemes."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:74
+msgid "https://evietheme.com/documentation/#dark-mode"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:75
+msgid "Learn more about Dark Mode."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:108
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:109
+msgid "The color for buttons, hover and active states of the links and menu items."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:130
+msgid "On Primary Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:131
+msgid "The color for text and icons that appear in front of surfaces using the Primary Color."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:160
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:161
+msgid "The color for buttons, input fields and the Back to Top button."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:182
+msgid "On Secondary Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:183
+msgid "The color for text and icons that appear in front of surfaces using the Secondary Color."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:212
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:215
+#: inc/customizer/sections/colors.php:249
+#, php-format
+msgid "Base color for text that appear in the whole site. Default value: %s."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:246
+msgid "Text Color (Dark Mode)"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:37
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:55
+#, php-format
+msgid "You can setup footer widgets in the <a href=\"%s\" class=\"link-panel-button\">Widgets</a> panel."
+msgstr ""
+
+#: inc/customizer/sections/footer.php:77
+msgid "Footer Widgets"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:82
+msgid "1 column"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:83
+msgid "2 columns"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:84
+msgid "3 columns"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:85
+msgid "4 columns"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:115
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:116
+msgid "Minimal HTML tags are allowed."
+msgstr ""
+
+#: inc/customizer/sections/footer.php:144
+#, php-format
+msgid "You can setup a footer menu in the <a href=\"%s\" class=\"link-panel-button\">Menus</a> panel."
+msgstr ""
+
+#: inc/customizer/sections/footer.php:171
+msgid "Show"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:203
+#, php-format
+msgid "You can setup social links in the <a href=\"%s\" target=\"_blank\">Social Links</a> settings."
+msgstr ""
+
+#: inc/customizer/sections/footer.php:219
+#, php-format
+msgid "The <a href=\"%s\">Social Links</a> module must be enabled."
+msgstr ""
+
+#: inc/customizer/sections/footer.php:242
+msgid "Social Links"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:247
+msgid "Icons"
+msgstr ""
+
+#: inc/customizer/sections/footer.php:248
+msgid "Names"
+msgstr ""
+
+#: inc/customizer/sections/header.php:66
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/sections/header.php:84
+msgid "The header background type."
+msgstr ""
+
+#: inc/customizer/sections/header.php:87 inc/customizer/sections/header.php:244
+msgid "Color"
+msgstr ""
+
+#: inc/customizer/sections/header.php:88
+msgid "Image"
+msgstr ""
+
+#: inc/customizer/sections/header.php:119
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer/sections/header.php:120
+msgid "The default background color for the main header."
+msgstr ""
+
+#: inc/customizer/sections/header.php:141
+msgid "Image Position"
+msgstr ""
+
+#: inc/customizer/sections/header.php:142
+msgid "The header background image position."
+msgstr ""
+
+#: inc/customizer/sections/header.php:145
+msgid "Left Top"
+msgstr ""
+
+#: inc/customizer/sections/header.php:146
+msgid "Left Center"
+msgstr ""
+
+#: inc/customizer/sections/header.php:147
+msgid "Left Bottom"
+msgstr ""
+
+#: inc/customizer/sections/header.php:148
+msgid "Right Top"
+msgstr ""
+
+#: inc/customizer/sections/header.php:149
+msgid "Right Center"
+msgstr ""
+
+#: inc/customizer/sections/header.php:150
+msgid "Right Bottom"
+msgstr ""
+
+#: inc/customizer/sections/header.php:151
+msgid "Center Top"
+msgstr ""
+
+#: inc/customizer/sections/header.php:152
+msgid "Center Center"
+msgstr ""
+
+#: inc/customizer/sections/header.php:153
+msgid "Center Bottom"
+msgstr ""
+
+#: inc/customizer/sections/header.php:173
+msgid "Image Size"
+msgstr ""
+
+#: inc/customizer/sections/header.php:174
+msgid "The header background image size."
+msgstr ""
+
+#: inc/customizer/sections/header.php:177
+msgid "Original"
+msgstr ""
+
+#: inc/customizer/sections/header.php:178
+msgid "Fit to Screen"
+msgstr ""
+
+#: inc/customizer/sections/header.php:179
+msgid "Fill Screen"
+msgstr ""
+
+#: inc/customizer/sections/header.php:199
+msgid "Fixed background."
+msgstr ""
+
+#: inc/customizer/sections/header.php:219
+msgid "Repeated background."
+msgstr ""
+
+#: inc/customizer/sections/header.php:239
+msgid "Background Overlay"
+msgstr ""
+
+#: inc/customizer/sections/header.php:240
+msgid "Adds an overlay to the background image."
+msgstr ""
+
+#: inc/customizer/sections/header.php:243
+msgid "Gradient"
+msgstr ""
+
+#: inc/customizer/sections/header.php:266
+msgid "Overlay Color"
+msgstr ""
+
+#: inc/customizer/sections/header.php:267
+msgid "The color overlay for the header background image."
+msgstr ""
+
+#: inc/customizer/sections/header.php:289
+msgid "Overlay Opacity"
+msgstr ""
+
+#: inc/customizer/sections/header.php:290
+msgid "The header background overlay opacity."
+msgstr ""
+
+#: inc/customizer/sections/header.php:321
+msgid "Text Mode"
+msgstr ""
+
+#: inc/customizer/sections/header.php:322
+msgid "Text color for the header titles. Choose \"Auto\" to automatically adjust it depending on your site color scheme."
+msgstr ""
+
+#: inc/customizer/sections/loader.php:48 inc/customizer/sections/loader.php:67
+msgid "Loader"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:68
+msgid "A loading animation (spinner) to display while loading the content."
+msgstr ""
+
+#: inc/customizer/sections/loader.php:72
+msgid "Water Drop"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:73
+msgid "Windmill"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:74
+msgid "Moon"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:76
+msgid "Custom Logo"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:106
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:107
+msgid "A logo to display while loading the content."
+msgstr ""
+
+#: inc/customizer/sections/loader.php:115
+#: inc/customizer/sections/loader.php:120
+#: inc/customizer/sections/site-identity.php:64
+#: inc/customizer/sections/site-identity.php:69
+#: inc/customizer/sections/site-identity.php:112
+#: inc/customizer/sections/site-identity.php:117
+#: inc/customizer/sections/site-identity.php:157
+#: inc/customizer/sections/site-identity.php:162
+msgid "Select logo"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:116
+#: inc/customizer/sections/site-identity.php:65
+#: inc/customizer/sections/site-identity.php:113
+#: inc/customizer/sections/site-identity.php:158
+msgid "Change logo"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:117
+#: inc/customizer/sections/site-identity.php:66
+#: inc/customizer/sections/site-identity.php:114
+#: inc/customizer/sections/site-identity.php:159
+msgid "Remove"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:118
+#: inc/customizer/sections/site-identity.php:67
+#: inc/customizer/sections/site-identity.php:115
+#: inc/customizer/sections/site-identity.php:160
+#: inc/customizer/sections/typography.php:45
+#: inc/customizer/sections/typography.php:101
+#: inc/customizer/sections/typography.php:169
+#: inc/customizer/sections/typography.php:191
+#: inc/customizer/sections/typography.php:213
+#: inc/customizer/sections/typography.php:235
+#: inc/customizer/sections/typography.php:257
+#: inc/customizer/sections/typography.php:279 inc/template-functions.php:1941
+msgid "Default"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:119
+#: inc/customizer/sections/site-identity.php:68
+#: inc/customizer/sections/site-identity.php:116
+#: inc/customizer/sections/site-identity.php:161
+msgid "No logo selected"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:121
+#: inc/customizer/sections/site-identity.php:70
+#: inc/customizer/sections/site-identity.php:118
+#: inc/customizer/sections/site-identity.php:163
+msgid "Choose logo"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:154
+msgid "The loader background color. Default value: Empty."
+msgstr ""
+
+#: inc/customizer/sections/loader.php:176
+msgid "Background Opacity"
+msgstr ""
+
+#: inc/customizer/sections/loader.php:177
+msgid "The background overlay opacity."
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:39
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:58
+msgid "Desktop Menu Breakpoint"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:59
+msgid "The viewport width in pixels for when the mobile menu will become the desktop menu."
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:82
+msgid "Menu Type"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:83
+msgid "The navigation menu type."
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:86
+msgid "Top Menu"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:87
+msgid "Fullscreen Menu"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:115
+msgid "Menu Align"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:116
+msgid "The alignment of menu items."
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:119
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:120
+msgid "Center"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:121
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:141
+msgid "Sticky Menu"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:142
+msgid "Displays sticky menu when scrolling."
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:154
+msgid "Menu Buttons"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:173
+msgid "Search Button"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:174
+msgid "Displays a search button."
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:193
+msgid "Log In Button"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:194
+msgid "Displays a Log In button."
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:213
+msgid "Off-Canvas Sidebar Button"
+msgstr ""
+
+#: inc/customizer/sections/navigation.php:214
+msgid "Displays a toggle button to show or hide a slide-out sidebar."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:211
+msgid "Portfolio"
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:225
+msgid "Portfolio Page"
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:256
+msgid "Displays Portfolio page content before the recent projects."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:358
+msgid "Choose portfolio posts layout."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:549
+#: inc/customizer/sections/portfolio.php:991
+msgid "Items per page"
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:550
+#: inc/customizer/sections/portfolio.php:992
+msgid "Number of items per page."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:576
+#: inc/customizer/sections/portfolio.php:1018
+msgid "Project Metadata"
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:626
+#: inc/customizer/sections/portfolio.php:1068
+#: inc/customizer/sections/portfolio.php:1200
+#: inc/customizer/sections/portfolio.php:1450
+msgid "Project category."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:800
+msgid "Changes the projects layout."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:1152
+msgid "Single Project"
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:1230
+msgid "Project tags."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:1320
+msgid "Related Projects."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:1350
+msgid "Project Navigation."
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:1373
+msgid "Portfolio Quick View"
+msgstr ""
+
+#: inc/customizer/sections/portfolio.php:1391
+msgid "Enable Quick View."
+msgstr ""
+
+#: inc/customizer/sections/site-identity.php:55
+msgid "Logo (Retina version)"
+msgstr ""
+
+#: inc/customizer/sections/site-identity.php:56
+msgid "A high-res version of the logo (2x of the logo size)."
+msgstr ""
+
+#: inc/customizer/sections/site-identity.php:103
+msgid "Light Logo"
+msgstr ""
+
+#: inc/customizer/sections/site-identity.php:104
+msgid "A light version of the logo to display on a dark background."
+msgstr ""
+
+#: inc/customizer/sections/site-identity.php:148
+msgid "Light Logo (Retina version)"
+msgstr ""
+
+#: inc/customizer/sections/site-identity.php:149
+msgid "A high-res version of the Light Logo (2x of the logo size)."
+msgstr ""
+
+#: inc/customizer/sections/typography.php:23
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:37
+msgid "Base Font"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:43
+msgid "Theme Fonts"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:76
+#: inc/customizer/sections/typography.php:133
+msgid "Font Family"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:99
+#: inc/customizer/sections/typography.php:146
+msgid "Font Size"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:100
+#: inc/customizer/sections/typography.php:147
+msgid "If no unit is specified, px will be used by default."
+msgstr ""
+
+#: inc/customizer/sections/typography.php:113
+msgid "Headings"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:168
+msgid "H1"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:190
+msgid "H2"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:212
+msgid "H3"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:234
+msgid "H4"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:256
+msgid "H5"
+msgstr ""
+
+#: inc/customizer/sections/typography.php:278
+msgid "H6"
+msgstr ""
+
+#: inc/portfolio-template-functions.php:553
+msgid "Client"
+msgid_plural "Clients"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template-functions.php:17
+msgid "Standard Fonts"
+msgstr ""
+
+#: inc/template-functions.php:723 inc/wc-template-functions.php:633
+msgid "Log In"
+msgstr ""
+
+#: inc/template-functions.php:942
+msgid "Show/Hide Sidebar"
+msgstr ""
+
+#: inc/template-functions.php:950
+msgid "Show/Hide Live Search"
+msgstr ""
+
+#: inc/template-functions.php:1337
+msgid "Toggle filters"
+msgstr ""
+
+#: inc/template-functions.php:1505
+msgid "Discover"
+msgstr ""
+
+#: inc/template-functions.php:1514
+msgid "Following"
+msgstr ""
+
+#: inc/template-functions.php:1670 inc/template-functions.php:1785
+msgid "All"
+msgstr ""
+
+#: inc/template-functions.php:1847
+msgid "Newest to oldest"
+msgstr ""
+
+#: inc/template-functions.php:1853
+msgid "Oldest to newest"
+msgstr ""
+
+#: inc/template-functions.php:1859
+msgid "Title A → Z"
+msgstr ""
+
+#: inc/template-functions.php:1865
+msgid "Title Z → A"
+msgstr ""
+
+#: inc/template-functions.php:1874
+msgid "Most Liked"
+msgstr ""
+
+#: inc/template-functions.php:1883
+msgid "Most Viewed"
+msgstr ""
+
+#: inc/template-functions.php:1948 inc/template-functions.php:1952
+msgid "Sort By"
+msgstr ""
+
+#: inc/template-functions.php:2308
+msgid "Read more"
+msgstr ""
+
+#: inc/template-functions.php:2314
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: inc/template-functions.php:2448
+msgid "Load more"
+msgstr ""
+
+#: inc/template-hooks.php:198
+msgid "Evie theme uses LocalStorage when your site allows users to switch schemes."
+msgstr ""
+
+#: inc/template-hooks.php:199
+msgid "Suggested text:"
+msgstr ""
+
+#: inc/template-hooks.php:200
+msgid "<h2>Color scheme preference</h2><p>This website uses LocalStorage to save the setting when the Dark Mode support is turned on or off.<br /> LocalStorage is only used when a visitor (who isn’t logged in) clicks on the dark mode toggle button.</br /> For a logged in user, the setting will be saved to the user’s metadata in the database instead.<br /><br /> Unlike Cookies, data stored in LocalStorage is never transferred to the server.</p>"
+msgstr ""
+
+#: inc/template-hooks.php:210
+msgid "Skip to the content"
+msgstr ""
+
+#: inc/template-hooks.php:270
+msgid "Toggle Dark Mode"
+msgstr ""
+
+#: inc/template-hooks.php:291
+msgid "Dark Mode"
+msgstr ""
+
+#: inc/template-hooks.php:297
+msgid "Off"
+msgstr ""
+
+#: inc/template-hooks.php:303
+msgid "On"
+msgstr ""
+
+#: inc/template-hooks.php:309
+msgid "Auto (We will automatically adjust the appearance based on your device settings)"
+msgstr ""
+
+#: inc/template-hooks.php:350
+msgid "The color scheme has been set."
+msgstr ""
+
+#: inc/template-hooks.php:357
+msgid "You are not allowed to change the color scheme."
+msgstr ""
+
+#: inc/template-hooks.php:616
+msgid "Square"
+msgstr ""
+
+#: inc/template-hooks.php:617
+msgid "Wide"
+msgstr ""
+
+#: inc/template-hooks.php:618
+msgid "Full Width"
+msgstr ""
+
+#: inc/template-hooks.php:695 inc/wc-template-functions.php:1016
+#: inc/wc-template-functions.php:1153
+msgid "Prev."
+msgstr ""
+
+#: inc/template-hooks.php:708 inc/wc-template-functions.php:1017
+#: inc/wc-template-functions.php:1154 template-parts/single/navigation.php:72
+msgid "Next"
+msgstr ""
+
+#: inc/template-hooks.php:790
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-hooks.php:803
+msgid "Leave a Comment"
+msgstr ""
+
+#: inc/template-hooks.php:805
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: inc/template-hooks.php:827
+msgid "Name"
+msgstr ""
+
+#: inc/template-hooks.php:832
+msgid "Email"
+msgstr ""
+
+#: inc/template-hooks.php:837
+msgid "Website"
+msgstr ""
+
+#: inc/template-hooks.php:861 template-parts/header/menu-side.php:25
+msgid "Open Submenu"
+msgstr ""
+
+#: inc/template-hooks.php:1038 inc/wc-template-functions.php:828
+msgid "Clear all filters"
+msgstr ""
+
+#: inc/template-tags.php:570 inc/template-tags.php:656
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:608
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/template-tags.php:624
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:660
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:766
+msgid "Daily Archives"
+msgstr ""
+
+#: inc/template-tags.php:767
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:769
+msgid "Monthly Archives"
+msgstr ""
+
+#: inc/template-tags.php:772
+msgid "Yearly Archives"
+msgstr ""
+
+#: inc/template-tags.php:773
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:779
+#, php-format
+msgid "%s by "
+msgstr ""
+
+#: inc/template-tags.php:792
+#, php-format
+msgid "%s in "
+msgstr ""
+
+#: inc/template-tags.php:858
+msgid "Entry"
+msgid_plural "Entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template-tags.php:860
+msgid "Result"
+msgid_plural "Results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template-tags.php:1104
+msgid "You are not following any authors yet."
+msgstr ""
+
+#: inc/template-tags.php:1106
+msgid "There are no posts to show right now."
+msgstr ""
+
+#: inc/wc-template-functions.php:40
+msgid "Product Filters"
+msgstr ""
+
+#: inc/wc-template-functions.php:42
+msgid "Add product filter widgets."
+msgstr ""
+
+#: inc/wc-template-functions.php:127
+msgid "Product Quick View"
+msgstr ""
+
+#: inc/wc-template-functions.php:128
+msgid "Adds a Quick View button to the products."
+msgstr ""
+
+#: inc/wc-template-functions.php:284
+msgid "Show/Hide Shopping Cart"
+msgstr ""
+
+#: inc/wc-template-functions.php:513
+msgid "No products in the cart."
+msgstr ""
+
+#: inc/wc-template-functions.php:514
+msgid "Return to shop"
+msgstr ""
+
+#: inc/wc-template-functions.php:609 inc/wc-template-functions.php:627
+msgid "Whishlist"
+msgstr ""
+
+#: inc/wc-template-functions.php:615
+msgid "Account"
+msgstr ""
+
+#: inc/wc-template-functions.php:619
+msgid "Log Out"
+msgstr ""
+
+#: inc/wc-template-functions.php:661
+msgid "Decrease"
+msgstr ""
+
+#: inc/wc-template-functions.php:671
+msgid "Increase"
+msgstr ""
+
+#: inc/wc-template-functions.php:709
+msgid "Popularity"
+msgstr ""
+
+#: inc/wc-template-functions.php:714
+msgid "Average rating"
+msgstr ""
+
+#: inc/wc-template-functions.php:720
+msgid "Latest"
+msgstr ""
+
+#: inc/wc-template-functions.php:725
+msgid "Price: low to high"
+msgstr ""
+
+#: inc/wc-template-functions.php:730
+msgid "Price: high to low"
+msgstr ""
+
+#: inc/wc-template-functions.php:741
+msgid "Relevance"
+msgstr ""
+
+#: inc/wc-template-functions.php:1130
+msgid "Show product metadata"
+msgstr ""
+
+#: searchform.php:13
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:27 template-parts/header/menu-full.php:48
+#: template-parts/header/menu-widgets.php:21
+msgid "There are no widgets to show right now."
+msgstr ""
+
+#: template-parts/404.php:22
+msgid "404"
+msgstr ""
+
+#: template-parts/404.php:23
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: template-parts/404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: template-parts/content/none.php:17
+msgid "Sorry, but nothing matched your search terms."
+msgstr ""
+
+#: template-parts/content/none.php:18
+msgid "Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content/none.php:26
+msgid "It seems we can’t find what you’re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/header/menu-full.php:67 template-parts/header/menu.php:48
+msgid "Show Menu"
+msgstr ""
+
+#: template-parts/page/content.php:31 template-parts/post/content-2.php:58
+#: template-parts/post/content-3.php:56 template-parts/post/content-4.php:60
+#: template-parts/post/content-5.php:55 template-parts/post/content-6.php:54
+#: template-parts/post/content.php:58 template-parts/project/content-2.php:69
+#: template-parts/project/content-3.php:70
+#: template-parts/project/content-4.php:67
+#: template-parts/project/content-5.php:65
+#: template-parts/project/content-6.php:68
+#: template-parts/project/content.php:69
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/project/content-2.php:57
+#: template-parts/project/content-3.php:52
+#: template-parts/project/content-4.php:59
+#: template-parts/project/content-5.php:55
+#: template-parts/project/content-6.php:58
+#: template-parts/project/content.php:57
+msgid "Open Project"
+msgstr ""
+
+#: template-parts/single/author.php:29
+msgid "Edit Profile"
+msgstr ""
+
+#: template-parts/single/navigation.php:26
+msgid "Previous"
+msgstr ""
+
+#: template-parts/single/navigation.php:39
+#, php-format
+msgid "No Older %s"
+msgstr ""
+
+#: template-parts/single/navigation.php:85
+#, php-format
+msgid "No Newer %s"
+msgstr ""
+
+#: template-parts/single/related.php:17
+msgid "You might also like"
+msgstr ""

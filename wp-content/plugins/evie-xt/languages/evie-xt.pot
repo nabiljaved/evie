@@ -1,0 +1,1707 @@
+# Evie XT Plugin
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Evie XT\n"
+"POT-Creation-Date: 2022-11-25 19:11+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: ISO-8859-1\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: build\n"
+"X-Poedit-SearchPathExcluded-2: .git\n"
+"X-Poedit-SearchPathExcluded-3: **/inc/**\n"
+"X-Poedit-SearchPathExcluded-4: **/blocks/**\n"
+"X-Poedit-SearchPathExcluded-5: **/vendor/**\n"
+
+#: extensions/contact-form-7/index.php:18
+#: modules/demo-content/evie-demo-content.php:181
+msgid "Contact Form 7"
+msgstr ""
+
+#: extensions/contact-form-7/index.php:19
+msgid "Adds theme support and custom styles for the Contact Form 7 plugin."
+msgstr ""
+
+#: extensions/cookie-notice/index.php:19
+msgid "Cookie Notice"
+msgstr ""
+
+#: extensions/cookie-notice/index.php:20
+msgid "Adds theme support and custom styles for the Cookie Notice plugin."
+msgstr ""
+
+#: extensions/mailchimp-for-wp/index.php:18
+msgid "MailChimp for WP"
+msgstr ""
+
+#: extensions/mailchimp-for-wp/index.php:19
+msgid "Adds theme support and custom styles for the MC4WP plugin."
+msgstr ""
+
+#: extensions/nextend-social-login/index.php:18
+msgid "Nextend Social Login"
+msgstr ""
+
+#: extensions/nextend-social-login/index.php:19
+msgid "Adds theme support and custom styles for the Nextend Social Login plugin."
+msgstr ""
+
+#: extensions/wpforms/index.php:18
+msgid "WPForms"
+msgstr ""
+
+#: extensions/wpforms/index.php:19
+msgid "Adds theme support and custom styles for the WPForms plugin."
+msgstr ""
+
+#: modules/ajax-pagination/evie-ajax-pagination.php:350
+msgid "Newer"
+msgstr ""
+
+#: modules/ajax-pagination/evie-ajax-pagination.php:351
+msgid "Older"
+msgstr ""
+
+#: modules/ajax-pagination/evie-ajax-pagination.php:379
+#: modules/ajax-pagination/evie-ajax-pagination.php:421
+msgid "Load more"
+msgstr ""
+
+#: modules/ajax-pagination/index.php:19
+msgid "AJAX Pagination"
+msgstr ""
+
+#: modules/ajax-pagination/index.php:20
+msgid "Adds infinite scrolling support and AJAX Pagination to the blog posts, pulling the next set of posts automatically into view when the reader approaches the bottom of the posts list."
+msgstr ""
+
+#: modules/ajax-pagination/index.php:21 modules/single-page/index.php:21
+msgid "Advanced"
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:42
+msgid "Attributes for the block."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:47
+msgid "Unique ID for the block."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:51
+msgid "ID of the post."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:55
+msgid "Path of the post."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:78
+#: modules/ajax-pagination/rest-api/class-evie-rest-post-controller.php:58
+#: modules/single-page/rest-api/class-evie-rest-page-renderer-controller.php:59
+msgid "Incorrect post password."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:87
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:173
+#: modules/ajax-pagination/rest-api/class-evie-rest-post-controller.php:67
+msgid "Invalid post ID or post name."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:194
+msgid "Invalid block."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-block-renderer-controller.php:229
+msgid "The rendered block."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:85
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:274
+msgid "Sorry, you are not allowed to read the post for this comment."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:87
+msgid "Sorry, you are not allowed to read comments without a post."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:199
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:214
+msgid "Sorry, you must be logged in to comment."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:223
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:233
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:243
+#, php-format
+msgid "Sorry, you are not allowed to edit '%s' for comments."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:262
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:384
+msgid "Sorry, you are not allowed to create this comment without a post."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:266
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:270
+msgid "Sorry, you are not allowed to create a comment on this post."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:278
+msgid "Sorry, comments are closed for this item."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:320
+msgid "Invalid comment author ID."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:389
+msgid "Cannot create a comment with that type."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:404
+msgid "Invalid comment content."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:430
+msgid "Creating a comment requires valid author name and email values."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:449
+msgid "Comment field exceeds maximum length allowed."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:478
+msgid "Creating comment failed."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:550
+msgid "Unique identifier for the object."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:556
+msgid "The ID of the user object, if author was a user."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:561
+msgid "Email address for the object author."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:571
+msgid "IP address for the object author."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:577
+msgid "Display name for the object author."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:585
+msgid "URL for the object author."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:591
+msgid "User agent for the object author."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:599
+msgid "The content for the object."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:608
+msgid "Content for the object, as it exists in the database."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:613
+msgid "HTML content for the object, transformed for display."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:621
+msgid "The date the object was published, in the site's timezone."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:627
+msgid "The date the object was published, as GMT."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:633
+msgid "URL to the object."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:640
+msgid "The ID for the parent of the object."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:646
+msgid "The ID of the associated post object."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:652
+msgid "State of the object."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:660
+msgid "Type of Comment for the object."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:675
+#, php-format
+msgid "Avatar URL with image size of %d pixels."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:683
+msgid "Avatar URLs for the object author."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:707
+msgid "Limit result set to comments assigned to specific post IDs."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:711
+msgid "The path of the post."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-comments-renderer-controller.php:715
+msgid "Current page of the collection."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-post-controller.php:239
+msgid "The rendered post."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-posts-controller.php:74
+msgid "There are no more posts to show right now."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-posts-controller.php:168
+msgid "The rendered posts."
+msgstr ""
+
+#: modules/ajax-pagination/rest-api/class-evie-rest-posts-renderer-controller.php:93
+msgid "The rendered posts section."
+msgstr ""
+
+#: modules/auto-update/index.php:28
+msgid "Automatic Updates"
+msgstr ""
+
+#: modules/auto-update/index.php:29
+msgid "Enables automatic updates for the Evie theme."
+msgstr ""
+
+#: modules/auto-update/index.php:30
+msgid "Utility"
+msgstr ""
+
+#: modules/auto-update/index.php:33 modules/demo-content/index.php:24
+#: modules/elements/index.php:22
+msgid "View documentation"
+msgstr ""
+
+#: modules/auto-update/index.php:65 modules/co-authors/index.php:124
+#: modules/demo-content/index.php:59 modules/wishlist/index.php:96
+#: modules/woocommerce/index.php:69
+msgid "Install Required Plugins"
+msgstr ""
+
+#: modules/auto-update/index.php:71 modules/portfolio/index.php:27
+#: modules/single-page/index.php:27
+msgid "Settings"
+msgstr ""
+
+#: modules/auto-update/index.php:86
+msgid "Envato Market"
+msgstr ""
+
+#: modules/co-authors/index.php:28
+msgid "Co-Authors"
+msgstr ""
+
+#: modules/co-authors/index.php:29
+msgid "Adds and displays multiple authors for posts and projects."
+msgstr ""
+
+#: modules/co-authors/index.php:30 modules/demo-content/index.php:21
+#: modules/elements/index.php:19
+msgid "Content"
+msgstr ""
+
+#: modules/co-authors/index.php:139
+#: modules/demo-content/evie-demo-content.php:175
+msgid "Co-Authors Plus"
+msgstr ""
+
+#: modules/cursor/evie-cursor.php:78 modules/cursor/evie-cursor.php:97
+#: modules/cursor/index.php:18
+msgid "Cursor"
+msgstr ""
+
+#: modules/cursor/evie-cursor.php:98
+msgid "Displays an animated cursor."
+msgstr ""
+
+#: modules/cursor/evie-cursor.php:101 modules/elements/js/blocks.js:229
+#: modules/elements/js/blocks.js:1138 modules/elements/js/blocks.js:1474
+#: modules/elements/js/blocks.js:1551 modules/elements/js/blocks.js:1564
+#: modules/elements/js/blocks.js:1577
+msgid "None"
+msgstr ""
+
+#: modules/cursor/evie-cursor.php:102
+msgid "Circle"
+msgstr ""
+
+#: modules/cursor/evie-cursor.php:103
+msgid "Dot"
+msgstr ""
+
+#: modules/cursor/evie-cursor.php:122
+msgid "Hide Default Cursor"
+msgstr ""
+
+#: modules/cursor/evie-cursor.php:123
+msgid "Displays only custom cursor and hides default cursor."
+msgstr ""
+
+#: modules/cursor/index.php:19
+msgid "Adds an animated cursor to your site."
+msgstr ""
+
+#: modules/cursor/index.php:24
+msgid "Customize"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:18
+#: modules/demo-content/index.php:19
+msgid "Demo Content"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:19
+#: modules/demo-content/evie-demo-content.php:34
+msgid "Import Demo Content"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:71
+#: modules/demo-content/evie-demo-content.php:82
+#: modules/demo-content/evie-demo-content.php:93
+#: modules/demo-content/evie-demo-content.php:104
+msgid "Full Demo"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:72
+msgid "Creative Agency - Full Demo"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:83
+msgid "Creative Portfolio - Full Demo"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:94
+msgid "Creative Network - Full Demo"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:105
+msgid "Creative Blog - Full Demo"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:115
+#: modules/demo-content/evie-demo-content.php:124
+#: modules/demo-content/evie-demo-content.php:133
+#: modules/demo-content/evie-demo-content.php:142
+msgid "Theme Presets"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:116
+msgid "Creative Agency - Theme Settings"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:125
+msgid "Creative Portfolio - Theme Settings"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:134
+msgid "Creative Network - Theme Settings"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:143
+msgid "Creative Blog - Theme Settings"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:168
+#: modules/woocommerce/index.php:84
+msgid "WooCommerce"
+msgstr ""
+
+#: modules/demo-content/evie-demo-content.php:186
+msgid "Icon Block"
+msgstr ""
+
+#: modules/demo-content/index.php:20
+msgid "Includes predefined demo content from the theme."
+msgstr ""
+
+#: modules/demo-content/index.php:53
+msgid "Import Demo"
+msgstr ""
+
+#: modules/demo-content/index.php:74
+msgid "One Click Demo Import"
+msgstr ""
+
+#: modules/elements/evie-elements.php:152
+msgid "Evie - Creative Agency"
+msgstr ""
+
+#: modules/elements/evie-elements.php:153
+msgid "Evie - Creative Portfolio"
+msgstr ""
+
+#: modules/elements/evie-elements.php:154
+msgid "Evie - Creative Network"
+msgstr ""
+
+#: modules/elements/evie-elements.php:155
+msgid "Evie - Creative Blog"
+msgstr ""
+
+#: modules/elements/evie-elements.php:156
+msgid "Evie - Page Templates"
+msgstr ""
+
+#: modules/elements/evie-elements.php:157
+msgid "Evie - Post Templates"
+msgstr ""
+
+#: modules/elements/evie-elements.php:158
+msgid "Evie - Project Templates"
+msgstr ""
+
+#: modules/elements/index.php:17
+msgid "Blocks & Widgets"
+msgstr ""
+
+#: modules/elements/index.php:18
+msgid "Adds exclusive blocks and widgets for the Evie theme."
+msgstr ""
+
+#: modules/elements/js/blocks.js:205 modules/elements/js/blocks.js:1375
+#: modules/portfolio/js/index.js:605 modules/theme-options/js/post.js:449
+msgid "Layout"
+msgstr ""
+
+#: modules/elements/js/blocks.js:207
+msgid "Type"
+msgstr ""
+
+#: modules/elements/js/blocks.js:210
+msgid "Carousel"
+msgstr ""
+
+#: modules/elements/js/blocks.js:213
+msgid "Large Slider"
+msgstr ""
+
+#: modules/elements/js/blocks.js:216
+msgid "Vertical Slider"
+msgstr ""
+
+#: modules/elements/js/blocks.js:219
+msgid "Split Slider"
+msgstr ""
+
+#: modules/elements/js/blocks.js:226 modules/theme-options/index.php:427
+msgid "Background Overlay"
+msgstr ""
+
+#: modules/elements/js/blocks.js:232 modules/portfolio/js/index.js:1324
+#: modules/theme-options/index.php:184 modules/theme-options/index.php:508
+msgid "Dark"
+msgstr ""
+
+#: modules/elements/js/blocks.js:235 modules/portfolio/js/index.js:1327
+#: modules/theme-options/index.php:185 modules/theme-options/index.php:509
+msgid "Light"
+msgstr ""
+
+#: modules/elements/js/blocks.js:242 modules/elements/js/blocks.js:1077
+#: modules/elements/js/blocks.js:1445
+msgid "Display category"
+msgstr ""
+
+#: modules/elements/js/blocks.js:248
+msgid "Mousewheel navigation"
+msgstr ""
+
+#: modules/elements/js/blocks.js:254 modules/elements/js/blocks.js:1119
+#: modules/elements/js/blocks.js:1500
+msgid "Sorting and filtering"
+msgstr ""
+
+#: modules/elements/js/blocks.js:258 modules/elements/js/blocks.js:1123
+#: modules/elements/js/blocks.js:1504
+msgid "Post"
+msgstr ""
+
+#: modules/elements/js/blocks.js:261 modules/elements/js/blocks.js:1126
+#: modules/elements/js/blocks.js:1507 modules/portfolio/evie-portfolio.php:196
+msgid "Project"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1046
+msgid "Post style"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1053 modules/elements/js/blocks.js:1407
+msgid "Hover effect"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1060 modules/elements/js/blocks.js:1414
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:124
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:246
+msgid "Columns"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1071 modules/elements/js/blocks.js:1439
+msgid "Display title"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1083 modules/elements/js/blocks.js:1451
+msgid "Display author"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1089 modules/elements/js/blocks.js:1457
+msgid "Display date"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1095 modules/elements/js/blocks.js:1463
+msgid "Display Likes, Share and Comments"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1101
+msgid "Display post number"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1107 modules/theme-options/index.php:158
+msgid "Navigation"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1113 modules/elements/js/blocks.js:1432
+msgid "Pagination"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1133 modules/elements/js/blocks.js:1469
+msgid "Link settings"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1135 modules/elements/js/blocks.js:1471
+msgid "Link to"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1141
+msgid "Archive page (all posts)"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1144
+msgid "More posts with the same filters"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1147 modules/elements/js/blocks.js:1480
+msgid "Custom"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1154 modules/elements/js/blocks.js:1487
+msgid "Link text"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1160 modules/elements/js/blocks.js:1493
+msgid "URL"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1181 modules/elements/js/blocks.js:2008
+msgid "Headingâ¦"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1193
+msgid "Descriptionâ¦"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1378 modules/elements/js/blocks.js:1972
+msgid "Large"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1381 modules/elements/js/blocks.js:5275
+msgid "List"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1384
+msgid "Grid"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1387
+msgid "Waterfall"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1394
+msgid "Parallax Columns"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1400
+msgid "Style"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1425
+msgid "Animation"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1477
+msgid "Archive Page"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1544
+msgid "Card"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1547
+msgid "Text Overlay"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1554
+msgid "Inset Border"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1557
+msgid "Ripple"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1560
+msgid "Slide Up"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1567
+msgid "Fade In"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1570
+msgid "Fade Up"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1573
+msgid "Zoom In"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1580
+msgid "Infinite Scroll"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1583
+msgid "Load More"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1586
+msgid "Next and Previous"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1589
+msgid "Numbered Pagination"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1643
+msgid "Scrolling Text"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1760
+#, javascript-format
+msgid "Add %s"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1762
+msgid "Add Media"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1813
+msgid "Add Overlay"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1950
+msgid "Direction"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1953
+msgid "Slide to left"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1956
+msgid "Slide to right"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1963
+msgid "Font size"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1966
+msgid "Small"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1969
+msgid "Normal"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1979
+msgid "Color settings"
+msgstr ""
+
+#: modules/elements/js/blocks.js:1981
+msgid "Text color"
+msgstr ""
+
+#: modules/elements/js/blocks.js:2007
+msgid "Heading text"
+msgstr ""
+
+#: modules/elements/js/blocks.js:5261
+msgid "Link"
+msgstr ""
+
+#: modules/elements/js/blocks.js:5264
+msgid "Circle Before"
+msgstr ""
+
+#: modules/elements/js/blocks.js:5267
+msgid "Circle After"
+msgstr ""
+
+#: modules/elements/patterns/evie-1-about.php:11
+msgid "Evie 1 - About page"
+msgstr ""
+
+#: modules/elements/patterns/evie-1-blog.php:11
+msgid "Evie 1 - Blog page"
+msgstr ""
+
+#: modules/elements/patterns/evie-1-contact.php:11
+msgid "Evie 1 - Contact page"
+msgstr ""
+
+#: modules/elements/patterns/evie-1-home.php:11
+msgid "Evie 1 - Home page"
+msgstr ""
+
+#: modules/elements/patterns/evie-2-about.php:11
+msgid "Evie 2 - About page"
+msgstr ""
+
+#: modules/elements/patterns/evie-2-contact.php:11
+msgid "Evie 2 - Contact page"
+msgstr ""
+
+#: modules/elements/patterns/evie-2-home.php:11
+msgid "Evie 2 - Home page"
+msgstr ""
+
+#: modules/elements/patterns/evie-3-about.php:11
+msgid "Evie 3 - About page"
+msgstr ""
+
+#: modules/elements/patterns/evie-3-authors.php:11
+msgid "Evie 3 - Authors page"
+msgstr ""
+
+#: modules/elements/patterns/evie-3-contact.php:11
+msgid "Evie 3 - Contact page"
+msgstr ""
+
+#: modules/elements/patterns/evie-3-home.php:11
+msgid "Evie 3 - Home page"
+msgstr ""
+
+#: modules/elements/patterns/evie-4-about.php:11
+msgid "Evie 4 - About page"
+msgstr ""
+
+#: modules/elements/patterns/evie-4-contact.php:11
+msgid "Evie 4 - Contact page"
+msgstr ""
+
+#: modules/elements/patterns/evie-4-home.php:11
+msgid "Evie 4 - Home page"
+msgstr ""
+
+#: modules/elements/patterns/evie-post-1.php:11
+msgid "Evie Post - Layout 1"
+msgstr ""
+
+#: modules/elements/patterns/evie-post-2.php:11
+msgid "Evie Post - Layout 2"
+msgstr ""
+
+#: modules/elements/patterns/evie-project-1.php:11
+msgid "Evie Project - Layout 1"
+msgstr ""
+
+#: modules/elements/patterns/evie-project-2.php:11
+msgid "Evie Project - Layout 2"
+msgstr ""
+
+#: modules/elements/patterns/evie-project-3.php:11
+msgid "Evie Project - Layout 3"
+msgstr ""
+
+#: modules/elements/patterns/evie-project-4.php:11
+msgid "Evie Project - Layout 4"
+msgstr ""
+
+#: modules/elements/patterns/evie-project-5.php:11
+msgid "Evie Project - Layout 5"
+msgstr ""
+
+#: modules/elements/patterns/evie-project-6.php:11
+msgid "Evie Project - Layout 6"
+msgstr ""
+
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:113
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:235
+#: modules/mega-menu/index.php:16
+msgid "Mega Menu"
+msgstr ""
+
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:116
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:238
+msgid "Disable"
+msgstr ""
+
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:117
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:239
+msgid "Menu items"
+msgstr ""
+
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:118
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:240
+msgid "Recent posts"
+msgstr ""
+
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:133
+#: modules/mega-menu/admin/class-evie-mega-menu-customize.php:255
+#, php-format
+msgid "%s columns"
+msgstr ""
+
+#: modules/mega-menu/index.php:17
+msgid "Displays Mega Menu in your the dropdown menu."
+msgstr ""
+
+#: modules/mega-menu/templates/mega-menu-posts.php:64
+msgid "There are no posts to show right now."
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-admin.php:35
+msgid "Portfolio Settings"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-admin.php:36
+#: modules/portfolio/index.php:18 modules/portfolio/index.php:20
+msgid "Portfolio"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-admin.php:63
+msgid "Portfolio page"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-admin.php:71
+msgid "The portfolio archive page."
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-admin.php:77
+msgid "Comments"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-admin.php:85
+msgid "Enable project comments."
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-admin.php:127
+#: modules/single-page/admin/class-evie-single-page-admin.php:137
+msgid "You do not have sufficient rights to view this page."
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:47
+msgid "Project permalinks"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:54
+msgid "Project category base"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:76
+#, php-format
+msgid "Project %s base"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:93
+msgid "Project attribute base"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:106
+msgid "Project tag base"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:127
+#, php-format
+msgid "If you like, you may enter custom structures for your project URLs here. For example, using <code>item</code> would make your project links like <code>%s/item/sample-project/</code>."
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:133
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:232
+msgctxt "default-slug"
+msgid "portfolio"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:138
+msgctxt "default-slug"
+msgid "project"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:154
+#: modules/portfolio/js/index.js:1321 modules/theme-options/index.php:183
+#: modules/theme-options/index.php:237 modules/theme-options/index.php:255
+#: modules/theme-options/index.php:272 modules/theme-options/index.php:290
+#: modules/theme-options/index.php:507
+msgid "Default"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:159
+msgid "Portfolio base"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:163
+msgid "Category base"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:170
+msgid "Custom base"
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:172
+msgid "Enter a custom base to use. A base must be set or WordPress will use default instead."
+msgstr ""
+
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:222
+#: modules/portfolio/admin/class-evie-portfolio-permalink-settings.php:225
+msgctxt "slug"
+msgid "project"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:192
+msgid "Adds projects to your website."
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:195
+msgid "Projects"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:197
+msgid "All Projects"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:198
+msgctxt "Admin menu name"
+msgid "Projects"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:199
+msgid "Add New"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:200
+msgid "Add New Project"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:201
+msgid "Edit"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:202
+msgid "Edit Project"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:203
+msgid "New Project"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:204
+msgid "View Project"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:205
+msgid "View Projects"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:206
+msgid "Search Projects"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:207
+msgid "No projects found"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:208
+msgid "No projects found in trash"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:209
+msgid "Parent Project"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:210
+msgid "Insert into Project"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:211
+msgid "Uploaded to this project"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:212
+msgid "Filter projects"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:213
+msgid "Projects navigation"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:214
+msgid "Projects list"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:243
+msgid "Categories"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:245
+msgid "Project Categories"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:246
+msgid "Category"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:247
+msgctxt "Admin menu name"
+msgid "Categories"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:248
+msgid "Search Categories"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:249
+msgid "Popular Categories"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:250
+msgid "All Categories"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:251
+msgid "Parent Category"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:252
+msgid "Parent Category:"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:253
+msgid "Edit Category"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:254
+msgid "View Category"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:255
+msgid "Update Category"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:256
+msgid "Add New Category"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:257
+msgid "New Category Name"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:258
+#: modules/portfolio/evie-portfolio.php:322
+#: modules/portfolio/evie-portfolio.php:367
+#: modules/portfolio/evie-portfolio.php:402
+msgid "Separate with commas or the Enter key."
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:259
+msgid "Add or remove tags"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:260
+msgid "Choose from the most used tags"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:261
+msgid "No categories found"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:262
+msgid "&larr; Back to categories"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:299
+#, php-format
+msgid "Project %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:303
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:305
+#, php-format
+msgid "Popular %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:307
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:309
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:311
+#, php-format
+msgid "Parent %s:"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:313
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:315
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:317
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:319
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:321
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:324
+#, php-format
+msgid "Add or remove \"%s\""
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:326
+#, php-format
+msgid "Choose from the most used \"%s\""
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:328
+#, php-format
+msgid "No \"%s\" found"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:330
+#, php-format
+msgid "&larr; Back to \"%s\""
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:356
+#: modules/portfolio/evie-portfolio.php:358
+msgid "Project Attributes"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:359
+msgid "Attribute"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:360
+msgctxt "Admin menu name"
+msgid "Attributes"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:361
+msgid "Search Attributes"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:362
+msgid "All Attributes"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:363
+msgid "Edit Attribute"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:364
+msgid "Update Attribute"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:365
+msgid "Add New Attribute"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:366
+msgid "New Attribute Name"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:368
+#: modules/portfolio/evie-portfolio.php:403
+msgid "No tags found"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:369
+#: modules/portfolio/evie-portfolio.php:404
+msgid "&larr; Back to tags"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:391
+#: modules/portfolio/evie-portfolio.php:393
+msgid "Project Tags"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:394 modules/portfolio/js/index.js:319
+msgid "Tag"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:395
+msgctxt "Admin menu name"
+msgid "Tags"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:396
+msgid "Search Tags"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:397
+msgid "All Tags"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:398
+msgid "Edit Tag"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:399
+msgid "Update Tag"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:400
+msgid "Add New Tag"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:401
+msgid "New Tag Name"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:741
+msgctxt "slug"
+msgid "uncategorized"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:894
+msgid "Portfolio Page"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:987 modules/theme-options/index.php:127
+msgid "Slider"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:988
+msgid "Image Rollover"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:989
+msgid "Video"
+msgstr ""
+
+#: modules/portfolio/evie-portfolio.php:990
+msgid "Audio"
+msgstr ""
+
+#: modules/portfolio/index.php:19
+msgid "Adds a Project post type and displays the portfolio on your website."
+msgstr ""
+
+#: modules/portfolio/js/index.js:319
+msgid "Term"
+msgstr ""
+
+#: modules/portfolio/js/index.js:323
+#, javascript-format
+msgctxt "term"
+msgid "%s added"
+msgstr ""
+
+#: modules/portfolio/js/index.js:326
+#, javascript-format
+msgctxt "term"
+msgid "%s removed"
+msgstr ""
+
+#: modules/portfolio/js/index.js:329
+#, javascript-format
+msgctxt "term"
+msgid "Remove %s"
+msgstr ""
+
+#: modules/portfolio/js/index.js:344
+msgid "Group Name"
+msgstr ""
+
+#: modules/portfolio/js/index.js:487
+msgid "Custom fields for the project."
+msgstr ""
+
+#: modules/portfolio/js/index.js:500 modules/portfolio/js/index.js:638
+msgid "Name"
+msgstr ""
+
+#: modules/portfolio/js/index.js:507
+msgid "Value"
+msgstr ""
+
+#: modules/portfolio/js/index.js:618 modules/portfolio/js/index.js:646
+msgid "Website"
+msgstr ""
+
+#: modules/portfolio/js/index.js:623
+msgid "The URL of the project website."
+msgstr ""
+
+#: modules/portfolio/js/index.js:626
+msgid "Clients"
+msgstr ""
+
+#: modules/portfolio/js/index.js:1190
+msgid "Project Details"
+msgstr ""
+
+#: modules/portfolio/js/index.js:1197
+msgid "General"
+msgstr ""
+
+#: modules/portfolio/js/index.js:1200
+msgid "Styling"
+msgstr ""
+
+#: modules/portfolio/js/index.js:1203
+msgid "Fields"
+msgstr ""
+
+#: modules/portfolio/js/index.js:1315
+msgid "Additional options for styling the project in the projects list."
+msgstr ""
+
+#: modules/portfolio/js/index.js:1316
+msgid "Scheme"
+msgstr ""
+
+#: modules/portfolio/js/index.js:1318
+msgid "Choose \"Dark\" scheme when the project has a dark background image or color. Default is based on the current theme color scheme."
+msgstr ""
+
+#: modules/portfolio/js/index.js:1334
+msgid "Project color"
+msgstr ""
+
+#: modules/portfolio/js/index.js:1356
+msgid "Clear"
+msgstr ""
+
+#: modules/single-page/admin/class-evie-single-page-admin.php:33
+#: modules/single-page/admin/class-evie-single-page-admin.php:34
+#: modules/single-page/index.php:19
+msgid "Single Page"
+msgstr ""
+
+#: modules/single-page/admin/class-evie-single-page-admin.php:60
+msgid "Advanced Rules"
+msgstr ""
+
+#: modules/single-page/admin/class-evie-single-page-admin.php:68
+msgid "Exclude the following URL(s)"
+msgstr ""
+
+#: modules/single-page/admin/class-evie-single-page-admin.php:76
+msgid "Ignore the links that contain these URL strings."
+msgstr ""
+
+#: modules/single-page/admin/class-evie-single-page-admin.php:90
+msgid "Exclude the following selector(s)"
+msgstr ""
+
+#: modules/single-page/admin/class-evie-single-page-admin.php:98
+msgid "Ignore the links that match the specified group of CSS selectors."
+msgstr ""
+
+#: modules/single-page/index.php:20
+msgid "Interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. It makes the site behave more like a desktop/mobile application."
+msgstr ""
+
+#: modules/theme-options/index.php:18
+msgid "Theme Options"
+msgstr ""
+
+#: modules/theme-options/index.php:19
+msgid "Adds additional options for the post and page."
+msgstr ""
+
+#: modules/theme-options/index.php:164
+msgid "Hide main menu"
+msgstr ""
+
+#: modules/theme-options/index.php:169
+msgid "Transparent background"
+msgstr ""
+
+#: modules/theme-options/index.php:180 modules/theme-options/index.php:504
+msgid "Text mode"
+msgstr ""
+
+#: modules/theme-options/index.php:206 modules/theme-options/index.php:212
+msgid "Header"
+msgstr ""
+
+#: modules/theme-options/index.php:222
+msgid "Description"
+msgstr ""
+
+#: modules/theme-options/index.php:234
+msgid "Header size"
+msgstr ""
+
+#: modules/theme-options/index.php:238
+msgid "Short"
+msgstr ""
+
+#: modules/theme-options/index.php:239
+msgid "Tall"
+msgstr ""
+
+#: modules/theme-options/index.php:240
+msgid "Full screen"
+msgstr ""
+
+#: modules/theme-options/index.php:252
+msgid "Content width"
+msgstr ""
+
+#: modules/theme-options/index.php:256
+msgid "Wide width"
+msgstr ""
+
+#: modules/theme-options/index.php:257
+msgid "Full width"
+msgstr ""
+
+#: modules/theme-options/index.php:269
+msgid "Text align"
+msgstr ""
+
+#: modules/theme-options/index.php:273
+msgid "Left"
+msgstr ""
+
+#: modules/theme-options/index.php:274
+msgid "Center"
+msgstr ""
+
+#: modules/theme-options/index.php:275
+msgid "Right"
+msgstr ""
+
+#: modules/theme-options/index.php:287
+msgid "Background"
+msgstr ""
+
+#: modules/theme-options/index.php:291 modules/theme-options/index.php:431
+#: modules/woocommerce/evie-variation-swatches.php:26
+#: modules/woocommerce/evie-variation-swatches.php:45
+msgid "Color"
+msgstr ""
+
+#: modules/theme-options/index.php:292
+#: modules/woocommerce/evie-variation-swatches.php:27
+#: modules/woocommerce/evie-variation-swatches.php:53
+msgid "Image"
+msgstr ""
+
+#: modules/theme-options/index.php:304
+msgid "Background color"
+msgstr ""
+
+#: modules/theme-options/index.php:320
+msgid "Background image"
+msgstr ""
+
+#: modules/theme-options/index.php:321
+msgid "You can set the background image in the Featured Image panel above."
+msgstr ""
+
+#: modules/theme-options/index.php:338
+msgid "Background image position"
+msgstr ""
+
+#: modules/theme-options/index.php:341
+msgid "Left Top"
+msgstr ""
+
+#: modules/theme-options/index.php:342
+msgid "Left Center"
+msgstr ""
+
+#: modules/theme-options/index.php:343
+msgid "Left Bottom"
+msgstr ""
+
+#: modules/theme-options/index.php:344
+msgid "Right Top"
+msgstr ""
+
+#: modules/theme-options/index.php:345
+msgid "Right Center"
+msgstr ""
+
+#: modules/theme-options/index.php:346
+msgid "Right Bottom"
+msgstr ""
+
+#: modules/theme-options/index.php:347
+msgid "Center Top"
+msgstr ""
+
+#: modules/theme-options/index.php:348
+msgid "Center Center"
+msgstr ""
+
+#: modules/theme-options/index.php:349
+msgid "Center Bottom"
+msgstr ""
+
+#: modules/theme-options/index.php:366
+msgid "Background image size"
+msgstr ""
+
+#: modules/theme-options/index.php:369
+msgid "Original"
+msgstr ""
+
+#: modules/theme-options/index.php:370
+msgid "Fit to Screen"
+msgstr ""
+
+#: modules/theme-options/index.php:371
+msgid "Fill Screen"
+msgstr ""
+
+#: modules/theme-options/index.php:388
+msgid "Fixed background"
+msgstr ""
+
+#: modules/theme-options/index.php:405
+msgid "Repeated background"
+msgstr ""
+
+#: modules/theme-options/index.php:430
+msgid "Gradient"
+msgstr ""
+
+#: modules/theme-options/index.php:448
+msgid "Overlay color"
+msgstr ""
+
+#: modules/theme-options/index.php:470
+msgid "Overlay opacity"
+msgstr ""
+
+#: modules/theme-options/index.php:531
+msgid "Remove header gap"
+msgstr ""
+
+#: modules/theme-options/index.php:549
+msgid "Footer"
+msgstr ""
+
+#: modules/theme-options/index.php:555
+msgid "Hide footer"
+msgstr ""
+
+#: modules/theme-options/index.php:560
+msgid "Remove footer gap"
+msgstr ""
+
+#: modules/theme-options/js/index.js:547
+msgid "Dark Mode Switcher"
+msgstr ""
+
+#: modules/theme-options/js/index.js:549
+msgid "Switch between Dark and Light mode to preview your content."
+msgstr ""
+
+#: modules/wishlist/index.php:25
+msgid "Wishlist"
+msgstr ""
+
+#: modules/wishlist/index.php:26
+msgid "Allows customers to create and add products to the wishlist."
+msgstr ""
+
+#: modules/wishlist/index.php:111
+msgid "YITH WooCommerce Wishlist"
+msgstr ""
+
+#: modules/woocommerce/evie-variation-swatches.php:28
+msgid "Button"
+msgstr ""
+
+#: modules/woocommerce/evie-variation-swatches.php:86
+msgid "Select terms"
+msgstr ""
+
+#: modules/woocommerce/evie-variation-swatches.php:107
+msgid "Select all"
+msgstr ""
+
+#: modules/woocommerce/evie-variation-swatches.php:108
+msgid "Select none"
+msgstr ""
+
+#: modules/woocommerce/evie-variation-swatches.php:109
+msgid "Add new"
+msgstr ""
+
+#: modules/woocommerce/index.php:25
+msgid "E-commerce"
+msgstr ""
+
+#: modules/woocommerce/index.php:26
+msgid "Adds theme support and custom styles for the WooCommerce plugin."
+msgstr ""
