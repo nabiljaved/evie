@@ -2,6 +2,7 @@
 /******/ 	"use strict";
 var __webpack_exports__ = {};
 
+
 ;// CONCATENATED MODULE: ./src/assets/js/inc/components/toggle.js
 /**
  * Toggles the visibility of the element.

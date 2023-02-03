@@ -9,7 +9,8 @@
  * @package Evie
  * @version 1.0.0
  */
-
+	include 'C:\xampp\htdocs\wordpress\wp-includes\widgets\UpperFooterSection.php';
+	
 ?>
 			</main><!-- #site-content -->
 
@@ -19,25 +20,21 @@
 
 			<footer id="site-footer" class="main-footer">
 
-			<div class="upper_footer_section">
+			<!-- <div class="upper_footer_section">
 				<div class="upper_footer_section_dropshadow"></div>
 				<div class="upper_footer_section_inner">
 					<div class="upper_footer_section_inner_left">
 						<h1> Feed Your <span style="color: tomato">Eyes</span> .</h1>
 						<p>Subscribe to our newsletter and never miss the new updates.</p>
 					</div>
-					<div class="upper_footer_section_inner_right">
-					      <!-- <form class="upper_footer_section_inner_right"> -->
-						  	<input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your email address" value="" type="email" name="email-278">
+					<form class="upper_footer_section_inner_right " id="form">
+						  	<input size="40"  aria-required="true" aria-invalid="false" placeholder="Your email address" value="" type="email" name="email-278" id="n_email">
 						  	<input style="margin-left:10px" class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Subscribe">
-						  <!-- </form> -->
-				    </div>
+					</form>
 				</div>
-			</div>
+			</div>  -->
 
-				
-
-			
+			<?php echo $upper_footer->generate() ?>
 
 				<?php
 
@@ -59,7 +56,8 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
-
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="http://localhost/wordpress/wp-content/themes/evie/assets/js/newsletter.js"></script>
 	</body>
 
 </html>
